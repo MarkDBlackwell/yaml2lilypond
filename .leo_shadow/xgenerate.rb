@@ -1,126 +1,6 @@
 #@+leo-ver=4-thin
 #@+node:georgesawyer.20110802081402.1955:@shadow generate.rb
 #@@language ruby
-#@<< comment block >>
-#@+node:georgesawyer.20110802081402.2213:<< comment block >>
-=begin
-#@<< author block >>
-#@+node:georgesawyer.20110802081402.2214:<< author block >>
-Author: Mark D. Blackwell
-Date created: July 17, 2011
-Date changed: July 19, 2011
-2011-7-19 Some cleanup.
-
-Purpose: TODO
-Example usage: TODO
-#@nonl
-#@-node:georgesawyer.20110802081402.2214:<< author block >>
-#@nl
-====================
-#@<< reference URL >>
-#@+node:georgesawyer.20110802081402.2216:<< reference URL >>
-See:
-http://corelib.rubyonrails.org/classes/YAML.html
-http://creedcultcode.blogspot.com/2008/05/parsing-yaml-files-in-ruby.html
-http://en.wikipedia.org/wiki/YAML
-http://rhnh.net/2006/06/25/yaml-tutorial
-http://rhnh.net/2011/01/31/yaml-tutorial
-http://www.ruby-doc.org/stdlib/libdoc/yaml/rdoc/index.html
-http://www.yaml.org/YAML_for_ruby.html
-http://www.yaml.org/spec/1.0/#id2491593
-http://yaml4r.sourceforge.net/doc/
-
-For clone method for deep copies, see:
-http://ruby.about.com/od/advancedruby/a/deepcopy.htm
-http://blog.rubybestpractices.com/posts/rklemme/018-Complete_Class.html
-#@nonl
-#@-node:georgesawyer.20110802081402.2216:<< reference URL >>
-#@nl
-====================
-#@<< example >>
-#@+node:georgesawyer.20110802081402.2215:<< example >>
-Examples:
---------------------
-Measure key:
-Where a word continues out of the measure:
---- # Measure keys
-- Go-(ing)
-Where a word is continued into the measure:
---- # Measure keys
-- (Com)-ing
-Where a syllable continues out of the measure:
---- # Measure keys
-- One--
-Where a syllable is continued into the measure:
---- # Measure keys
-- --One
-Where a syllable continues both into and out of the measure:
---- # Measure keys
-- --One--
---------------------
-Time signature:
---- # Measure times
-# With quarter note beats:
-- 3
-When the beat is other than a quarter note:
-- - 5
-  - 2
-#@nonl
-#@-node:georgesawyer.20110802081402.2215:<< example >>
-#@nl
-====================
-#@<< test >>
-#@+node:georgesawyer.20110802081402.2217:<< test >>
-Tests:
---------------------
-Code:
-b=[1,[2,8]]
-b.collect!{|a| a=[a].flatten;2==a.length ? a : (a.push 4)}
-p b
-Prints:
-[[1, 4], [2, 8]]
---------------------
-Code:
-s=[1,[2,3],4].to_yaml
-print s
-tree=YAML::parse(s)
-p tree.transform
-YAML::parse(s){|d| print d.inspect, "\n"}
-Prints:
----
-- 1
-- - 2
-  - 3
-- 4
-[1, [2, 3], 4]
---------------------
-Code:
-k='(Requi)-emAeternam'
-test_instrument[k].content_no_barlines='hello'
-        print test_instrument[k].content, "\n"
-test_instrument[k].content='c4 d e f'
-        print test_instrument[k].content, "\n"
-test_instrument[k].content="r*#{test_instrument[k].time}"
-        print test_instrument[k].content, "\n"
-Prints:
-hello
-| c4 d e f |
-| r*12/4 |
---------------------
-Code:
-a=[1,2];a.unshift(3);p a
-Prints:
-[3, 1, 2]
-====================
-#@nonl
-#@-node:georgesawyer.20110802081402.2217:<< test >>
-#@nl
-=end
-#@+others
-#@-others
-#@nonl
-#@-node:georgesawyer.20110802081402.2213:<< comment block >>
-#@nl
 #@<< require >>
 #@+node:georgesawyer.20110724164426.3493:<< require >>
 require 'yaml'
@@ -135,7 +15,14 @@ require 'pathname'
 class App
   #@  << class accessor >>
   #@+node:georgesawyer.20110802081402.2220:<< class accessor >>
-  class << self; attr_reader :root end
+  class << self
+    #@  @+others
+    #@+node:georgesawyer.20110819095338.1628:root
+    attr_reader :root
+    #@nonl
+    #@-node:georgesawyer.20110819095338.1628:root
+    #@-others
+  end
   #@nonl
   #@-node:georgesawyer.20110802081402.2220:<< class accessor >>
   #@nl
@@ -161,11 +48,12 @@ class Lilypond
   #@nl
   #@  @+others
   #@+node:georgesawyer.20110802081402.2224:method
-  #@+node:georgesawyer.20110802081402.2225:self.rest
+  #@+node:georgesawyer.20110819095338.1613:public class
+  #@+node:georgesawyer.20110802081402.2225:rest
   def self.rest; rest='r1*' end
   #@nonl
-  #@-node:georgesawyer.20110802081402.2225:self.rest
-  #@+node:georgesawyer.20110802081402.2226:self.write_input_for_lilypond
+  #@-node:georgesawyer.20110802081402.2225:rest
+  #@+node:georgesawyer.20110802081402.2226:write_input_for_lilypond
   def self.write_input_for_lilypond movement, instrument, filepath
     lilypond_variable_name, mode, overall_prefix = Main.three_keys
     a=Array.new
@@ -183,7 +71,8 @@ class Lilypond
     f.close
   end
   #@nonl
-  #@-node:georgesawyer.20110802081402.2226:self.write_input_for_lilypond
+  #@-node:georgesawyer.20110802081402.2226:write_input_for_lilypond
+  #@-node:georgesawyer.20110819095338.1613:public class
   #@-node:georgesawyer.20110802081402.2224:method
   #@-others
 end
@@ -193,27 +82,21 @@ end
 class Main
   #@  << class accessor >>
   #@+node:georgesawyer.20110802081402.2228:<< class accessor >>
-  class << self; attr_reader :three_keys end
+  class << self
+    #@  @+others
+    #@+node:georgesawyer.20110819095338.1623:three_keys
+    attr_reader :three_keys
+    #@nonl
+    #@-node:georgesawyer.20110819095338.1623:three_keys
+    #@-others
+  end
   #@nonl
   #@-node:georgesawyer.20110802081402.2228:<< class accessor >>
   #@nl
   #@  @+others
-  #@+node:georgesawyer.20110802081402.2229:TODO
-  #@+node:georgesawyer.20110802081402.2230:look at this for finding yaml files
-  # Look at this for finding yaml files:
-  =begin
-      app_root
-  App.root.join(*TEST_GROUP).find do |path|
-    b=path.basename.to_s
-    Find.prune if path.directory? && ?.==b[0]
-    paths << path.dirname.join(b.chomp '.rb') if REQUIRE_TEST_BASENAME==b
-  end
-  =end
-  #@nonl
-  #@-node:georgesawyer.20110802081402.2230:look at this for finding yaml files
-  #@-node:georgesawyer.20110802081402.2229:TODO
   #@+node:georgesawyer.20110802081402.2231:method
-  #@+node:georgesawyer.20110802081402.2232:self.extract_three_keys
+  #@+node:georgesawyer.20110819095338.1614:public class
+  #@+node:georgesawyer.20110802081402.2232:extract_three_keys
   def self.extract_three_keys lilypond_variable_request
     @three_keys=[
         (lilypond_variable_request.delete 'variable'),
@@ -221,56 +104,42 @@ class Main
         (lilypond_variable_request.delete 'prefix') ]
   end
   #@nonl
-  #@-node:georgesawyer.20110802081402.2232:self.extract_three_keys
-  #@+node:georgesawyer.20110802081402.2233:self.get_filenames
-  def self.get_filenames
-    %w[
-        soprano/note.yaml  alto/note.yaml  tenor/note.yaml  bass/note.yaml  percussion/note.yaml
-        tempo.yaml  non-reduction.yaml
-        alto/non-reduction.yaml  tenor/non-reduction.yaml  
-        organ/right/add.yaml  organ/left/add.yaml  
-        ]
-  #    ['percussion/note.yaml'] # Test.
-  end
-  #@nonl
-  #@-node:georgesawyer.20110802081402.2233:self.get_filenames
-  #@+node:georgesawyer.20110802081402.2234:self.get_movement_names
-  def self.get_movement_names
-    %w[hostias]
-  end
-  #@nonl
-  #@-node:georgesawyer.20110802081402.2234:self.get_movement_names
-  #@+node:georgesawyer.20110802081402.2235:self.get_sole_yaml_document
+  #@-node:georgesawyer.20110802081402.2232:extract_three_keys
+  #@+node:georgesawyer.20110802081402.2235:get_sole_yaml_document
   def self.get_sole_yaml_document filepath
     y=UseYaml.get_yaml_documents filepath
     raise unless 1==y.length # Must be exactly one yaml document.
     y.first
   end
   #@nonl
-  #@-node:georgesawyer.20110802081402.2235:self.get_sole_yaml_document
-  #@+node:georgesawyer.20110802081402.2236:self.run
+  #@-node:georgesawyer.20110802081402.2235:get_sole_yaml_document
+  #@+node:georgesawyer.20110802081402.2236:run
   def self.run
     caller = caller(0)
   #print 'caller=';p caller
-    get_movement_names.each do |movement_name|
+  #  get_movement_names.each do |movement_name|
+    Movement.names.each do |movement_name|
       movement = Movement.new movement_name
-      get_filenames.each do |filename|
-        next if 'template.yaml'==filename
-        filepath=movement.directory.join filename
-  #print 'filepath.to_s=';p filepath.to_s
+      movement.get_filepaths.each do |filepath|
+        next if movement.is_template filepath
+  #      filepath=movement.directory.join filename
+  ##print 'filepath.to_s=';p filepath.to_s
         lilypond_variable_request=get_sole_yaml_document filepath
         extract_three_keys lilypond_variable_request
         instrument=movement.template.clone
         run_requests instrument, lilypond_variable_request
-        output_filepath=Pathname filepath.to_s.chomp('.yaml').concat '.rly'
+  #      output_filepath=Pathname filepath.to_s.chomp('.yaml').concat '.rly'
+        x=filepath.extname.to_s
+        no_x=filepath.chomp x
+        output_filepath=no_x.concat '.rly'
         Lilypond.write_input_for_lilypond movement, instrument, output_filepath
       end
     end
     run_lilypond
   end
   #@nonl
-  #@-node:georgesawyer.20110802081402.2236:self.run
-  #@+node:georgesawyer.20110802081402.2237:self.run_lilypond
+  #@-node:georgesawyer.20110802081402.2236:run
+  #@+node:georgesawyer.20110802081402.2237:run_lilypond
   def self.run_lilypond
     dos_separator= '\\'
     programs_directory  = 'Program Files'
@@ -281,8 +150,8 @@ class Main
   #    `#{dos_quote}#{program_location}#{dos_quote} #{arguments}`
   end
   #@nonl
-  #@-node:georgesawyer.20110802081402.2237:self.run_lilypond
-  #@+node:georgesawyer.20110802081402.2238:self.run_requests
+  #@-node:georgesawyer.20110802081402.2237:run_lilypond
+  #@+node:georgesawyer.20110802081402.2238:run_requests
   def self.run_requests instrument, lilypond_variable_request
   #print 'instrument=';p instrument
     lilypond_variable_request.each do |measure_key,measure_request_vector|
@@ -301,7 +170,8 @@ class Main
     end
   end
   #@nonl
-  #@-node:georgesawyer.20110802081402.2238:self.run_requests
+  #@-node:georgesawyer.20110802081402.2238:run_requests
+  #@-node:georgesawyer.20110819095338.1614:public class
   #@-node:georgesawyer.20110802081402.2231:method
   #@-others
 end
@@ -355,6 +225,7 @@ class Measure
   #@nl
   #@  @+others
   #@+node:georgesawyer.20110802081402.2242:method
+  #@+node:georgesawyer.20110819095338.1615:public
   #@+node:georgesawyer.20110802081402.2250:initialize
   def initialize k, ts, t
     @key = k
@@ -375,6 +246,7 @@ class Measure
   end
   #@nonl
   #@-node:georgesawyer.20110802081402.2252:to_s
+  #@-node:georgesawyer.20110819095338.1615:public
   #@-node:georgesawyer.20110802081402.2242:method
   #@-others
 end
@@ -390,20 +262,80 @@ class Movement
   #@nl
   #@  << accessor >>
   #@+node:georgesawyer.20110802081402.2255:<< accessor >>
-  attr_reader :directory, :measure_keys, :template
+  attr_reader :directory, :filepaths, :measure_keys, :template
   #@nonl
   #@-node:georgesawyer.20110802081402.2255:<< accessor >>
   #@nl
   #@  @+others
   #@+node:georgesawyer.20110802081402.2256:method
+  #@+node:georgesawyer.20110819095338.1661:public class
+  #@+node:georgesawyer.20110819095338.1663:names
+  def self.names
+  =begin
+    result = Array.new
+    App.root.join('movement').entries.each do |path|
+      b = path.basename.to_s
+      next unless path.directory? && ?.!=b[0]
+      result << b
+    end
+    result
+  =end
+    App.root.join('movement').entries.select{|e| e.directory? && ?.!=e.basename.to_s[0]}.map(:basename).map{:to_s)
+  #  %w[hostias]
+  end
+  #@nonl
+  #@-node:georgesawyer.20110819095338.1663:names
+  #@-node:georgesawyer.20110819095338.1661:public class
+  #@+node:georgesawyer.20110819095338.1616:public
   #@+node:georgesawyer.20110802081402.2257:initialize
   def initialize s
     @directory=MOVEMENTS_DIRECTORY.join s
     @measure_keys, time_data = UseYaml.get_yaml_documents @directory.join 'template.yaml'
     @template=Template.new @measure_keys, time_data
+    @filepaths= filepaths
   end
   #@nonl
   #@-node:georgesawyer.20110802081402.2257:initialize
+  #@+node:georgesawyer.20110819095338.1667:is_template
+  def is_template filepath
+    f=filepath
+    x=f.extname.to_s
+    'template'==f.basename.chomp x
+  end
+  #@nonl
+  #@-node:georgesawyer.20110819095338.1667:is_template
+  #@-node:georgesawyer.20110819095338.1616:public
+  #@+node:georgesawyer.20110819095338.1644:private
+  #@+node:georgesawyer.20110819095338.1648:filepaths
+  def filepaths
+    result=Array.new
+    no_extension=Array.new
+    @directory.find do |path|
+      b=path.basename.to_s
+      Find.prune if path.directory? && ?.==b[0]
+      next unless path.file?
+      x = path.extname.to_s
+  # Example: soprano/note.yaml
+      if UseYaml.extension.member? x
+        result << path
+        no_extension << path.dirname.join(b.chomp x)
+      end
+    end
+    no_extension=no_extension.sort
+    raise unless no_extension.uniq==no_extension
+    result.sort.uniq
+  =begin
+    %w[
+        soprano/note.yaml  alto/note.yaml  tenor/note.yaml  bass/note.yaml  percussion/note.yaml
+        tempo.yaml  non-reduction.yaml
+        alto/non-reduction.yaml  tenor/non-reduction.yaml  
+        organ/right/add.yaml  organ/left/add.yaml  
+        ]
+  =end
+  end
+  #@nonl
+  #@-node:georgesawyer.20110819095338.1648:filepaths
+  #@-node:georgesawyer.20110819095338.1644:private
   #@-node:georgesawyer.20110802081402.2256:method
   #@-others
 end
@@ -425,6 +357,7 @@ class Template
   #@nl
   #@  @+others
   #@+node:georgesawyer.20110802081402.2261:method
+  #@+node:georgesawyer.20110819095338.1617:public
   #@+node:georgesawyer.20110802081402.2262:create_measures
   def create_measures keys, time_data
     times=time_data.collect{|a| a=[a].flatten;2==a.length ? a : (a.push 4)}
@@ -448,6 +381,7 @@ class Template
   end
   #@nonl
   #@-node:georgesawyer.20110802081402.2264:initialize_copy
+  #@-node:georgesawyer.20110819095338.1617:public
   #@-node:georgesawyer.20110802081402.2261:method
   #@-others
 end
@@ -455,9 +389,29 @@ end
 #@-node:georgesawyer.20110802081402.2258:Template
 #@+node:georgesawyer.20110802081402.2265:UseYaml
 class UseYaml
+  #@  << class accessor >>
+  #@+node:georgesawyer.20110819095338.1654:<< class accessor >>
+  class << self
+    #@  @+others
+    #@+node:georgesawyer.20110819095338.1655:extension
+    attr_reader :extension
+    #@nonl
+    #@-node:georgesawyer.20110819095338.1655:extension
+    #@-others
+  end
+  #@nonl
+  #@-node:georgesawyer.20110819095338.1654:<< class accessor >>
+  #@nl
+  #@  << script >>
+  #@+node:georgesawyer.20110819095338.1657:<< script >>
+  @extension = %w[yaml]
+  #@nonl
+  #@-node:georgesawyer.20110819095338.1657:<< script >>
+  #@nl
   #@  @+others
   #@+node:georgesawyer.20110802081402.2266:method
-  #@+node:georgesawyer.20110802081402.2267:self.get_yaml_documents
+  #@+node:georgesawyer.20110819095338.1618:public class
+  #@+node:georgesawyer.20110802081402.2267:get_yaml_documents
   def self.get_yaml_documents filepath
     result=Array.new
     push_document=Proc.new{|e| result.push e}
@@ -467,7 +421,8 @@ class UseYaml
     result
   end
   #@nonl
-  #@-node:georgesawyer.20110802081402.2267:self.get_yaml_documents
+  #@-node:georgesawyer.20110802081402.2267:get_yaml_documents
+  #@-node:georgesawyer.20110819095338.1618:public class
   #@-node:georgesawyer.20110802081402.2266:method
   #@-others
 end
@@ -494,7 +449,8 @@ class VariableRequest
   #@nl
   #@  @+others
   #@+node:georgesawyer.20110802081402.2271:method
-  #@+node:georgesawyer.20110802081402.2272:self.execute_method
+  #@+node:georgesawyer.20110819095338.1619:public class
+  #@+node:georgesawyer.20110802081402.2272:execute_method
   def self.execute_method method_name, measure, data
     m,d = measure,data
     case method_name
@@ -507,7 +463,8 @@ class VariableRequest
     else raise 'what?' end
   end
   #@nonl
-  #@-node:georgesawyer.20110802081402.2272:self.execute_method
+  #@-node:georgesawyer.20110802081402.2272:execute_method
+  #@-node:georgesawyer.20110819095338.1619:public class
   #@-node:georgesawyer.20110802081402.2271:method
   #@-others
 end
@@ -517,13 +474,14 @@ end
 #@nonl
 #@-node:georgesawyer.20110802081402.2218:<< class >>
 #@nl
-#@<< script >>
-#@+node:georgesawyer.20110802081402.2212:<< script >>
+#@<< overall script >>
+#@+node:georgesawyer.20110802081402.2212:<< overall script >>
 Main.run
 #@nonl
-#@-node:georgesawyer.20110802081402.2212:<< script >>
+#@-node:georgesawyer.20110802081402.2212:<< overall script >>
 #@nl
 #@+others
 #@-others
+#@nonl
 #@-node:georgesawyer.20110802081402.1955:@shadow generate.rb
 #@-leo

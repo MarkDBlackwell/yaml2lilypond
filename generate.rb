@@ -1,100 +1,9 @@
-=begin
-Author: Mark D. Blackwell
-Date created: July 17, 2011
-Date changed: July 19, 2011
-2011-7-19 Some cleanup.
-
-Purpose: TODO
-Example usage: TODO
-====================
-See:
-http://corelib.rubyonrails.org/classes/YAML.html
-http://creedcultcode.blogspot.com/2008/05/parsing-yaml-files-in-ruby.html
-http://en.wikipedia.org/wiki/YAML
-http://rhnh.net/2006/06/25/yaml-tutorial
-http://rhnh.net/2011/01/31/yaml-tutorial
-http://www.ruby-doc.org/stdlib/libdoc/yaml/rdoc/index.html
-http://www.yaml.org/YAML_for_ruby.html
-http://www.yaml.org/spec/1.0/#id2491593
-http://yaml4r.sourceforge.net/doc/
-
-For clone method for deep copies, see:
-http://ruby.about.com/od/advancedruby/a/deepcopy.htm
-http://blog.rubybestpractices.com/posts/rklemme/018-Complete_Class.html
-====================
-Examples:
---------------------
-Measure key:
-Where a word continues out of the measure:
---- # Measure keys
-- Go-(ing)
-Where a word is continued into the measure:
---- # Measure keys
-- (Com)-ing
-Where a syllable continues out of the measure:
---- # Measure keys
-- One--
-Where a syllable is continued into the measure:
---- # Measure keys
-- --One
-Where a syllable continues both into and out of the measure:
---- # Measure keys
-- --One--
---------------------
-Time signature:
---- # Measure times
-# With quarter note beats:
-- 3
-When the beat is other than a quarter note:
-- - 5
-  - 2
-====================
-Tests:
---------------------
-Code:
-b=[1,[2,8]]
-b.collect!{|a| a=[a].flatten;2==a.length ? a : (a.push 4)}
-p b
-Prints:
-[[1, 4], [2, 8]]
---------------------
-Code:
-s=[1,[2,3],4].to_yaml
-print s
-tree=YAML::parse(s)
-p tree.transform
-YAML::parse(s){|d| print d.inspect, "\n"}
-Prints:
----
-- 1
-- - 2
-  - 3
-- 4
-[1, [2, 3], 4]
---------------------
-Code:
-k='(Requi)-emAeternam'
-test_instrument[k].content_no_barlines='hello'
-        print test_instrument[k].content, "\n"
-test_instrument[k].content='c4 d e f'
-        print test_instrument[k].content, "\n"
-test_instrument[k].content="r*#{test_instrument[k].time}"
-        print test_instrument[k].content, "\n"
-Prints:
-hello
-| c4 d e f |
-| r*12/4 |
---------------------
-Code:
-a=[1,2];a.unshift(3);p a
-Prints:
-[3, 1, 2]
-====================
-=end
 require 'yaml'
 require 'pathname'
 class App
-  class << self; attr_reader :root end
+  class << self
+    attr_reader :root
+  end
 end
 class Lilypond
   LILYPOND_VERSION='2.14.1'
@@ -118,33 +27,14 @@ class Lilypond
   end
 end
 class Main
-  class << self; attr_reader :three_keys end
-  # Look at this for finding yaml files:
-  =begin
-      app_root
-  App.root.join(*TEST_GROUP).find do |path|
-    b=path.basename.to_s
-    Find.prune if path.directory? && ?.==b[0]
-    paths << path.dirname.join(b.chomp '.rb') if REQUIRE_TEST_BASENAME==b
+  class << self
+    attr_reader :three_keys
   end
-  =end
   def self.extract_three_keys lilypond_variable_request
     @three_keys=[
         (lilypond_variable_request.delete 'variable'),
         (lilypond_variable_request.delete 'mode'),
         (lilypond_variable_request.delete 'prefix') ]
-  end
-  def self.get_filenames
-    %w[
-        soprano/note.yaml  alto/note.yaml  tenor/note.yaml  bass/note.yaml  percussion/note.yaml
-        tempo.yaml  non-reduction.yaml
-        alto/non-reduction.yaml  tenor/non-reduction.yaml  
-        organ/right/add.yaml  organ/left/add.yaml  
-        ]
-  #    ['percussion/note.yaml'] # Test.
-  end
-  def self.get_movement_names
-    %w[hostias]
   end
   def self.get_sole_yaml_document filepath
     y=UseYaml.get_yaml_documents filepath
@@ -154,17 +44,21 @@ class Main
   def self.run
     caller = caller(0)
   #print 'caller=';p caller
-    get_movement_names.each do |movement_name|
+  #  get_movement_names.each do |movement_name|
+    Movement.names.each do |movement_name|
       movement = Movement.new movement_name
-      get_filenames.each do |filename|
-        next if 'template.yaml'==filename
-        filepath=movement.directory.join filename
-  #print 'filepath.to_s=';p filepath.to_s
+      movement.get_filepaths.each do |filepath|
+        next if movement.is_template filepath
+  #      filepath=movement.directory.join filename
+  ##print 'filepath.to_s=';p filepath.to_s
         lilypond_variable_request=get_sole_yaml_document filepath
         extract_three_keys lilypond_variable_request
         instrument=movement.template.clone
         run_requests instrument, lilypond_variable_request
-        output_filepath=Pathname filepath.to_s.chomp('.yaml').concat '.rly'
+  #      output_filepath=Pathname filepath.to_s.chomp('.yaml').concat '.rly'
+        x=filepath.extname.to_s
+        no_x=filepath.chomp x
+        output_filepath=no_x.concat '.rly'
         Lilypond.write_input_for_lilypond movement, instrument, output_filepath
       end
     end
@@ -225,11 +119,56 @@ class Measure
 end
 class Movement
   MOVEMENTS_DIRECTORY=App.root.join 'movement'
-  attr_reader :directory, :measure_keys, :template
+  attr_reader :directory, :filepaths, :measure_keys, :template
+  def self.names
+  =begin
+    result = Array.new
+    App.root.join('movement').entries.each do |path|
+      b = path.basename.to_s
+      next unless path.directory? && ?.!=b[0]
+      result << b
+    end
+    result
+  =end
+    App.root.join('movement').entries.select{|e| e.directory? && ?.!=e.basename.to_s[0]}.map(:basename).map{:to_s)
+  #  %w[hostias]
+  end
   def initialize s
     @directory=MOVEMENTS_DIRECTORY.join s
     @measure_keys, time_data = UseYaml.get_yaml_documents @directory.join 'template.yaml'
     @template=Template.new @measure_keys, time_data
+    @filepaths= filepaths
+  end
+  def is_template filepath
+    f=filepath
+    x=f.extname.to_s
+    'template'==f.basename.chomp x
+  end
+  def filepaths
+    result=Array.new
+    no_extension=Array.new
+    @directory.find do |path|
+      b=path.basename.to_s
+      Find.prune if path.directory? && ?.==b[0]
+      next unless path.file?
+      x = path.extname.to_s
+  # Example: soprano/note.yaml
+      if UseYaml.extension.member? x
+        result << path
+        no_extension << path.dirname.join(b.chomp x)
+      end
+    end
+    no_extension=no_extension.sort
+    raise unless no_extension.uniq==no_extension
+    result.sort.uniq
+  =begin
+    %w[
+        soprano/note.yaml  alto/note.yaml  tenor/note.yaml  bass/note.yaml  percussion/note.yaml
+        tempo.yaml  non-reduction.yaml
+        alto/non-reduction.yaml  tenor/non-reduction.yaml  
+        organ/right/add.yaml  organ/left/add.yaml  
+        ]
+  =end
   end
 end
 class Template
@@ -251,6 +190,10 @@ class Template
   end
 end
 class UseYaml
+  class << self
+    attr_reader :extension
+  end
+  @extension = %w[yaml]
   def self.get_yaml_documents filepath
     result=Array.new
     push_document=Proc.new{|e| result.push e}
