@@ -5,7 +5,7 @@
 class Movement
   #@  << constant >>
   #@+node:markdblackwell.20110823170927.1367:<< constant >>
-  MOVEMENTS_DIRECTORY=App.root.join 'movement'
+  MOVEMENTS_DIRECTORY=App.my_root.join 'movement'
   #@nonl
   #@-node:markdblackwell.20110823170927.1367:<< constant >>
   #@nl
@@ -22,14 +22,14 @@ class Movement
   def self.names
   =begin
     result = Array.new
-    App.root.join('movement').entries.each do |path|
+    App.my_root.join('movement').entries.each do |path|
       b = path.basename.to_s
       next unless path.directory? && ?.!=b[0]
       result << b
     end
     result
   =end
-    App.root.join('movement').entries.select{|e| e.directory? && ?.!=e.basename.to_s[0]}.map(:basename).map{:to_s)
+    App.my_root.join('movement').entries.select{|e| e.directory? && ?.!=e.basename.to_s[0]}.map(:basename).map{:to_s)
   #  %w[hostias]
   end
   #@nonl

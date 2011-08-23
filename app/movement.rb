@@ -1,17 +1,17 @@
 class Movement
-  MOVEMENTS_DIRECTORY=App.root.join 'movement'
+  MOVEMENTS_DIRECTORY=App.my_root.join 'movement'
   attr_reader :directory, :filepaths, :measure_keys, :template
   def self.names
   =begin
     result = Array.new
-    App.root.join('movement').entries.each do |path|
+    App.my_root.join('movement').entries.each do |path|
       b = path.basename.to_s
       next unless path.directory? && ?.!=b[0]
       result << b
     end
     result
   =end
-    App.root.join('movement').entries.select{|e| e.directory? && ?.!=e.basename.to_s[0]}.map(:basename).map{:to_s)
+    App.my_root.join('movement').entries.select{|e| e.directory? && ?.!=e.basename.to_s[0]}.map(:basename).map{:to_s)
   #  %w[hostias]
   end
   def initialize s

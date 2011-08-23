@@ -1,6 +1,5 @@
 #@+leo-ver=4-thin
 #@+node:georgesawyer.20110819095338.1333:@shadow comment_block.txt
-#@@language plain
 #@<< author block >>
 #@+node:georgesawyer.20110819095338.1340:<< author block >>
 Author: Mark D. Blackwell

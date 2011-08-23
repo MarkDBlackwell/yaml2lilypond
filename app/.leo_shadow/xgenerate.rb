@@ -1,6 +1,5 @@
 #@+leo-ver=4-thin
 #@+node:markdblackwell.20110823170927.1391:@shadow generate.rb
-#@@language ruby
 #@<< require >>
 #@+node:markdblackwell.20110823170927.1392:<< require >>
 require 'yaml'

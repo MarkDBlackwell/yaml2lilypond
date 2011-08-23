@@ -7,10 +7,10 @@ class App
   #@+node:markdblackwell.20110823170927.1384:<< class accessor >>
   class << self
     #@  @+others
-    #@+node:markdblackwell.20110823170927.1385:root
-    attr_reader :root
+    #@+node:markdblackwell.20110823170927.1385:my_root
+    attr_reader :my_root
     #@nonl
-    #@-node:markdblackwell.20110823170927.1385:root
+    #@-node:markdblackwell.20110823170927.1385:my_root
     #@-others
   end
   #@nonl
@@ -18,7 +18,7 @@ class App
   #@nl
   #@  << script >>
   #@+node:markdblackwell.20110823170927.1386:<< script >>
-  #@@root = Pathname(__FILE__).join('..').cleanpath.realpath.dirname
+  @my_root = Pathname(__FILE__).join('..').cleanpath.realpath.dirname
   #@nonl
   #@-node:markdblackwell.20110823170927.1386:<< script >>
   #@nl

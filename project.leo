@@ -22,13 +22,12 @@
 </v>
 <v t="georgesawyer.20110802081402.1953" a="E"><vh>external files</vh>
 <v t="georgesawyer.20110802081402.1954" a="E"><vh>@path .</vh>
-<v t="markdblackwell.20110823170927.1230"><vh>@path my_doc</vh>
-<v t="georgesawyer.20110819095338.1333"><vh>@shadow comment_block.txt</vh></v>
+<v t="markdblackwell.20110823170927.1230" a="E"><vh>@path my_doc</vh>
+<v t="georgesawyer.20110819095338.1333" a="E"><vh>@shadow comment_block.txt</vh></v>
 </v>
 <v t="markdblackwell.20110823170927.1229" a="E"><vh>@path app</vh>
-<v t="markdblackwell.20110823170927.1391" a="E"><vh>@shadow generate.rb</vh></v>
-<v t="markdblackwell.20110823170927.1382"
-expanded="markdblackwell.20110823170927.1384,"><vh>@shadow app.rb</vh></v>
+<v t="markdblackwell.20110823170927.1391"><vh>@shadow generate.rb</vh></v>
+<v t="markdblackwell.20110823170927.1382"><vh>@shadow app.rb</vh></v>
 <v t="markdblackwell.20110823170927.1239"
 expanded="markdblackwell.20110823170927.1260,markdblackwell.20110823170927.1261,"><vh>@shadow lily_pond.rb</vh></v>
 <v t="markdblackwell.20110823170927.1241"
@@ -36,7 +35,7 @@ expanded="markdblackwell.20110823170927.1275,markdblackwell.20110823170927.1277,
 <v t="markdblackwell.20110823170927.1243"
 expanded="markdblackwell.20110823170927.1301,markdblackwell.20110823170927.1308,markdblackwell.20110823170927.1309,"><vh>@shadow measure.rb</vh></v>
 <v t="markdblackwell.20110823170927.1354"
-expanded="markdblackwell.20110823170927.1369,markdblackwell.20110823170927.1370,markdblackwell.20110823170927.1372,markdblackwell.20110823170927.1375,"><vh>@shadow movement.rb</vh></v>
+expanded="markdblackwell.20110823170927.1366,markdblackwell.20110823170927.1369,markdblackwell.20110823170927.1370,markdblackwell.20110823170927.1372,markdblackwell.20110823170927.1375,"><vh>@shadow movement.rb</vh></v>
 <v t="markdblackwell.20110823170927.1245"><vh>@shadow template.rb</vh></v>
 <v t="markdblackwell.20110823170927.1247"
 expanded="markdblackwell.20110823170927.1336,markdblackwell.20110823170927.1339,markdblackwell.20110823170927.1340,"><vh>@shadow use_yaml.rb</vh></v>
@@ -68,6 +67,6 @@ App.root.join(*TEST_GROUP).find do |path|
   paths &lt;&lt; path.dirname.join(b.chomp '.rb') if REQUIRE_TEST_BASENAME==b
 end</t>
 <t tx="markdblackwell.20110823170927.1229">@language ruby</t>
-<t tx="markdblackwell.20110823170927.1230"></t>
+<t tx="markdblackwell.20110823170927.1230">@language plain</t>
 </tnodes>
 </leo_file>
