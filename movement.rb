@@ -1,3 +1,0 @@
-directory=File.dirname File.expand_path __FILE__
-MEASURE_KEYS, time_data = Myclass.get_movement_template_data directory
-MOVEMENT_TEMPLATE=Myclass.flesh_out_movement_template_data MEASURE_KEYS, time_data

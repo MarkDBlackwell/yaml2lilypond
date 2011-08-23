@@ -11,32 +11,6 @@ require 'pathname'
 #@<< class >>
 #@+node:georgesawyer.20110802081402.2218:<< class >>
 #@+others
-#@+node:georgesawyer.20110802081402.2219:App
-class App
-  #@  << class accessor >>
-  #@+node:georgesawyer.20110802081402.2220:<< class accessor >>
-  class << self
-    #@  @+others
-    #@+node:georgesawyer.20110819095338.1628:root
-    attr_reader :root
-    #@nonl
-    #@-node:georgesawyer.20110819095338.1628:root
-    #@-others
-  end
-  #@nonl
-  #@-node:georgesawyer.20110802081402.2220:<< class accessor >>
-  #@nl
-  #@  << script >>
-  #@+node:georgesawyer.20110802081402.2221:<< script >>
-  #@@root = Pathname(__FILE__).join('..').cleanpath.realpath.dirname
-  #@nonl
-  #@-node:georgesawyer.20110802081402.2221:<< script >>
-  #@nl
-  #@  @+others
-  #@-others
-end
-#@nonl
-#@-node:georgesawyer.20110802081402.2219:App
 #@+node:georgesawyer.20110802081402.2222:Lilypond
 class Lilypond
   #@  << constant >>

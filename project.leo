@@ -22,9 +22,27 @@
 </v>
 <v t="georgesawyer.20110802081402.1953" a="E"><vh>external files</vh>
 <v t="georgesawyer.20110802081402.1954" a="E"><vh>@path .</vh>
-<v t="georgesawyer.20110819095338.1333" a="E"><vh>@shadow comment_block.txt</vh></v>
-<v t="georgesawyer.20110802081402.1955" a="E"
-expanded="georgesawyer.20110802081402.2218,georgesawyer.20110802081402.2220,georgesawyer.20110802081402.2224,georgesawyer.20110819095338.1613,georgesawyer.20110802081402.2227,georgesawyer.20110802081402.2228,georgesawyer.20110802081402.2231,georgesawyer.20110819095338.1614,georgesawyer.20110802081402.2243,georgesawyer.20110802081402.2242,georgesawyer.20110819095338.1615,georgesawyer.20110802081402.2253,georgesawyer.20110802081402.2256,georgesawyer.20110819095338.1661,georgesawyer.20110819095338.1616,georgesawyer.20110819095338.1644,georgesawyer.20110819095338.1654,georgesawyer.20110802081402.2266,georgesawyer.20110819095338.1618,georgesawyer.20110802081402.2271,"><vh>@shadow generate.rb</vh></v>
+<v t="markdblackwell.20110823170927.1230"><vh>@path my_doc</vh>
+<v t="georgesawyer.20110819095338.1333"><vh>@shadow comment_block.txt</vh></v>
+</v>
+<v t="markdblackwell.20110823170927.1229" a="E"><vh>@path app</vh>
+<v t="markdblackwell.20110823170927.1391" a="E"><vh>@shadow generate.rb</vh></v>
+<v t="markdblackwell.20110823170927.1382"
+expanded="markdblackwell.20110823170927.1384,"><vh>@shadow app.rb</vh></v>
+<v t="markdblackwell.20110823170927.1239"
+expanded="markdblackwell.20110823170927.1260,markdblackwell.20110823170927.1261,"><vh>@shadow lily_pond.rb</vh></v>
+<v t="markdblackwell.20110823170927.1241"
+expanded="markdblackwell.20110823170927.1275,markdblackwell.20110823170927.1277,markdblackwell.20110823170927.1278,"><vh>@shadow main.rb</vh></v>
+<v t="markdblackwell.20110823170927.1243"
+expanded="markdblackwell.20110823170927.1301,markdblackwell.20110823170927.1308,markdblackwell.20110823170927.1309,"><vh>@shadow measure.rb</vh></v>
+<v t="markdblackwell.20110823170927.1354"
+expanded="markdblackwell.20110823170927.1369,markdblackwell.20110823170927.1370,markdblackwell.20110823170927.1372,markdblackwell.20110823170927.1375,"><vh>@shadow movement.rb</vh></v>
+<v t="markdblackwell.20110823170927.1245"><vh>@shadow template.rb</vh></v>
+<v t="markdblackwell.20110823170927.1247"
+expanded="markdblackwell.20110823170927.1336,markdblackwell.20110823170927.1339,markdblackwell.20110823170927.1340,"><vh>@shadow use_yaml.rb</vh></v>
+<v t="markdblackwell.20110823170927.1249"
+expanded="markdblackwell.20110823170927.1351,"><vh>@shadow variable_request.rb</vh></v>
+</v>
 </v>
 </v>
 </v>
@@ -49,5 +67,7 @@ App.root.join(*TEST_GROUP).find do |path|
   Find.prune if path.directory? &amp;&amp; ?.==b[0]
   paths &lt;&lt; path.dirname.join(b.chomp '.rb') if REQUIRE_TEST_BASENAME==b
 end</t>
+<t tx="markdblackwell.20110823170927.1229">@language ruby</t>
+<t tx="markdblackwell.20110823170927.1230"></t>
 </tnodes>
 </leo_file>

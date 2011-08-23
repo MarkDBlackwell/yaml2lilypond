@@ -1,0 +1,173 @@
+#@+leo-ver=4-thin
+#@+node:georgesawyer.20110819095338.1333:@shadow comment_block.txt
+#@@language plain
+#@<< author block >>
+#@+node:georgesawyer.20110819095338.1340:<< author block >>
+Author: Mark D. Blackwell
+#@-node:georgesawyer.20110819095338.1340:<< author block >>
+#@nl
+#@<< change dates >>
+#@+node:georgesawyer.20110819095338.1606:<< change dates >>
+Change dates:
+Date created: July 17, 2011
+Date changed: July 19, 2011
+2011-07-19 Some cleanup.
+2011-08-19 Rearrange documentation.
+#@nonl
+#@-node:georgesawyer.20110819095338.1606:<< change dates >>
+#@nl
+#@<< purpose >>
+#@+node:georgesawyer.20110819095338.1609:<< purpose >>
+Purpose: TODO
+#@nonl
+#@-node:georgesawyer.20110819095338.1609:<< purpose >>
+#@nl
+#@<< usage >>
+#@+node:georgesawyer.20110819095338.1610:<< usage >>
+Example usage: TODO
+#@nonl
+#@-node:georgesawyer.20110819095338.1610:<< usage >>
+#@nl
+====================
+#@<< reference URL >>
+#@+node:georgesawyer.20110819095338.1341:<< reference URL >>
+See:
+#@<< yaml >>
+#@+node:georgesawyer.20110819095338.1605:<< yaml >>
+YAML (Yaml Ain't  Markup Language):
+http://corelib.rubyonrails.org/classes/YAML.html
+http://creedcultcode.blogspot.com/2008/05/parsing-yaml-files-in-ruby.html
+http://en.wikipedia.org/wiki/YAML
+http://rhnh.net/2006/06/25/yaml-tutorial
+http://rhnh.net/2011/01/31/yaml-tutorial
+http://www.ruby-doc.org/stdlib/libdoc/yaml/rdoc/index.html
+http://www.yaml.org/YAML_for_ruby.html
+http://www.yaml.org/spec/1.0/#id2491593
+http://yaml4r.sourceforge.net/doc/
+#@nonl
+#@-node:georgesawyer.20110819095338.1605:<< yaml >>
+#@nl
+--------------------
+#@<< deep copy clone >>
+#@+node:georgesawyer.20110819095338.1604:<< deep copy clone >>
+For clone method for deep copies, see:
+http://ruby.about.com/od/advancedruby/a/deepcopy.htm
+http://blog.rubybestpractices.com/posts/rklemme/018-Complete_Class.html
+#@nonl
+#@-node:georgesawyer.20110819095338.1604:<< deep copy clone >>
+#@nl
+#@nonl
+#@-node:georgesawyer.20110819095338.1341:<< reference URL >>
+#@nl
+====================
+#@<< example >>
+#@+node:georgesawyer.20110819095338.1342:<< example >>
+Examples:
+--------------------
+#@<< measure key >>
+#@+node:georgesawyer.20110819095338.1602:<< measure key >>
+Measure key:
+Where a word continues out of the measure:
+--- # Measure keys
+- Go-(ing)
+Where a word is continued into the measure:
+--- # Measure keys
+- (Com)-ing
+Where a syllable continues out of the measure:
+--- # Measure keys
+- One--
+Where a syllable is continued into the measure:
+--- # Measure keys
+- --One
+Where a syllable continues both into and out of the measure:
+--- # Measure keys
+- --One--
+#@nonl
+#@-node:georgesawyer.20110819095338.1602:<< measure key >>
+#@nl
+--------------------
+#@<< time signature >>
+#@+node:georgesawyer.20110819095338.1603:<< time signature >>
+Time signature:
+--- # Measure times
+# With quarter note beats:
+- 3
+When the beat is other than a quarter note:
+- - 5
+  - 2
+#@nonl
+#@-node:georgesawyer.20110819095338.1603:<< time signature >>
+#@nl
+#@nonl
+#@-node:georgesawyer.20110819095338.1342:<< example >>
+#@nl
+====================
+#@<< test >>
+#@+node:georgesawyer.20110819095338.1343:<< test >>
+Tests:
+--------------------
+#@<< one >>
+#@+node:georgesawyer.20110819095338.1597:<< one >>
+Code:
+b=[1,[2,8]]
+b.collect!{|a| a=[a].flatten;2==a.length ? a : (a.push 4)}
+p b
+Prints:
+[[1, 4], [2, 8]]
+#@nonl
+#@-node:georgesawyer.20110819095338.1597:<< one >>
+#@nl
+--------------------
+#@<< two >>
+#@+node:georgesawyer.20110819095338.1599:<< two >>
+Code:
+s=[1,[2,3],4].to_yaml
+print s
+tree=YAML::parse(s)
+p tree.transform
+YAML::parse(s){|d| print d.inspect, "\n"}
+Prints:
+---
+- 1
+- - 2
+  - 3
+- 4
+[1, [2, 3], 4]
+#@nonl
+#@-node:georgesawyer.20110819095338.1599:<< two >>
+#@nl
+--------------------
+#@<< three >>
+#@+node:georgesawyer.20110819095338.1600:<< three >>
+Code:
+k='(Requi)-emAeternam'
+test_instrument[k].content_no_barlines='hello'
+        print test_instrument[k].content, "\n"
+test_instrument[k].content='c4 d e f'
+        print test_instrument[k].content, "\n"
+test_instrument[k].content="r*#{test_instrument[k].time}"
+        print test_instrument[k].content, "\n"
+Prints:
+hello
+| c4 d e f |
+| r*12/4 |
+#@nonl
+#@-node:georgesawyer.20110819095338.1600:<< three >>
+#@nl
+--------------------
+#@<< four >>
+#@+node:georgesawyer.20110819095338.1601:<< four >>
+Code:
+a=[1,2];a.unshift(3);p a
+Prints:
+[3, 1, 2]
+#@nonl
+#@-node:georgesawyer.20110819095338.1601:<< four >>
+#@nl
+#@nonl
+#@-node:georgesawyer.20110819095338.1343:<< test >>
+#@nl
+#@+others
+#@-others
+#@-node:georgesawyer.20110819095338.1333:@shadow comment_block.txt
+#@-leo
