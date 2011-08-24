@@ -31,7 +31,9 @@ def self.names
 =end
 #  App.my_root.join('movement').entries.select{|e| e.directory? && ?.!=e.basename.to_s[0]}.map(&:basename).map(&:to_s)
 
+##print 'MOVEMENTS_DIRECTORY.to_s=';p MOVEMENTS_DIRECTORY.to_s
   MOVEMENTS_DIRECTORY.entries.select do |e|
+##print 'e.to_s=';p e.to_s
      MOVEMENTS_DIRECTORY.join(e).directory? && ?.!=e.to_s[0]
   end.map(&:to_s)
 #  %w[hostias]
@@ -42,26 +44,33 @@ end
 #@+node:markdblackwell.20110823170927.1372:public
 #@+node:markdblackwell.20110823170927.1373:initialize
 def initialize s
+##print 's=';p s
   @directory=MOVEMENTS_DIRECTORY.join s
   a = UseYaml.get_yaml_documents @directory.join 'template.yaml'
-  @measure_keys, time_data = a.map{|e| e.nil? ? [] : e}
+##print 'a.inspect=';p a.inspect
+  a=a.map{|e| e.nil? ? [] : e}
+  @measure_keys, time_data = a
+##print '@measure_keys=';p @measure_keys
+##print 'time_data=';p time_data
   @template=Template.new @measure_keys, time_data
-  @filepaths= filepaths
+  @filepaths=get_filepaths
 end
 #@nonl
 #@-node:markdblackwell.20110823170927.1373:initialize
 #@+node:markdblackwell.20110823170927.1374:is_template
 def is_template filepath
   f=filepath
-  x=f.extname.to_s
-  'template'==(f.basename.chomp x)
+  x=f.extname
+  'template'==(f.basename.to_s.chomp x)
 end
 #@nonl
 #@-node:markdblackwell.20110823170927.1374:is_template
 #@-node:markdblackwell.20110823170927.1372:public
 #@+node:markdblackwell.20110823170927.1375:private
-#@+node:markdblackwell.20110823170927.1376:filepaths
-def filepaths
+private
+#@nonl
+#@+node:markdblackwell.20110823170927.1376:get_filepaths
+def get_filepaths
   result=Array.new
   no_extension=Array.new
   @directory.find do |path|
@@ -69,8 +78,11 @@ def filepaths
     Find.prune if path.directory? && ?.==b[0]
     next unless path.file?
     x = path.extname.to_s
+## print 'x=';p x
 # Example: soprano/note.yaml
-    if UseYaml.extension.member? x
+    s=(! x.start_with? '.') ? x : x[1..-1]
+    if UseYaml.extension.member? s
+##print 'path.inspect=';p path.inspect
       result << path
       no_extension << path.dirname.join(b.chomp x)
     end
@@ -88,7 +100,7 @@ def filepaths
 =end
 end
 #@nonl
-#@-node:markdblackwell.20110823170927.1376:filepaths
+#@-node:markdblackwell.20110823170927.1376:get_filepaths
 #@-node:markdblackwell.20110823170927.1375:private
 #@-node:markdblackwell.20110823170927.1369:method
 #@-others

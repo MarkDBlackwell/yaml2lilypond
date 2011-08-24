@@ -17,9 +17,12 @@ class Main
     caller = caller(0)
   #print 'caller=';p caller
   #  get_movement_names.each do |movement_name|
+  ##print 'Movement.names=';p Movement.names
     Movement.names.each do |movement_name|
       movement = Movement.new movement_name
+  ##print 'movement.filepaths.inspect=';p movement.filepaths.inspect
       movement.filepaths.each do |filepath|
+  ##print 'filepath.to_s=';p filepath.to_s
         next if movement.is_template filepath
   #      filepath=movement.directory.join filename
   ##print 'filepath.to_s=';p filepath.to_s
@@ -28,9 +31,10 @@ class Main
         instrument=movement.template.clone
         run_requests instrument, lilypond_variable_request
   #      output_filepath=Pathname filepath.to_s.chomp('.yaml').concat '.rly'
-        x=filepath.extname.to_s
-        no_x=filepath.chomp x
+        x=filepath.extname
+        no_x=filepath.to_s.chomp x
         output_filepath=no_x.concat '.rly'
+  ##print 'output_filepath.to_s=';p output_filepath.to_s
         Lilypond.write_input_for_lilypond movement, instrument, output_filepath
       end
     end
