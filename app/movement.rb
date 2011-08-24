@@ -13,7 +13,7 @@ end
 def initialize s
 ##print 's=';p s
   @directory=MOVEMENTS_DIRECTORY.join s
-  a = UseYaml.get_yaml_documents @directory.join 'template.yaml'
+  a = UseYaml.get_yaml_documents @directory.join 'template.yml'
 ##print 'a.inspect=';p a.inspect
   a=a.map{|e| e.nil? ? [] : e}
   @measure_keys, time_data = a
