@@ -18,7 +18,7 @@ class UseYaml
   #@nl
   #@  << script >>
   #@+node:markdblackwell.20110823170927.1338:<< script >>
-  @extension = %w[yaml]
+  @extension = %w[yml] # Was 'yaml'.
   #@nonl
   #@-node:markdblackwell.20110823170927.1338:<< script >>
   #@nl

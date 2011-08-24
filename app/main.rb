@@ -15,8 +15,7 @@ class Main
   end
   def self.run
     caller = caller(0)
-  #print 'caller=';p caller
-  #  get_movement_names.each do |movement_name|
+  ##print 'caller=';p caller
   ##print 'Movement.names=';p Movement.names
     Movement.names.each do |movement_name|
       movement = Movement.new movement_name
@@ -24,13 +23,11 @@ class Main
       movement.filepaths.each do |filepath|
   ##print 'filepath.to_s=';p filepath.to_s
         next if movement.is_template filepath
-  #      filepath=movement.directory.join filename
   ##print 'filepath.to_s=';p filepath.to_s
         lilypond_variable_request=get_sole_yaml_document filepath
         extract_three_keys lilypond_variable_request
         instrument=movement.template.clone
         run_requests instrument, lilypond_variable_request
-  #      output_filepath=Pathname filepath.to_s.chomp('.yaml').concat '.rly'
         x=filepath.extname
         no_x=filepath.to_s.chomp x
         output_filepath=no_x.concat '.rly'
@@ -43,16 +40,16 @@ class Main
   def self.run_lilypond
     dos_separator= '\\'
     programs_directory  = 'Program Files'
-  #    programs_directory  = 'progra'
+  ##    programs_directory  = 'progra'
     program_location = %w[C: LilyPond usr bin lilypond-windows.exe].insert(1,programs_directory).join dos_separator
     arguments = '-dgui book.ly'
     dos_quote = '"'
-  #    `#{dos_quote}#{program_location}#{dos_quote} #{arguments}`
+  ##    `#{dos_quote}#{program_location}#{dos_quote} #{arguments}`
   end
   def self.run_requests instrument, lilypond_variable_request
-  #print 'instrument=';p instrument
+  ##print 'instrument=';p instrument
     lilypond_variable_request.each do |measure_key,measure_request_vector|
-  #print 'instrument.hash=';p instrument.hash
+  ##print 'instrument.hash=';p instrument.hash
       begin
         m=(measure=instrument.hash.fetch measure_key)
       rescue KeyError

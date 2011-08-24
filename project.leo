@@ -22,15 +22,16 @@
 </v>
 <v t="georgesawyer.20110802081402.1953" a="E"><vh>external files</vh>
 <v t="georgesawyer.20110802081402.1954" a="E"><vh>@path .</vh>
-<v t="markdblackwell.20110823170927.1230"><vh>@path my_doc</vh>
-<v t="georgesawyer.20110819095338.1333"><vh>@shadow comment_block.txt</vh></v>
+<v t="markdblackwell.20110823170927.1230" a="E"><vh>@path my_doc</vh>
+<v t="georgesawyer.20110819095338.1333" a="E"
+expanded="georgesawyer.20110819095338.1341,georgesawyer.20110819095338.1342,georgesawyer.20110819095338.1343,"><vh>@shadow comment_block.txt</vh></v>
 </v>
 <v t="markdblackwell.20110823170927.1229" a="E"><vh>@path app</vh>
 <v t="markdblackwell.20110823170927.1391" a="E"><vh>@shadow generate.rb</vh></v>
 <v t="markdblackwell.20110823170927.1382" a="E"
 expanded="markdblackwell.20110823170927.1383,markdblackwell.20110823170927.1384,"><vh>@shadow app.rb</vh></v>
 <v t="markdblackwell.20110823170927.1239" a="E"
-expanded="markdblackwell.20110823170927.1258,markdblackwell.20110823170927.1260,"><vh>@shadow lily_pond.rb</vh></v>
+expanded="markdblackwell.20110823170927.1258,markdblackwell.20110823170927.1260,markdblackwell.20110823170927.1261,"><vh>@shadow lily_pond.rb</vh></v>
 <v t="markdblackwell.20110823170927.1241" a="E"
 expanded="markdblackwell.20110823170927.1274,markdblackwell.20110823170927.1275,markdblackwell.20110823170927.1277,markdblackwell.20110823170927.1278,"><vh>@shadow main.rb</vh></v>
 <v t="markdblackwell.20110823170927.1243" a="E"
@@ -42,7 +43,7 @@ expanded="markdblackwell.20110823170927.1320,markdblackwell.20110823170927.1323,
 <v t="markdblackwell.20110823170927.1247" a="E"
 expanded="markdblackwell.20110823170927.1335,markdblackwell.20110823170927.1336,markdblackwell.20110823170927.1339,markdblackwell.20110823170927.1340,"><vh>@shadow use_yaml.rb</vh></v>
 <v t="markdblackwell.20110823170927.1249" a="E"
-expanded="markdblackwell.20110823170927.1348,markdblackwell.20110823170927.1351,"><vh>@shadow variable_request.rb</vh></v>
+expanded="markdblackwell.20110823170927.1348,markdblackwell.20110823170927.1351,markdblackwell.20110823170927.1352,"><vh>@shadow variable_request.rb</vh></v>
 </v>
 </v>
 </v>

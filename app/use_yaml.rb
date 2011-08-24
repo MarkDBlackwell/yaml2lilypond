@@ -2,7 +2,7 @@ class UseYaml
   class << self
     attr_reader :extension
   end
-  @extension = %w[yaml]
+  @extension = %w[yml] # Was 'yaml'.
   def self.get_yaml_documents filepath
     result=Array.new
     push_document=Proc.new{|e| result.push e}
