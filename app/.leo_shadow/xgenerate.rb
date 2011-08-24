@@ -4,7 +4,16 @@
 #@+node:markdblackwell.20110823170927.1392:<< require >>
 require 'yaml'
 require 'pathname'
-#@nonl
+s=Pathname(__FILE__).join('..').cleanpath.realpath
+$LOAD_PATH.unshift s
+require 'app'
+require 'lily_pond'
+require 'main'
+require 'measure'
+require 'movement'
+require 'template'
+require 'use_yaml'
+require 'variable_request'
 #@-node:markdblackwell.20110823170927.1392:<< require >>
 #@nl
 #@<< overall script >>

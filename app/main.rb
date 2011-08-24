@@ -19,7 +19,7 @@ class Main
   #  get_movement_names.each do |movement_name|
     Movement.names.each do |movement_name|
       movement = Movement.new movement_name
-      movement.get_filepaths.each do |filepath|
+      movement.filepaths.each do |filepath|
         next if movement.is_template filepath
   #      filepath=movement.directory.join filename
   ##print 'filepath.to_s=';p filepath.to_s
