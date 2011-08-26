@@ -228,8 +228,10 @@ It is written in Ruby.
 
 ##invocation
 
+```bash
 cd &amp;lt;directory containing LilyPond movement directories&amp;gt;
 yaml2lilypond
+```
 
 ##requirements
 
