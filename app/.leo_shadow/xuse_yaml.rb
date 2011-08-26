@@ -6,12 +6,7 @@ class UseYaml
   #@  << class accessor >>
   #@+node:markdblackwell.20110823170927.1336:<< class accessor >>
   class << self
-    #@  @+others
-    #@+node:markdblackwell.20110823170927.1337:extension
     attr_reader :extension
-    #@nonl
-    #@-node:markdblackwell.20110823170927.1337:extension
-    #@-others
   end
   #@nonl
   #@-node:markdblackwell.20110823170927.1336:<< class accessor >>

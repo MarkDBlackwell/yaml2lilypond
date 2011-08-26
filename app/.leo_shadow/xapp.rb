@@ -6,12 +6,7 @@ class App
   #@  << class accessor >>
   #@+node:markdblackwell.20110823170927.1384:<< class accessor >>
   class << self
-    #@  @+others
-    #@+node:markdblackwell.20110823170927.1385:my_root
     attr_reader :my_root
-    #@nonl
-    #@-node:markdblackwell.20110823170927.1385:my_root
-    #@-others
   end
   #@nonl
   #@-node:markdblackwell.20110823170927.1384:<< class accessor >>

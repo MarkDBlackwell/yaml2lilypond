@@ -17,7 +17,8 @@ Date changed: July 19, 2011
 #@nl
 #@<< purpose >>
 #@+node:georgesawyer.20110819095338.1609:<< purpose >>
-Purpose: TODO
+Purpose: improve usability of LilyPond by means of the YAML entry format.
+Generate LilyPond input from YAML.
 #@nonl
 #@-node:georgesawyer.20110819095338.1609:<< purpose >>
 #@nl

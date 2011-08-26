@@ -10,40 +10,182 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
-<v t="georgesawyer.20110802081402.1951" a="E"><vh>package yamll2lilypond</vh>
-<v t="georgesawyer.20110802081402.1952"><vh>purpose</vh></v>
-<v t="georgesawyer.20110802081402.2005" a="E"><vh>TODO</vh>
-<v t="georgesawyer.20110819095338.1609"><vh>&lt;&lt; purpose &gt;&gt;</vh></v>
-<v t="georgesawyer.20110819095338.1610"><vh>&lt;&lt; usage &gt;&gt;</vh></v>
+<v t="georgesawyer.20110802081402.1951" a="E"><vh>project yaml2lilypond</vh>
+<v t="georgesawyer.20110825192845.1468"><vh>DONE</vh>
+<v t="georgesawyer.20110802081402.2006"><vh>add function to find all YAML files</vh></v>
 <v t="georgesawyer.20110802081402.2007"><vh>chop up with Leo</vh></v>
-<v t="georgesawyer.20110802081402.2006" a="E"><vh>add function to find all YAML files.</vh>
-<v t="georgesawyer.20110819095338.1612"><vh>look at this for finding yaml files</vh></v>
+<v t="georgesawyer.20110819095338.1609"><vh>&lt;&lt; purpose &gt;&gt;</vh></v>
+</v>
+<v t="georgesawyer.20110802081402.2005"><vh>TODO</vh>
+<v t="georgesawyer.20110825192845.1469"><vh>make it a Ruby gem</vh></v>
+<v t="georgesawyer.20110819095338.1610"><vh>&lt;&lt; usage &gt;&gt;</vh></v>
+</v>
+<v t="georgesawyer.20110825192845.1464"><vh>fragment</vh>
+<v t="georgesawyer.20110825192845.1462"><vh>accessor</vh>
+<v t="markdblackwell.20110823170927.1300"><vh>&lt;&lt; accessor &gt;&gt;</vh></v>
+<v t="markdblackwell.20110823170927.1368"><vh>&lt;&lt; accessor &gt;&gt;</vh></v>
+<v t="markdblackwell.20110823170927.1322"><vh>&lt;&lt; accessor &gt;&gt;</vh></v>
+</v>
+<v t="georgesawyer.20110825192845.1465"><vh>class</vh>
+<v t="markdblackwell.20110823170927.1383"><vh>App</vh>
+<v t="markdblackwell.20110823170927.1384"><vh>&lt;&lt; class accessor &gt;&gt;</vh></v>
+<v t="markdblackwell.20110823170927.1386"><vh>&lt;&lt; script &gt;&gt;</vh></v>
+</v>
+<v t="markdblackwell.20110823170927.1258"><vh>Lilypond</vh>
+<v t="markdblackwell.20110823170927.1259"><vh>&lt;&lt; constant &gt;&gt;</vh></v>
+<v t="markdblackwell.20110823170927.1260" a="E"><vh>method</vh>
+<v t="markdblackwell.20110823170927.1261" a="E"><vh>public class</vh>
+<v t="markdblackwell.20110823170927.1262"><vh>rest</vh></v>
+<v t="markdblackwell.20110823170927.1263"><vh>write_input_for_lilypond</vh></v>
+</v>
+</v>
+</v>
+<v t="markdblackwell.20110823170927.1274"><vh>Main</vh>
+<v t="markdblackwell.20110823170927.1275"><vh>&lt;&lt; class accessor &gt;&gt;</vh></v>
+<v t="markdblackwell.20110823170927.1277" a="E"><vh>method</vh>
+<v t="markdblackwell.20110823170927.1278" a="E"><vh>public class</vh>
+<v t="markdblackwell.20110823170927.1279"><vh>extract_three_keys</vh></v>
+<v t="markdblackwell.20110823170927.1280"><vh>get_sole_yaml_document</vh></v>
+<v t="markdblackwell.20110823170927.1281"><vh>run</vh></v>
+<v t="markdblackwell.20110823170927.1282"><vh>run_lilypond</vh></v>
+<v t="markdblackwell.20110823170927.1283"><vh>run_requests</vh></v>
+</v>
+</v>
+</v>
+<v t="markdblackwell.20110823170927.1298"><vh>Measure</vh>
+<v t="markdblackwell.20110823170927.1299"><vh>&lt;&lt; constant &gt;&gt;</vh></v>
+<v t="markdblackwell.20110823170927.1300"></v>
+<v t="markdblackwell.20110823170927.1301" a="E"><vh>&lt;&lt; single line method &gt;&gt;</vh>
+<v t="markdblackwell.20110823170927.1302"><vh>content_no_barlines=</vh></v>
+<v t="markdblackwell.20110823170927.1303"><vh>content=</vh></v>
+<v t="markdblackwell.20110823170927.1304"><vh>prefix</vh></v>
+<v t="markdblackwell.20110823170927.1305"><vh>prefix_barlines</vh></v>
+<v t="markdblackwell.20110823170927.1306"><vh>suffix</vh></v>
+<v t="markdblackwell.20110823170927.1307"><vh>suffix_barlines</vh></v>
+</v>
+<v t="markdblackwell.20110823170927.1308" a="E"><vh>method</vh>
+<v t="markdblackwell.20110823170927.1309" a="E"><vh>public</vh>
+<v t="markdblackwell.20110823170927.1310"><vh>initialize</vh></v>
+<v t="markdblackwell.20110823170927.1311"><vh>to_s</vh></v>
+</v>
+</v>
+</v>
+<v t="markdblackwell.20110823170927.1366"><vh>Movement</vh>
+<v t="markdblackwell.20110823170927.1367"><vh>&lt;&lt; constant &gt;&gt;</vh></v>
+<v t="markdblackwell.20110823170927.1368"></v>
+<v t="markdblackwell.20110823170927.1369" a="E"><vh>method</vh>
+<v t="markdblackwell.20110823170927.1370" a="E"><vh>public class</vh>
+<v t="markdblackwell.20110823170927.1371"><vh>names</vh></v>
+</v>
+<v t="markdblackwell.20110823170927.1372" a="E"><vh>public</vh>
+<v t="markdblackwell.20110823170927.1373"><vh>initialize</vh></v>
+<v t="markdblackwell.20110823170927.1374"><vh>is_template</vh></v>
+</v>
+<v t="markdblackwell.20110823170927.1375" a="E"><vh>private</vh>
+<v t="markdblackwell.20110823170927.1376"><vh>get_filepaths</vh></v>
+</v>
+</v>
+</v>
+<v t="markdblackwell.20110823170927.1320"><vh>Template</vh>
+<v t="markdblackwell.20110823170927.1321"><vh>&lt;&lt; constant &gt;&gt;</vh></v>
+<v t="markdblackwell.20110823170927.1322"></v>
+<v t="markdblackwell.20110823170927.1323" a="E"><vh>method</vh>
+<v t="markdblackwell.20110823170927.1324" a="E"><vh>public</vh>
+<v t="markdblackwell.20110823170927.1325"><vh>create_measures</vh></v>
+<v t="markdblackwell.20110823170927.1326"><vh>initialize</vh></v>
+<v t="markdblackwell.20110823170927.1327"><vh>initialize_copy</vh></v>
+</v>
+</v>
+</v>
+<v t="markdblackwell.20110823170927.1335"><vh>UseYaml</vh>
+<v t="markdblackwell.20110823170927.1336"><vh>&lt;&lt; class accessor &gt;&gt;</vh></v>
+<v t="markdblackwell.20110823170927.1338"><vh>&lt;&lt; script &gt;&gt;</vh></v>
+<v t="markdblackwell.20110823170927.1339" a="E"><vh>method</vh>
+<v t="markdblackwell.20110823170927.1340" a="E"><vh>public class</vh>
+<v t="markdblackwell.20110823170927.1341"><vh>get_yaml_documents</vh></v>
+</v>
+</v>
+</v>
+<v t="markdblackwell.20110823170927.1348"><vh>VariableRequest</vh>
+<v t="markdblackwell.20110823170927.1349"><vh>&lt;&lt; class accessor &gt;&gt;</vh></v>
+<v t="markdblackwell.20110823170927.1350"><vh>&lt;&lt; script &gt;&gt;</vh></v>
+<v t="markdblackwell.20110823170927.1351" a="E"><vh>method</vh>
+<v t="markdblackwell.20110823170927.1352" a="E"><vh>public class</vh>
+<v t="markdblackwell.20110823170927.1353"><vh>execute_method</vh></v>
+</v>
+</v>
+</v>
+</v>
+<v t="georgesawyer.20110825192845.1460"><vh>class accessor</vh>
+<v t="markdblackwell.20110823170927.1336"></v>
+<v t="markdblackwell.20110823170927.1349"></v>
+<v t="markdblackwell.20110823170927.1384"></v>
+<v t="markdblackwell.20110823170927.1275"></v>
+</v>
+<v t="georgesawyer.20110825192845.1456"><vh>constants</vh>
+<v t="markdblackwell.20110823170927.1259"></v>
+<v t="markdblackwell.20110823170927.1299"></v>
+<v t="markdblackwell.20110823170927.1367"></v>
+<v t="markdblackwell.20110823170927.1321"></v>
+</v>
+<v t="georgesawyer.20110825192845.1467"><vh>method</vh>
+<v t="markdblackwell.20110823170927.1303"></v>
+<v t="markdblackwell.20110823170927.1302"></v>
+<v t="markdblackwell.20110823170927.1325"></v>
+<v t="markdblackwell.20110823170927.1353"></v>
+<v t="markdblackwell.20110823170927.1279"></v>
+<v t="markdblackwell.20110823170927.1376"></v>
+<v t="markdblackwell.20110823170927.1280"></v>
+<v t="markdblackwell.20110823170927.1341"></v>
+<v t="markdblackwell.20110823170927.1326"></v>
+<v t="markdblackwell.20110823170927.1373"></v>
+<v t="markdblackwell.20110823170927.1327"></v>
+<v t="markdblackwell.20110823170927.1374"></v>
+<v t="markdblackwell.20110823170927.1371"></v>
+<v t="markdblackwell.20110823170927.1304"></v>
+<v t="markdblackwell.20110823170927.1305"></v>
+<v t="markdblackwell.20110823170927.1262"></v>
+<v t="markdblackwell.20110823170927.1281"></v>
+<v t="markdblackwell.20110823170927.1282"></v>
+<v t="markdblackwell.20110823170927.1283"></v>
+<v t="markdblackwell.20110823170927.1306"></v>
+<v t="markdblackwell.20110823170927.1307"></v>
+<v t="markdblackwell.20110823170927.1311"></v>
+<v t="markdblackwell.20110823170927.1263"></v>
+</v>
+<v t="georgesawyer.20110825192845.1463"><vh>require</vh>
+<v t="markdblackwell.20110823170927.1392"><vh>&lt;&lt; require &gt;&gt;</vh></v>
+</v>
+<v t="georgesawyer.20110825192845.1461"><vh>script</vh>
+<v t="markdblackwell.20110823170927.1394"><vh>&lt;&lt; overall script &gt;&gt;</vh></v>
+<v t="markdblackwell.20110823170927.1338"></v>
+<v t="markdblackwell.20110823170927.1350"></v>
+<v t="markdblackwell.20110823170927.1386"></v>
 </v>
 </v>
 <v t="georgesawyer.20110802081402.1953" a="E"><vh>external files</vh>
 <v t="georgesawyer.20110802081402.1954" a="E"><vh>@path .</vh>
-<v t="markdblackwell.20110823170927.1230" a="E"><vh>@path my_doc</vh>
+<v t="markdblackwell.20110823170927.1230"><vh>@path my_doc</vh>
 <v t="georgesawyer.20110819095338.1333" a="E"
 expanded="georgesawyer.20110819095338.1341,georgesawyer.20110819095338.1342,georgesawyer.20110819095338.1343,"><vh>@shadow comment_block.txt</vh></v>
 </v>
 <v t="markdblackwell.20110823170927.1229" a="E"><vh>@path app</vh>
-<v t="markdblackwell.20110823170927.1391" a="E"><vh>@shadow generate.rb</vh></v>
-<v t="markdblackwell.20110823170927.1382" a="E"
-expanded="markdblackwell.20110823170927.1383,markdblackwell.20110823170927.1384,"><vh>@shadow app.rb</vh></v>
-<v t="markdblackwell.20110823170927.1239" a="E"
-expanded="markdblackwell.20110823170927.1258,markdblackwell.20110823170927.1260,markdblackwell.20110823170927.1261,"><vh>@shadow lily_pond.rb</vh></v>
-<v t="markdblackwell.20110823170927.1241" a="E"
-expanded="markdblackwell.20110823170927.1274,markdblackwell.20110823170927.1275,markdblackwell.20110823170927.1277,markdblackwell.20110823170927.1278,"><vh>@shadow main.rb</vh></v>
-<v t="markdblackwell.20110823170927.1243" a="E"
-expanded="markdblackwell.20110823170927.1298,markdblackwell.20110823170927.1301,markdblackwell.20110823170927.1308,markdblackwell.20110823170927.1309,"><vh>@shadow measure.rb</vh></v>
-<v t="markdblackwell.20110823170927.1354" a="E"
-expanded="markdblackwell.20110823170927.1366,markdblackwell.20110823170927.1369,markdblackwell.20110823170927.1370,markdblackwell.20110823170927.1372,markdblackwell.20110823170927.1375,"><vh>@shadow movement.rb</vh></v>
-<v t="markdblackwell.20110823170927.1245" a="E"
-expanded="markdblackwell.20110823170927.1320,markdblackwell.20110823170927.1323,markdblackwell.20110823170927.1324,"><vh>@shadow template.rb</vh></v>
-<v t="markdblackwell.20110823170927.1247" a="E"
-expanded="markdblackwell.20110823170927.1335,markdblackwell.20110823170927.1336,markdblackwell.20110823170927.1339,markdblackwell.20110823170927.1340,"><vh>@shadow use_yaml.rb</vh></v>
-<v t="markdblackwell.20110823170927.1249" a="E"
-expanded="markdblackwell.20110823170927.1348,markdblackwell.20110823170927.1351,markdblackwell.20110823170927.1352,"><vh>@shadow variable_request.rb</vh></v>
+<v t="markdblackwell.20110823170927.1391"><vh>@shadow generate.rb</vh></v>
+<v t="markdblackwell.20110823170927.1382"><vh>@shadow app.rb</vh></v>
+<v t="markdblackwell.20110823170927.1239"
+expanded="markdblackwell.20110823170927.1260,markdblackwell.20110823170927.1261,"><vh>@shadow lily_pond.rb</vh></v>
+<v t="markdblackwell.20110823170927.1241"
+expanded="markdblackwell.20110823170927.1277,markdblackwell.20110823170927.1278,"><vh>@shadow main.rb</vh></v>
+<v t="markdblackwell.20110823170927.1243"
+expanded="markdblackwell.20110823170927.1301,markdblackwell.20110823170927.1308,markdblackwell.20110823170927.1309,"><vh>@shadow measure.rb</vh></v>
+<v t="markdblackwell.20110823170927.1354"
+expanded="markdblackwell.20110823170927.1369,markdblackwell.20110823170927.1370,markdblackwell.20110823170927.1372,markdblackwell.20110823170927.1375,"><vh>@shadow movement.rb</vh></v>
+<v t="markdblackwell.20110823170927.1245"
+expanded="markdblackwell.20110823170927.1323,markdblackwell.20110823170927.1324,"><vh>@shadow template.rb</vh></v>
+<v t="markdblackwell.20110823170927.1247"
+expanded="markdblackwell.20110823170927.1339,markdblackwell.20110823170927.1340,"><vh>@shadow use_yaml.rb</vh></v>
+<v t="markdblackwell.20110823170927.1249"
+expanded="markdblackwell.20110823170927.1351,markdblackwell.20110823170927.1352,"><vh>@shadow variable_request.rb</vh></v>
 </v>
 </v>
 </v>
@@ -51,25 +193,309 @@ expanded="markdblackwell.20110823170927.1348,markdblackwell.20110823170927.1351,
 </vnodes>
 <tnodes>
 <t tx="georgesawyer.20110802081402.1951">Convert YAML to LilyPond input format</t>
-<t tx="georgesawyer.20110802081402.1952">Improve use of LilyPond by means of the YAML entry format.
-Generate LilyPond input from YAML.</t>
-<t tx="georgesawyer.20110802081402.1953"></t>
+<t tx="georgesawyer.20110802081402.1953">@path .</t>
 <t tx="georgesawyer.20110802081402.1954"></t>
 <t tx="georgesawyer.20110802081402.2005"></t>
-<t tx="georgesawyer.20110802081402.2006">=begin
-@others
-=end</t>
-<t tx="georgesawyer.20110802081402.2007"></t>
-<t tx="georgesawyer.20110819095338.1609">Purpose: TODO</t>
-<t tx="georgesawyer.20110819095338.1610">Example usage: TODO</t>
-<t tx="georgesawyer.20110819095338.1612"># Look at this for finding yaml files:
+<t tx="georgesawyer.20110802081402.2006"># Look at this for finding yaml files:
     app_root
 App.root.join(*TEST_GROUP).find do |path|
   b=path.basename.to_s
   Find.prune if path.directory? &amp;&amp; ?.==b[0]
   paths &lt;&lt; path.dirname.join(b.chomp '.rb') if REQUIRE_TEST_BASENAME==b
 end</t>
+<t tx="georgesawyer.20110802081402.2007">    </t>
+<t tx="georgesawyer.20110819095338.1609">Purpose: improve usability of LilyPond by means of the YAML entry format.
+Generate LilyPond input from YAML.</t>
+<t tx="georgesawyer.20110819095338.1610">Example usage: TODO</t>
+<t tx="georgesawyer.20110825192845.1456"></t>
+<t tx="georgesawyer.20110825192845.1460"></t>
+<t tx="georgesawyer.20110825192845.1461"></t>
+<t tx="georgesawyer.20110825192845.1462"></t>
+<t tx="georgesawyer.20110825192845.1463"></t>
+<t tx="georgesawyer.20110825192845.1464"></t>
+<t tx="georgesawyer.20110825192845.1465"></t>
+<t tx="georgesawyer.20110825192845.1467"></t>
+<t tx="georgesawyer.20110825192845.1468"></t>
+<t tx="georgesawyer.20110825192845.1469"></t>
 <t tx="markdblackwell.20110823170927.1229">@language ruby</t>
 <t tx="markdblackwell.20110823170927.1230">@language plain</t>
+<t tx="markdblackwell.20110823170927.1258">class Lilypond
+  &lt;&lt; constant &gt;&gt;
+  @others
+end</t>
+<t tx="markdblackwell.20110823170927.1259">LILYPOND_VERSION='2.14.1'
+INDENT = ' '*2</t>
+<t tx="markdblackwell.20110823170927.1260"></t>
+<t tx="markdblackwell.20110823170927.1261"></t>
+<t tx="markdblackwell.20110823170927.1262">def self.rest; rest='r1*' end</t>
+<t tx="markdblackwell.20110823170927.1263">def self.write_input_for_lilypond movement, instrument, filepath
+  lilypond_variable_name, mode, overall_prefix = Main.three_keys
+  a=Array.new
+  a.push %Q@\\version "#{LILYPOND_VERSION}"@
+  a.push "% This file was autogenerated. DO NOT MODIFY.\n"
+  a.push "#{lilypond_variable_name} = {"
+  a.push "#{INDENT}\\#{mode} {"
+  overall_prefix.each{|e| a.push "#{INDENT}#{INDENT}#{e}"} unless overall_prefix.nil?
+  a.push instrument.hash.values_at(*movement.measure_keys).map{|e| e.to_s}.join "\n"
+  a.push "#{INDENT}}"
+  a.push "}"
+  s=a.join "\n"
+  f=File.new filepath, 'w'
+  f.print s, "\n"
+  f.close
+end</t>
+<t tx="markdblackwell.20110823170927.1274">class Main
+  &lt;&lt; class accessor &gt;&gt;
+  @others
+end</t>
+<t tx="markdblackwell.20110823170927.1275">class &lt;&lt; self
+  attr_reader :three_keys
+end</t>
+<t tx="markdblackwell.20110823170927.1277"></t>
+<t tx="markdblackwell.20110823170927.1278"></t>
+<t tx="markdblackwell.20110823170927.1279">def self.extract_three_keys lilypond_variable_request
+  @three_keys=[
+      (lilypond_variable_request.delete 'variable'),
+      (lilypond_variable_request.delete 'mode'),
+      (lilypond_variable_request.delete 'prefix') ]
+end</t>
+<t tx="markdblackwell.20110823170927.1280">def self.get_sole_yaml_document filepath
+  y=UseYaml.get_yaml_documents filepath
+  raise unless 1==y.length # Must be exactly one yaml document.
+  y.first
+end</t>
+<t tx="markdblackwell.20110823170927.1281">def self.run
+  caller = caller(0)
+##print 'caller=';p caller
+##print 'Movement.names=';p Movement.names
+  Movement.names.each do |movement_name|
+    movement = Movement.new movement_name
+##print 'movement.filepaths.inspect=';p movement.filepaths.inspect
+    movement.filepaths.each do |filepath|
+##print 'filepath.to_s=';p filepath.to_s
+      next if movement.is_template filepath
+##print 'filepath.to_s=';p filepath.to_s
+      lilypond_variable_request=get_sole_yaml_document filepath
+      extract_three_keys lilypond_variable_request
+      instrument=movement.template.clone
+      run_requests instrument, lilypond_variable_request
+      x=filepath.extname
+      no_x=filepath.to_s.chomp x
+      output_filepath=no_x.concat '.rly'
+##print 'output_filepath.to_s=';p output_filepath.to_s
+      Lilypond.write_input_for_lilypond movement, instrument, output_filepath
+    end
+  end
+  run_lilypond
+end</t>
+<t tx="markdblackwell.20110823170927.1282">def self.run_lilypond
+  dos_separator= '\\'
+  programs_directory  = 'Program Files'
+##    programs_directory  = 'progra'
+  program_location = %w[C: LilyPond usr bin lilypond-windows.exe].insert(1,programs_directory).join dos_separator
+  arguments = '-dgui book.ly'
+  dos_quote = '"'
+##    `#{dos_quote}#{program_location}#{dos_quote} #{arguments}`
+end</t>
+<t tx="markdblackwell.20110823170927.1283">def self.run_requests instrument, lilypond_variable_request
+##print 'instrument=';p instrument
+  lilypond_variable_request.each do |measure_key,measure_request_vector|
+##print 'instrument.hash=';p instrument.hash
+    begin
+      m=(measure=instrument.hash.fetch measure_key)
+    rescue KeyError
+      raise "problem with key #{measure_key}; instrument is #{instrument}"
+    end
+    method_name='content' # Is default.
+    until measure_request_vector.empty?
+      data = measure_request_vector.shift
+      (method_name=data; next) if VariableRequest.methods.include? data
+      VariableRequest.execute_method method_name, measure, data
+    end
+  end
+end</t>
+<t tx="markdblackwell.20110823170927.1298">class Measure
+  &lt;&lt; constant &gt;&gt;
+  &lt;&lt; accessor &gt;&gt;
+  &lt;&lt; single line method &gt;&gt;
+  @others
+end</t>
+<t tx="markdblackwell.20110823170927.1299">BAR_SYMBOL = '|'
+FILLER = 's'
+INDENT = ' '*4</t>
+<t tx="markdblackwell.20110823170927.1300">attr_reader :content, :time, :time_array</t>
+<t tx="markdblackwell.20110823170927.1301">@others
+</t>
+<t tx="markdblackwell.20110823170927.1302">def content_no_barlines= s; @content = s end</t>
+<t tx="markdblackwell.20110823170927.1303">def content= s; @content = "#{BAR_SYMBOL} #{s} #{BAR_SYMBOL}" end</t>
+<t tx="markdblackwell.20110823170927.1304">def prefix s; @content = "#{s}\n" + @content end</t>
+<t tx="markdblackwell.20110823170927.1305">def prefix_barlines s; @content = "#{BAR_SYMBOL} #{s} #{BAR_SYMBOL}\n" + @content end</t>
+<t tx="markdblackwell.20110823170927.1306">def suffix s; @content += "\n#{s}" end</t>
+<t tx="markdblackwell.20110823170927.1307">def suffix_barlines s; @content += "\n#{BAR_SYMBOL} #{s} #{BAR_SYMBOL}" end</t>
+<t tx="markdblackwell.20110823170927.1308"></t>
+<t tx="markdblackwell.20110823170927.1309"></t>
+<t tx="markdblackwell.20110823170927.1310">def initialize k, ts, t
+  @key = k
+  @time_same = ts
+  @time_array=[t].flatten; t = 2==t.length ? t : (t.push 4)
+  count,beat = @time_array
+  @time = "#{count}/#{beat}"
+  default_music = "#{BAR_SYMBOL} #{FILLER}1*#{@time} #{BAR_SYMBOL}"
+  @content = default_music
+end</t>
+<t tx="markdblackwell.20110823170927.1311">def to_s
+  time_line = @time_same ? nil : "\\time #{@time}"
+  key_line = "#{INDENT}% #{@key}"
+  [time_line, @content, key_line].compact.join "\n"
+end</t>
+<t tx="markdblackwell.20110823170927.1320">class Template
+  &lt;&lt; constant &gt;&gt;
+  &lt;&lt; accessor &gt;&gt;
+  @others
+end</t>
+<t tx="markdblackwell.20110823170927.1321">FIRST_MEASURE_TIME_COMPARISON_VALUE = false</t>
+<t tx="markdblackwell.20110823170927.1322">attr_reader :hash, :measures</t>
+<t tx="markdblackwell.20110823170927.1323"></t>
+<t tx="markdblackwell.20110823170927.1324"></t>
+<t tx="markdblackwell.20110823170927.1325">def create_measures keys, time_data
+  times=time_data.collect{|a| a=[a].flatten;2==a.length ? a : (a.push 4)}
+  time_same=(1...times.length).map{|i| times.at(i-1)==(times.at i)}
+  time_same.unshift FIRST_MEASURE_TIME_COMPARISON_VALUE
+  @measures=(keys.zip time_same, times).map{|k,ts,t| (Measure.new k,ts,t).freeze}
+end</t>
+<t tx="markdblackwell.20110823170927.1326">def initialize keys, time_data
+  create_measures keys, time_data
+  @hash=Hash[keys.zip @measures]
+end</t>
+<t tx="markdblackwell.20110823170927.1327">def initialize_copy source
+  keys=@hash.keys
+  @hash=Hash[keys.zip @hash.values_at(*keys).map{|e| e.dup}]
+end</t>
+<t tx="markdblackwell.20110823170927.1335">class UseYaml
+  &lt;&lt; class accessor &gt;&gt;
+  &lt;&lt; script &gt;&gt;
+  @others
+end</t>
+<t tx="markdblackwell.20110823170927.1336">class &lt;&lt; self
+  attr_reader :extension
+end</t>
+<t tx="markdblackwell.20110823170927.1338">@extension = %w[yml] # Was 'yaml'.</t>
+<t tx="markdblackwell.20110823170927.1339"></t>
+<t tx="markdblackwell.20110823170927.1340"></t>
+<t tx="markdblackwell.20110823170927.1341">def self.get_yaml_documents filepath
+  result=Array.new
+  push_document=Proc.new{|e| result.push e}
+  f=File.new filepath, 'r'
+  YAML::load_documents f, &amp;push_document
+  f.close
+  result
+end</t>
+<t tx="markdblackwell.20110823170927.1348">class VariableRequest
+  &lt;&lt; class accessor &gt;&gt;
+  &lt;&lt; script &gt;&gt;
+  @others
+end</t>
+<t tx="markdblackwell.20110823170927.1349">class &lt;&lt; self
+  attr_reader :methods
+end</t>
+<t tx="markdblackwell.20110823170927.1350">@methods = (
+    %w[prefix suffix].product(['',   '_barlines']) + 
+    %w[content      ].product(['','_no_barlines'])
+).map!{|a| a.join}</t>
+<t tx="markdblackwell.20110823170927.1351"></t>
+<t tx="markdblackwell.20110823170927.1352"></t>
+<t tx="markdblackwell.20110823170927.1353">def self.execute_method method_name, measure, data
+  m,d = measure,data
+  case method_name
+  when 'content'; m.content=d
+  when 'prefix'; m.prefix d
+  when 'suffix'; m.suffix d
+  when 'content_no_barlines'; m.content_no_barlines=d
+  when 'prefix_barlines'; m.prefix_barlines d
+  when 'suffix_barlines'; m.suffix_barlines d
+  else raise 'what?' end
+end</t>
+<t tx="markdblackwell.20110823170927.1366">class Movement
+&lt;&lt; constant &gt;&gt;
+&lt;&lt; accessor &gt;&gt;
+@others
+end</t>
+<t tx="markdblackwell.20110823170927.1367">MOVEMENTS_DIRECTORY=Pathname.pwd.join 'movement'
+</t>
+<t tx="markdblackwell.20110823170927.1368">attr_reader :directory, :filepaths, :measure_keys, :template</t>
+<t tx="markdblackwell.20110823170927.1369"></t>
+<t tx="markdblackwell.20110823170927.1370"></t>
+<t tx="markdblackwell.20110823170927.1371"># Example: ['hostias']
+
+def self.names
+##print 'MOVEMENTS_DIRECTORY.to_s=';p MOVEMENTS_DIRECTORY.to_s
+  MOVEMENTS_DIRECTORY.entries.select do |e|
+##print 'e.to_s=';p e.to_s
+     MOVEMENTS_DIRECTORY.join(e).directory? &amp;&amp; ?.!=e.to_s[0]
+  end.map(&amp;:to_s)
+end</t>
+<t tx="markdblackwell.20110823170927.1372"></t>
+<t tx="markdblackwell.20110823170927.1373">def initialize s
+##print 's=';p s
+  @directory=MOVEMENTS_DIRECTORY.join s
+  a = UseYaml.get_yaml_documents @directory.join 'template.yml'
+##print 'a.inspect=';p a.inspect
+  a=a.map{|e| e.nil? ? [] : e}
+  @measure_keys, time_data = a
+##print '@measure_keys=';p @measure_keys
+##print 'time_data=';p time_data
+  @template=Template.new @measure_keys, time_data
+  @filepaths=get_filepaths
+end</t>
+<t tx="markdblackwell.20110823170927.1374">def is_template filepath
+  f=filepath
+  x=f.extname
+  'template'==(f.basename.to_s.chomp x)
+end</t>
+<t tx="markdblackwell.20110823170927.1375">private</t>
+<t tx="markdblackwell.20110823170927.1376">def get_filepaths
+  result=Array.new
+  no_extension=Array.new
+  @directory.find do |path|
+    b=path.basename.to_s
+    Find.prune if path.directory? &amp;&amp; ?.==b[0]
+    next unless path.file?
+    x = path.extname.to_s
+##print 'x=';p x
+# Example: soprano/note.yaml
+    s=(! x.start_with? '.') ? x : x[1..-1]
+    if UseYaml.extension.member? s
+##print 'path.inspect=';p path.inspect
+      result &lt;&lt; path
+      no_extension &lt;&lt; path.dirname.join(b.chomp x)
+    end
+  end
+  no_extension=no_extension.sort
+  raise unless no_extension.uniq==no_extension
+  result.sort.uniq
+end</t>
+<t tx="markdblackwell.20110823170927.1383">class App
+  &lt;&lt; class accessor &gt;&gt;
+  &lt;&lt; script &gt;&gt;
+  @others
+end</t>
+<t tx="markdblackwell.20110823170927.1384">class &lt;&lt; self
+  attr_reader :my_root
+end</t>
+<t tx="markdblackwell.20110823170927.1386">@my_root = Pathname(__FILE__).join('..').cleanpath.realpath.dirname</t>
+<t tx="markdblackwell.20110823170927.1392">require 'yaml'
+require 'pathname'
+s=Pathname(__FILE__).join('..').cleanpath.realpath
+$LOAD_PATH.unshift s
+require 'app'
+require 'lily_pond'
+require 'main'
+require 'measure'
+require 'movement'
+require 'template'
+require 'use_yaml'
+require 'variable_request'
+</t>
+<t tx="markdblackwell.20110823170927.1394">Main.run</t>
 </tnodes>
 </leo_file>

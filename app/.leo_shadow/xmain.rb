@@ -6,12 +6,7 @@ class Main
   #@  << class accessor >>
   #@+node:markdblackwell.20110823170927.1275:<< class accessor >>
   class << self
-    #@  @+others
-    #@+node:markdblackwell.20110823170927.1276:three_keys
     attr_reader :three_keys
-    #@nonl
-    #@-node:markdblackwell.20110823170927.1276:three_keys
-    #@-others
   end
   #@nonl
   #@-node:markdblackwell.20110823170927.1275:<< class accessor >>

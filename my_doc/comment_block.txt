@@ -4,7 +4,8 @@ Date created: July 17, 2011
 Date changed: July 19, 2011
 2011-07-19 Some cleanup.
 2011-08-19 Rearrange documentation.
-Purpose: TODO
+Purpose: improve usability of LilyPond by means of the YAML entry format.
+Generate LilyPond input from YAML.
 Example usage: TODO
 ====================
 See:
