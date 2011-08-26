@@ -10,8 +10,8 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
-<v t="georgesawyer.20110802081402.1951" a="E"><vh>project yaml2lilypond</vh>
-<v t="georgesawyer.20110825192845.1468"><vh>DONE</vh>
+<v t="georgesawyer.20110802081402.1951" a="E"><vh>yaml2lilypond project</vh>
+<v t="georgesawyer.20110825192845.1468" a="E"><vh>DONE</vh>
 <v t="georgesawyer.20110802081402.2006"><vh>add function to find all YAML files</vh></v>
 <v t="georgesawyer.20110802081402.2007"><vh>chop up with Leo</vh></v>
 <v t="georgesawyer.20110819095338.1609"><vh>&lt;&lt; purpose &gt;&gt;</vh></v>
@@ -164,9 +164,11 @@
 </v>
 </v>
 <v t="georgesawyer.20110802081402.1953" a="E"><vh>external files</vh>
-<v t="georgesawyer.20110802081402.1954" a="E"><vh>@path .</vh>
+<v t="georgesawyer.20110825192845.1923" a="E"><vh>@path .</vh>
+<v t="georgesawyer.20110825192845.1920" a="E"><vh>@shadow README.md</vh></v>
+</v>
 <v t="markdblackwell.20110823170927.1230"><vh>@path my_doc</vh>
-<v t="georgesawyer.20110819095338.1333" a="E"
+<v t="georgesawyer.20110819095338.1333"
 expanded="georgesawyer.20110819095338.1341,georgesawyer.20110819095338.1342,georgesawyer.20110819095338.1343,"><vh>@shadow comment_block.txt</vh></v>
 </v>
 <v t="markdblackwell.20110823170927.1229" a="E"><vh>@path app</vh>
@@ -189,12 +191,10 @@ expanded="markdblackwell.20110823170927.1351,markdblackwell.20110823170927.1352,
 </v>
 </v>
 </v>
-</v>
 </vnodes>
 <tnodes>
 <t tx="georgesawyer.20110802081402.1951">Convert YAML to LilyPond input format</t>
 <t tx="georgesawyer.20110802081402.1953">@path .</t>
-<t tx="georgesawyer.20110802081402.1954"></t>
 <t tx="georgesawyer.20110802081402.2005"></t>
 <t tx="georgesawyer.20110802081402.2006"># Look at this for finding yaml files:
     app_root
@@ -217,6 +217,7 @@ Generate LilyPond input from YAML.</t>
 <t tx="georgesawyer.20110825192845.1467"></t>
 <t tx="georgesawyer.20110825192845.1468"></t>
 <t tx="georgesawyer.20110825192845.1469"></t>
+<t tx="georgesawyer.20110825192845.1923"></t>
 <t tx="markdblackwell.20110823170927.1229">@language ruby</t>
 <t tx="markdblackwell.20110823170927.1230">@language plain</t>
 <t tx="markdblackwell.20110823170927.1258">class Lilypond
