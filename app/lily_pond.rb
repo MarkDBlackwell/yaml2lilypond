@@ -1,4 +1,4 @@
-class Lilypond
+class LilyPond
   LILYPOND_VERSION='2.14.1'
   INDENT = ' '*2
   def self.output_extension; '.gly' end

@@ -1,5 +1,6 @@
 class Movement
-MOVEMENTS_DIRECTORY=Pathname.pwd.join 'movement'
+MOVEMENTS_DIRECTORY=Pathname.pwd
+
 attr_reader :directory, :filepaths, :measure_keys, :template
 # Example: ['hostias']
 

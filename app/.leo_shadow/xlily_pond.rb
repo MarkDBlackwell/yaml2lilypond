@@ -1,8 +1,8 @@
 #@+leo-ver=4-thin
 #@+node:markdblackwell.20110823170927.1239:@shadow lily_pond.rb
 #@+others
-#@+node:markdblackwell.20110823170927.1258:Lilypond
-class Lilypond
+#@+node:markdblackwell.20110823170927.1258:LilyPond
+class LilyPond
   #@  << constant >>
   #@+node:markdblackwell.20110823170927.1259:<< constant >>
   LILYPOND_VERSION='2.14.1'
@@ -45,7 +45,7 @@ class Lilypond
   #@-others
 end
 #@nonl
-#@-node:markdblackwell.20110823170927.1258:Lilypond
+#@-node:markdblackwell.20110823170927.1258:LilyPond
 #@-others
 #@nonl
 #@-node:markdblackwell.20110823170927.1239:@shadow lily_pond.rb

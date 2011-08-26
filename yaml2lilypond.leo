@@ -11,6 +11,7 @@
 <find_panel_settings/>
 <vnodes>
 <v t="georgesawyer.20110802081402.1951" a="E"><vh>yaml2lilypond project</vh>
+<v t="georgesawyer.20110825192845.1922"><vh>&lt;&lt; readme &gt;&gt;</vh></v>
 <v t="georgesawyer.20110825192845.1468"><vh>DONE</vh>
 <v t="georgesawyer.20110802081402.2006"><vh>add function to find all YAML files</vh></v>
 <v t="georgesawyer.20110802081402.2007"><vh>chop up with Leo</vh></v>
@@ -20,7 +21,7 @@
 <v t="georgesawyer.20110825192845.1469"><vh>make it a Ruby gem</vh></v>
 <v t="georgesawyer.20110819095338.1610"><vh>&lt;&lt; usage &gt;&gt;</vh></v>
 </v>
-<v t="georgesawyer.20110825192845.1464" a="E"><vh>fragment</vh>
+<v t="georgesawyer.20110825192845.1464"><vh>fragment</vh>
 <v t="georgesawyer.20110825192845.1462"><vh>accessor</vh>
 <v t="markdblackwell.20110823170927.1300"><vh>&lt;&lt; accessor &gt;&gt;</vh></v>
 <v t="markdblackwell.20110823170927.1368"><vh>&lt;&lt; accessor &gt;&gt;</vh></v>
@@ -31,7 +32,7 @@
 <v t="markdblackwell.20110823170927.1384"><vh>&lt;&lt; class accessor &gt;&gt;</vh></v>
 <v t="markdblackwell.20110823170927.1386"><vh>&lt;&lt; script &gt;&gt;</vh></v>
 </v>
-<v t="markdblackwell.20110823170927.1258" a="E"><vh>Lilypond</vh>
+<v t="markdblackwell.20110823170927.1258"><vh>LilyPond</vh>
 <v t="markdblackwell.20110823170927.1259"><vh>&lt;&lt; constant &gt;&gt;</vh></v>
 <v t="markdblackwell.20110823170927.1260" a="E"><vh>method</vh>
 <v t="markdblackwell.20110823170927.1261" a="E"><vh>public class</vh>
@@ -41,7 +42,7 @@
 </v>
 </v>
 </v>
-<v t="markdblackwell.20110823170927.1274"><vh>Main</vh>
+<v t="markdblackwell.20110823170927.1274" a="E"><vh>Main</vh>
 <v t="markdblackwell.20110823170927.1275"><vh>&lt;&lt; class accessor &gt;&gt;</vh></v>
 <v t="markdblackwell.20110823170927.1277" a="E"><vh>method</vh>
 <v t="markdblackwell.20110823170927.1278" a="E"><vh>public class</vh>
@@ -64,14 +65,14 @@
 <v t="markdblackwell.20110823170927.1306"><vh>suffix</vh></v>
 <v t="markdblackwell.20110823170927.1307"><vh>suffix_barlines</vh></v>
 </v>
-<v t="markdblackwell.20110823170927.1308" a="E"><vh>method</vh>
-<v t="markdblackwell.20110823170927.1309" a="E"><vh>public</vh>
+<v t="markdblackwell.20110823170927.1308"><vh>method</vh>
+<v t="markdblackwell.20110823170927.1309"><vh>public</vh>
 <v t="markdblackwell.20110823170927.1310"><vh>initialize</vh></v>
 <v t="markdblackwell.20110823170927.1311"><vh>to_s</vh></v>
 </v>
 </v>
 </v>
-<v t="markdblackwell.20110823170927.1366"><vh>Movement</vh>
+<v t="markdblackwell.20110823170927.1366" a="E"><vh>Movement</vh>
 <v t="markdblackwell.20110823170927.1367"><vh>&lt;&lt; constant &gt;&gt;</vh></v>
 <v t="markdblackwell.20110823170927.1368"></v>
 <v t="markdblackwell.20110823170927.1369" a="E"><vh>method</vh>
@@ -129,7 +130,7 @@
 <v t="markdblackwell.20110823170927.1367"></v>
 <v t="markdblackwell.20110823170927.1321"></v>
 </v>
-<v t="georgesawyer.20110825192845.1467" a="E"><vh>method</vh>
+<v t="georgesawyer.20110825192845.1467"><vh>method</vh>
 <v t="markdblackwell.20110823170927.1303"></v>
 <v t="markdblackwell.20110823170927.1302"></v>
 <v t="markdblackwell.20110823170927.1325"></v>
@@ -173,17 +174,17 @@
 <v t="georgesawyer.20110819095338.1333"
 expanded="georgesawyer.20110819095338.1341,georgesawyer.20110819095338.1342,georgesawyer.20110819095338.1343,"><vh>@shadow comment_block.txt</vh></v>
 </v>
-<v t="markdblackwell.20110823170927.1229" a="E"><vh>@path app</vh>
+<v t="markdblackwell.20110823170927.1229"><vh>@path app</vh>
 <v t="markdblackwell.20110823170927.1391"><vh>@shadow generate.rb</vh></v>
 <v t="markdblackwell.20110823170927.1382"><vh>@shadow app.rb</vh></v>
 <v t="markdblackwell.20110823170927.1239" a="E"
-expanded="markdblackwell.20110823170927.1258,markdblackwell.20110823170927.1260,markdblackwell.20110823170927.1261,"><vh>@shadow lily_pond.rb</vh></v>
-<v t="markdblackwell.20110823170927.1241"
-expanded="markdblackwell.20110823170927.1277,markdblackwell.20110823170927.1278,"><vh>@shadow main.rb</vh></v>
+expanded="markdblackwell.20110823170927.1260,markdblackwell.20110823170927.1261,"><vh>@shadow lily_pond.rb</vh></v>
+<v t="markdblackwell.20110823170927.1241" a="E"
+expanded="markdblackwell.20110823170927.1274,markdblackwell.20110823170927.1277,markdblackwell.20110823170927.1278,"><vh>@shadow main.rb</vh></v>
 <v t="markdblackwell.20110823170927.1243"
-expanded="markdblackwell.20110823170927.1301,markdblackwell.20110823170927.1308,markdblackwell.20110823170927.1309,"><vh>@shadow measure.rb</vh></v>
+expanded="markdblackwell.20110823170927.1301,"><vh>@shadow measure.rb</vh></v>
 <v t="markdblackwell.20110823170927.1354"
-expanded="markdblackwell.20110823170927.1369,markdblackwell.20110823170927.1370,markdblackwell.20110823170927.1372,markdblackwell.20110823170927.1375,"><vh>@shadow movement.rb</vh></v>
+expanded="markdblackwell.20110823170927.1366,markdblackwell.20110823170927.1369,markdblackwell.20110823170927.1370,markdblackwell.20110823170927.1372,markdblackwell.20110823170927.1375,"><vh>@shadow movement.rb</vh></v>
 <v t="markdblackwell.20110823170927.1245"
 expanded="markdblackwell.20110823170927.1323,markdblackwell.20110823170927.1324,"><vh>@shadow template.rb</vh></v>
 <v t="markdblackwell.20110823170927.1247"
@@ -219,10 +220,38 @@ Generate LilyPond input from YAML.</t>
 <t tx="georgesawyer.20110825192845.1467"></t>
 <t tx="georgesawyer.20110825192845.1468"></t>
 <t tx="georgesawyer.20110825192845.1469"></t>
+<t tx="georgesawyer.20110825192845.1922">#yaml2lilypond
+
+A program to convert music specifications, from YAML format into LilyPond (input) format.
+
+It is written in Ruby.
+
+##invocation
+
+cd &lt;directory containing LilyPond movement directories&gt;
+yaml2lilypond
+
+#requirements
+
+When yaml2lilypond is invoked, each filesystem tree, starting one level below the current directory, must contain the *.yml files of only a single musical movement: even if there is only one movement.
+
+The easiest way is to make a subdirectory (in your LilyPond project) called 'all-movements', and place the files pertaining to each musical movement in a further, separate, subdirectory ('CHILD') under it. For example, if your project were called, 'my-suite', then one of 'my-suite's filesystem descendents would be called, 'all-movements', and 'all-movements' descendents might be 'adagio', 'minuet' and 'sarabande'.
+
+BTW, in LilyPond, you should be using relative paths by specifying, in your (e.g.) book.ly:
+
+#(ly:set-option 'relative-includes #t)
+
+Within each CHILD, there must be a file, 'template.yml' containing, for all the movement's measures:
+
+* time signatures, and
+* unique string identifiers
+
+Any other *.yml files are converted to LilyPond input format using an output filename having the same full pathname but the extension, '.gly' (for 'generated Lilypond').
+</t>
 <t tx="georgesawyer.20110825192845.1923"></t>
 <t tx="markdblackwell.20110823170927.1229">@language ruby</t>
 <t tx="markdblackwell.20110823170927.1230">@language plain</t>
-<t tx="markdblackwell.20110823170927.1258">class Lilypond
+<t tx="markdblackwell.20110823170927.1258">class LilyPond
   &lt;&lt; constant &gt;&gt;
   @others
 end</t>
@@ -287,7 +316,7 @@ end</t>
 #      output_filepath=no_x.concat '.rly'
       output_filepath=no_x.concat LilyPond.output_extension
 ##print 'output_filepath.to_s=';p output_filepath.to_s
-      Lilypond.write_input_for_lilypond movement, instrument, output_filepath
+      LilyPond.write_input_for_lilypond movement, instrument, output_filepath
     end
   end
   run_lilypond
@@ -424,7 +453,8 @@ end</t>
 &lt;&lt; accessor &gt;&gt;
 @others
 end</t>
-<t tx="markdblackwell.20110823170927.1367">MOVEMENTS_DIRECTORY=Pathname.pwd.join 'movement'
+<t tx="markdblackwell.20110823170927.1367">MOVEMENTS_DIRECTORY=Pathname.pwd
+
 </t>
 <t tx="markdblackwell.20110823170927.1368">attr_reader :directory, :filepaths, :measure_keys, :template</t>
 <t tx="markdblackwell.20110823170927.1369"></t>

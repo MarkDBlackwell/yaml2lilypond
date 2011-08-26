@@ -1,8 +1,8 @@
 #yaml2lilypond
 
-A program to convert music specifications from YAML to LilyPond input format.
+A program to convert music specifications, from YAML format into LilyPond (input) format.
 
-The program is written in Ruby.
+It is written in Ruby.
 
 ##invocation
 
@@ -11,19 +11,17 @@ yaml2lilypond
 
 #requirements
 
-When yaml2lilypond is invoked, the filesystem trees, starting one level down from the current directory, each must contain the *.yml files of only a single musical movement.
+When yaml2lilypond is invoked, each filesystem tree, starting one level below the current directory, must contain the *.yml files of only a single musical movement: even if there is only one movement.
 
-This is so, even if there is only a single movement.
+The easiest way is to make a subdirectory (in your LilyPond project) called 'all-movements', and place the files pertaining to each musical movement in a further, separate, subdirectory ('CHILD') under it. For example, if your project were called, 'my-suite', then one of 'my-suite's filesystem descendents would be called, 'all-movements', and 'all-movements' descendents might be 'adagio', 'minuet' and 'sarabande'.
 
-The easiest way to accomplish this is to make a subdirectory of the your LilyPond project, called 'all-movements', and place the files pertaining to each musical movement under or in a sepparate, further subdirectory ('CHILD') inside it. For example, if your project is called, 'my-suite', then 'my-suite's filesystem descendent is 'all-movements' and 'all-movements' descendents are 'adagio', 'minuet' and 'sarabande'.
+BTW, in LilyPond, you should be using relative paths by specifying, in your (e.g.) book.ly:
 
-(Note about relative paths in LilyPond.)
-
+#(ly:set-option 'relative-includes #t)
 
 Within each CHILD, there must be a file, 'template.yml' containing, for all the movement's measures:
 
 * time signatures, and
 * unique string identifiers
 
-Any other *.yml files are converted to LilyPond input format in a file having the same full pathname but for the extension, '.gly' (generated Lilypond).
-s
+Any other *.yml files are converted to LilyPond input format using an output filename having the same full pathname but the extension, '.gly' (for 'generated Lilypond').

@@ -5,7 +5,8 @@
 class Movement
 #@<< constant >>
 #@+node:markdblackwell.20110823170927.1367:<< constant >>
-MOVEMENTS_DIRECTORY=Pathname.pwd.join 'movement'
+MOVEMENTS_DIRECTORY=Pathname.pwd
+
 #@-node:markdblackwell.20110823170927.1367:<< constant >>
 #@nl
 #@<< accessor >>

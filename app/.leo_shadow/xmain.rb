@@ -52,7 +52,7 @@ class Main
   #      output_filepath=no_x.concat '.rly'
         output_filepath=no_x.concat LilyPond.output_extension
   ##print 'output_filepath.to_s=';p output_filepath.to_s
-        Lilypond.write_input_for_lilypond movement, instrument, output_filepath
+        LilyPond.write_input_for_lilypond movement, instrument, output_filepath
       end
     end
     run_lilypond
