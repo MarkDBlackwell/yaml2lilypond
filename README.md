@@ -20,7 +20,7 @@ The easiest way is to make a subdirectory (in your LilyPond project), e.g., 'all
 BTW, in LilyPond, you can and should be using relative paths, for example by specifying in your book.ly:
 
 ```lilypond
-\#(ly:set-option 'relative-includes #t)
+#(ly:set-option 'relative-includes #t)
 ```
 Within each CHILD, there must be a file, 'template.yml' containing, for all the movement's measures:
 
