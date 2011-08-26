@@ -11,9 +11,9 @@ yaml2lilypond
 
 ##requirements
 
-When yaml2lilypond is invoked, each tree below the current directory, in the filesystem, must contain the *.yml files of only a single musical movement (even if there is only one).
+When yaml2lilypond is invoked, each tree below the current directory (in the filesystem) must contain the *.yml files of only a single musical movement (even if there is only one).
 
-It is easiest is to make a subdirectory (in your LilyPond project), e.g., 'all-movements', and place the files pertaining to each musical movement in a separate, ('CHILD') subdirectory under it. For example, if your project were called, 'my-suite', then one of my-suite's filesystem children would be called, 'all-movements', and all-movements' children might be 'adagio', 'minuet' and 'sarabande'.
+The easiest way is to make a subdirectory (in your LilyPond project), e.g., 'all-movements', and place the files pertaining to each musical movement in a separate, ('CHILD') subdirectory under it. For example, if your project were called, 'my-suite', then one of my-suite's filesystem children would be called, 'all-movements', and all-movements' children might be 'adagio', 'minuet' and 'sarabande'.
 
 BTW, in LilyPond, you can and should be using relative paths, for example by specifying in your book.ly:
 
