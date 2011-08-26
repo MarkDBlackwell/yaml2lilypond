@@ -49,7 +49,8 @@ class Main
         run_requests instrument, lilypond_variable_request
         x=filepath.extname
         no_x=filepath.to_s.chomp x
-        output_filepath=no_x.concat '.rly'
+  #      output_filepath=no_x.concat '.rly'
+        output_filepath=no_x.concat LilyPond.output_extension
   ##print 'output_filepath.to_s=';p output_filepath.to_s
         Lilypond.write_input_for_lilypond movement, instrument, output_filepath
       end

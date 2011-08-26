@@ -1,6 +1,7 @@
 class Lilypond
   LILYPOND_VERSION='2.14.1'
   INDENT = ' '*2
+  def self.output_extension; '.gly' end
   def self.rest; rest='r1*' end
   def self.write_input_for_lilypond movement, instrument, filepath
     lilypond_variable_name, mode, overall_prefix = Main.three_keys

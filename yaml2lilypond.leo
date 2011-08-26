@@ -11,7 +11,7 @@
 <find_panel_settings/>
 <vnodes>
 <v t="georgesawyer.20110802081402.1951" a="E"><vh>yaml2lilypond project</vh>
-<v t="georgesawyer.20110825192845.1468" a="E"><vh>DONE</vh>
+<v t="georgesawyer.20110825192845.1468"><vh>DONE</vh>
 <v t="georgesawyer.20110802081402.2006"><vh>add function to find all YAML files</vh></v>
 <v t="georgesawyer.20110802081402.2007"><vh>chop up with Leo</vh></v>
 <v t="georgesawyer.20110819095338.1609"><vh>&lt;&lt; purpose &gt;&gt;</vh></v>
@@ -20,21 +20,22 @@
 <v t="georgesawyer.20110825192845.1469"><vh>make it a Ruby gem</vh></v>
 <v t="georgesawyer.20110819095338.1610"><vh>&lt;&lt; usage &gt;&gt;</vh></v>
 </v>
-<v t="georgesawyer.20110825192845.1464"><vh>fragment</vh>
+<v t="georgesawyer.20110825192845.1464" a="E"><vh>fragment</vh>
 <v t="georgesawyer.20110825192845.1462"><vh>accessor</vh>
 <v t="markdblackwell.20110823170927.1300"><vh>&lt;&lt; accessor &gt;&gt;</vh></v>
 <v t="markdblackwell.20110823170927.1368"><vh>&lt;&lt; accessor &gt;&gt;</vh></v>
 <v t="markdblackwell.20110823170927.1322"><vh>&lt;&lt; accessor &gt;&gt;</vh></v>
 </v>
-<v t="georgesawyer.20110825192845.1465"><vh>class</vh>
+<v t="georgesawyer.20110825192845.1465" a="E"><vh>class</vh>
 <v t="markdblackwell.20110823170927.1383"><vh>App</vh>
 <v t="markdblackwell.20110823170927.1384"><vh>&lt;&lt; class accessor &gt;&gt;</vh></v>
 <v t="markdblackwell.20110823170927.1386"><vh>&lt;&lt; script &gt;&gt;</vh></v>
 </v>
-<v t="markdblackwell.20110823170927.1258"><vh>Lilypond</vh>
+<v t="markdblackwell.20110823170927.1258" a="E"><vh>Lilypond</vh>
 <v t="markdblackwell.20110823170927.1259"><vh>&lt;&lt; constant &gt;&gt;</vh></v>
 <v t="markdblackwell.20110823170927.1260" a="E"><vh>method</vh>
 <v t="markdblackwell.20110823170927.1261" a="E"><vh>public class</vh>
+<v t="markdblackwell.20110826175603.1481"><vh>output_extension</vh></v>
 <v t="markdblackwell.20110823170927.1262"><vh>rest</vh></v>
 <v t="markdblackwell.20110823170927.1263"><vh>write_input_for_lilypond</vh></v>
 </v>
@@ -128,7 +129,7 @@
 <v t="markdblackwell.20110823170927.1367"></v>
 <v t="markdblackwell.20110823170927.1321"></v>
 </v>
-<v t="georgesawyer.20110825192845.1467"><vh>method</vh>
+<v t="georgesawyer.20110825192845.1467" a="E"><vh>method</vh>
 <v t="markdblackwell.20110823170927.1303"></v>
 <v t="markdblackwell.20110823170927.1302"></v>
 <v t="markdblackwell.20110823170927.1325"></v>
@@ -142,6 +143,7 @@
 <v t="markdblackwell.20110823170927.1327"></v>
 <v t="markdblackwell.20110823170927.1374"></v>
 <v t="markdblackwell.20110823170927.1371"></v>
+<v t="markdblackwell.20110826175603.1481"></v>
 <v t="markdblackwell.20110823170927.1304"></v>
 <v t="markdblackwell.20110823170927.1305"></v>
 <v t="markdblackwell.20110823170927.1262"></v>
@@ -174,8 +176,8 @@ expanded="georgesawyer.20110819095338.1341,georgesawyer.20110819095338.1342,geor
 <v t="markdblackwell.20110823170927.1229" a="E"><vh>@path app</vh>
 <v t="markdblackwell.20110823170927.1391"><vh>@shadow generate.rb</vh></v>
 <v t="markdblackwell.20110823170927.1382"><vh>@shadow app.rb</vh></v>
-<v t="markdblackwell.20110823170927.1239"
-expanded="markdblackwell.20110823170927.1260,markdblackwell.20110823170927.1261,"><vh>@shadow lily_pond.rb</vh></v>
+<v t="markdblackwell.20110823170927.1239" a="E"
+expanded="markdblackwell.20110823170927.1258,markdblackwell.20110823170927.1260,markdblackwell.20110823170927.1261,"><vh>@shadow lily_pond.rb</vh></v>
 <v t="markdblackwell.20110823170927.1241"
 expanded="markdblackwell.20110823170927.1277,markdblackwell.20110823170927.1278,"><vh>@shadow main.rb</vh></v>
 <v t="markdblackwell.20110823170927.1243"
@@ -282,7 +284,8 @@ end</t>
       run_requests instrument, lilypond_variable_request
       x=filepath.extname
       no_x=filepath.to_s.chomp x
-      output_filepath=no_x.concat '.rly'
+#      output_filepath=no_x.concat '.rly'
+      output_filepath=no_x.concat LilyPond.output_extension
 ##print 'output_filepath.to_s=';p output_filepath.to_s
       Lilypond.write_input_for_lilypond movement, instrument, output_filepath
     end
@@ -498,5 +501,6 @@ require 'use_yaml'
 require 'variable_request'
 </t>
 <t tx="markdblackwell.20110823170927.1394">Main.run</t>
+<t tx="markdblackwell.20110826175603.1481">def self.output_extension; '.gly' end</t>
 </tnodes>
 </leo_file>

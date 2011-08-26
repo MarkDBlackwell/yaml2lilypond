@@ -13,6 +13,10 @@ class Lilypond
   #@  @+others
   #@+node:markdblackwell.20110823170927.1260:method
   #@+node:markdblackwell.20110823170927.1261:public class
+  #@+node:markdblackwell.20110826175603.1481:output_extension
+  def self.output_extension; '.gly' end
+  #@nonl
+  #@-node:markdblackwell.20110826175603.1481:output_extension
   #@+node:markdblackwell.20110823170927.1262:rest
   def self.rest; rest='r1*' end
   #@nonl
