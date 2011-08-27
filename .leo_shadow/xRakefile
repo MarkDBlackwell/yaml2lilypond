@@ -1,0 +1,27 @@
+#--unknown-language--@+leo-ver=4-thin
+#--unknown-language--@+node:georgesawyer.20110827152321.1537:@shadow Rakefile
+require 'rake'
+require 'rake/testtask'
+require 'rdoc/task'
+
+desc 'Default: run unit tests.'
+task :default => :test
+
+desc 'Standalone-test the yaml2lilypond project.'
+Rake::TestTask.new(:test) do |t|
+  t.libs << 'lib'
+  t.libs << 'test'
+  t.pattern = 'test/**/*_test.rb'
+  t.verbose = true
+end
+
+desc 'Generate documentation for the yaml2lilypond project.'
+RDoc::Task.new(:rdoc) do |rdoc|
+  rdoc.rdoc_dir = 'rdoc'
+  rdoc.title    = 'yaml2lilypond'
+  rdoc.options << '--line-numbers' << '--inline-source'
+  rdoc.rdoc_files.include('README.md')
+  rdoc.rdoc_files.include('lib/**/*.rb')
+end
+#--unknown-language--@-node:georgesawyer.20110827152321.1537:@shadow Rakefile
+#--unknown-language--@-leo

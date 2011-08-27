@@ -203,12 +203,14 @@
 <v t="markdblackwell.20110823170927.1386"></v>
 </v>
 </v>
-<v t="georgesawyer.20110802081402.1953"><vh>external files</vh>
-<v t="georgesawyer.20110825192845.1923"><vh>@path .</vh>
+<v t="georgesawyer.20110802081402.1953" a="E"><vh>external files</vh>
+<v t="georgesawyer.20110825192845.1923" a="E"><vh>@path .</vh>
+<v t="georgesawyer.20110827152321.1537"><vh>@shadow Rakefile</vh></v>
 <v t="georgesawyer.20110825192845.1920"><vh>@shadow README.md</vh></v>
 </v>
-<v t="georgesawyer.20110827101921.1494"><vh>@path test/unit</vh>
-<v t="georgesawyer.20110827101921.1552"><vh>@path surroundings</vh>
+<v t="georgesawyer.20110827101921.1494" a="E"><vh>@path test/unit</vh>
+<v t="georgesawyer.20110827152321.1534"><vh>@shadow standalone_test_helper.rb</vh></v>
+<v t="georgesawyer.20110827101921.1552" a="E"><vh>@path surroundings</vh>
 <v t="georgesawyer.20110827101921.1518" a="E"></v>
 </v>
 <v t="georgesawyer.20110827101921.1553"><vh>@path app</vh>
