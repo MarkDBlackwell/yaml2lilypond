@@ -26,8 +26,9 @@
 </v>
 <v t="georgesawyer.20110802081402.2005" a="E"><vh>TODO</vh>
 <v t="georgesawyer.20110827101921.1493" a="E"><vh>actualize tests</vh>
-<v t="georgesawyer.20110827152321.1531" a="E"><vh>@path test/unit/app</vh>
-<v t="georgesawyer.20110827101921.1519" a="E"><vh>&lt;&lt; app code tests &gt;&gt;</vh>
+<v t="georgesawyer.20110827152321.1533" a="E"><vh>@path test/unit</vh>
+<v t="georgesawyer.20110827152321.1531" a="E"><vh>@path app</vh>
+<v t="georgesawyer.20110827101921.1519"><vh>&lt;&lt; app code tests &gt;&gt;</vh>
 <v t="georgesawyer.20110827101921.1500"><vh>some test</vh>
 <v t="georgesawyer.20110827101921.1520"><vh>code</vh></v>
 <v t="georgesawyer.20110827101921.1521"><vh>prints</vh></v>
@@ -42,11 +43,12 @@
 <v t="georgesawyer.20110827101921.1549"><vh>@shadow variable_request_test.rb</vh></v>
 </v>
 </v>
-<v t="georgesawyer.20110827152321.1532"><vh>@path test/unit/surroundings</vh>
+<v t="georgesawyer.20110827152321.1532" a="E"><vh>@path surroundings</vh>
 <v t="georgesawyer.20110827101921.1518" a="E"><vh>&lt;&lt; surroundings tests &gt;&gt;</vh>
 <v t="georgesawyer.20110827101921.1510"><vh>@shadow unshift.rb</vh></v>
 <v t="georgesawyer.20110827101921.1509"><vh>@shadow yaml_test.rb</vh></v>
 <v t="georgesawyer.20110827101921.1508"><vh>@shadow flatten_test.rb</vh></v>
+</v>
 </v>
 </v>
 </v>
@@ -201,16 +203,16 @@
 <v t="markdblackwell.20110823170927.1386"></v>
 </v>
 </v>
-<v t="georgesawyer.20110802081402.1953" a="E"><vh>external files</vh>
+<v t="georgesawyer.20110802081402.1953"><vh>external files</vh>
 <v t="georgesawyer.20110825192845.1923"><vh>@path .</vh>
 <v t="georgesawyer.20110825192845.1920"><vh>@shadow README.md</vh></v>
 </v>
-<v t="georgesawyer.20110827101921.1494" a="E"><vh>@path test/unit</vh>
-<v t="georgesawyer.20110827101921.1552" a="E"><vh>@path surroundings</vh>
+<v t="georgesawyer.20110827101921.1494"><vh>@path test/unit</vh>
+<v t="georgesawyer.20110827101921.1552"><vh>@path surroundings</vh>
 <v t="georgesawyer.20110827101921.1518" a="E"></v>
 </v>
-<v t="georgesawyer.20110827101921.1553" a="E"><vh>@path app</vh>
-<v t="georgesawyer.20110827101921.1519" a="E"></v>
+<v t="georgesawyer.20110827101921.1553"><vh>@path app</vh>
+<v t="georgesawyer.20110827101921.1519"></v>
 </v>
 </v>
 <v t="markdblackwell.20110823170927.1230"><vh>@path my_doc</vh>
@@ -314,6 +316,7 @@ test_instrument[k].content="r*#{test_instrument[k].time}"
 end</t>
 <t tx="georgesawyer.20110827152321.1531"></t>
 <t tx="georgesawyer.20110827152321.1532"></t>
+<t tx="georgesawyer.20110827152321.1533"></t>
 <t tx="markdblackwell.20110823170927.1229">@language ruby</t>
 <t tx="markdblackwell.20110823170927.1230">@language plain</t>
 <t tx="markdblackwell.20110823170927.1258">class LilyPond #:nodoc: all
