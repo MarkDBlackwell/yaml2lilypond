@@ -1,4 +1,4 @@
-class VariableRequest
+class VariableRequest #:nodoc: all
   class << self
     attr_reader :methods
   end

@@ -1,8 +1,8 @@
-class UseYaml
+class UseYaml #:nodoc: all
   class << self
     attr_reader :extension
   end
-  @extension = %w[yml] # Was 'yaml'.
+  @extension = %w[yml]
   def self.get_yaml_documents filepath
     result=Array.new
     push_document=Proc.new{|e| result.push e}

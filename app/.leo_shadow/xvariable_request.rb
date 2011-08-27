@@ -2,7 +2,7 @@
 #@+node:markdblackwell.20110823170927.1249:@shadow variable_request.rb
 #@+others
 #@+node:markdblackwell.20110823170927.1348:VariableRequest
-class VariableRequest
+class VariableRequest #:nodoc: all
   #@  << class accessor >>
   #@+node:markdblackwell.20110823170927.1349:<< class accessor >>
   class << self

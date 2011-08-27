@@ -2,11 +2,11 @@
 #@+node:markdblackwell.20110823170927.1239:@shadow lily_pond.rb
 #@+others
 #@+node:markdblackwell.20110823170927.1258:LilyPond
-class LilyPond
+class LilyPond #:nodoc: all
   #@  << constant >>
   #@+node:markdblackwell.20110823170927.1259:<< constant >>
-  LILYPOND_VERSION='2.14.1'
   INDENT = ' '*2
+  LILYPOND_VERSION='2.14.1'
   #@nonl
   #@-node:markdblackwell.20110823170927.1259:<< constant >>
   #@nl

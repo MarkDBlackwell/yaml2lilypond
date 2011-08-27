@@ -16,11 +16,11 @@ require 'use_yaml'
 require 'variable_request'
 #@-node:markdblackwell.20110823170927.1392:<< require >>
 #@nl
-#@<< overall script >>
-#@+node:markdblackwell.20110823170927.1394:<< overall script >>
+#@<< script >>
+#@+node:markdblackwell.20110823170927.1394:<< script >>
 Main.run
 #@nonl
-#@-node:markdblackwell.20110823170927.1394:<< overall script >>
+#@-node:markdblackwell.20110823170927.1394:<< script >>
 #@nl
 #@+others
 #@-others

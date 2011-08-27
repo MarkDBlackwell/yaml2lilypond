@@ -1,6 +1,6 @@
-class LilyPond
-  LILYPOND_VERSION='2.14.1'
+class LilyPond #:nodoc: all
   INDENT = ' '*2
+  LILYPOND_VERSION='2.14.1'
   def self.output_extension; '.gly' end
   def self.rest; rest='r1*' end
   def self.write_input_for_lilypond movement, instrument, filepath

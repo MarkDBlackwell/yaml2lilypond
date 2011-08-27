@@ -2,7 +2,7 @@
 #@+node:markdblackwell.20110823170927.1243:@shadow measure.rb
 #@+others
 #@+node:markdblackwell.20110823170927.1298:Measure
-class Measure
+class Measure #:nodoc: all
   #@  << constant >>
   #@+node:markdblackwell.20110823170927.1299:<< constant >>
   BAR_SYMBOL = '|'

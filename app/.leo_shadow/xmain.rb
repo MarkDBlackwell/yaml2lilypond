@@ -2,7 +2,7 @@
 #@+node:markdblackwell.20110823170927.1241:@shadow main.rb
 #@+others
 #@+node:markdblackwell.20110823170927.1274:Main
-class Main
+class Main #:nodoc: all
   #@  << class accessor >>
   #@+node:markdblackwell.20110823170927.1275:<< class accessor >>
   class << self
@@ -26,7 +26,7 @@ class Main
   #@+node:markdblackwell.20110823170927.1280:get_sole_yaml_document
   def self.get_sole_yaml_document filepath
     y=UseYaml.get_yaml_documents filepath
-    raise unless 1==y.length # Must be exactly one yaml document.
+    raise unless 1==y.length # Must be exactly one YAML document.
     y.first
   end
   #@nonl
@@ -49,7 +49,6 @@ class Main
         run_requests instrument, lilypond_variable_request
         x=filepath.extname
         no_x=filepath.to_s.chomp x
-  #      output_filepath=no_x.concat '.rly'
         output_filepath=no_x.concat LilyPond.output_extension
   ##print 'output_filepath.to_s=';p output_filepath.to_s
         LilyPond.write_input_for_lilypond movement, instrument, output_filepath
@@ -63,11 +62,11 @@ class Main
   def self.run_lilypond
     dos_separator= '\\'
     programs_directory  = 'Program Files'
-  ##    programs_directory  = 'progra'
+    ## programs_directory  = 'progra'
     program_location = %w[C: LilyPond usr bin lilypond-windows.exe].insert(1,programs_directory).join dos_separator
     arguments = '-dgui book.ly'
     dos_quote = '"'
-  ##    `#{dos_quote}#{program_location}#{dos_quote} #{arguments}`
+    ## `#{dos_quote}#{program_location}#{dos_quote} #{arguments}`
   end
   #@nonl
   #@-node:markdblackwell.20110823170927.1282:run_lilypond

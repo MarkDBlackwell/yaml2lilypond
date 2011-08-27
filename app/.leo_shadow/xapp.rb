@@ -2,7 +2,7 @@
 #@+node:markdblackwell.20110823170927.1382:@shadow app.rb
 #@+others
 #@+node:markdblackwell.20110823170927.1383:App
-class App
+class App #:nodoc: all
   #@  << class accessor >>
   #@+node:markdblackwell.20110823170927.1384:<< class accessor >>
   class << self

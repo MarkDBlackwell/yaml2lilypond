@@ -1,4 +1,4 @@
-class Measure
+class Measure #:nodoc: all
   BAR_SYMBOL = '|'
   FILLER = 's'
   INDENT = ' '*4

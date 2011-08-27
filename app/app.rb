@@ -1,4 +1,4 @@
-class App
+class App #:nodoc: all
   class << self
     attr_reader :my_root
   end

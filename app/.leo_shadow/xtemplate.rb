@@ -2,7 +2,7 @@
 #@+node:markdblackwell.20110823170927.1245:@shadow template.rb
 #@+others
 #@+node:markdblackwell.20110823170927.1320:Template
-class Template
+class Template #:nodoc: all
   #@  << constant >>
   #@+node:markdblackwell.20110823170927.1321:<< constant >>
   FIRST_MEASURE_TIME_COMPARISON_VALUE = false

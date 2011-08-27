@@ -2,7 +2,7 @@
 #@+node:markdblackwell.20110823170927.1247:@shadow use_yaml.rb
 #@+others
 #@+node:markdblackwell.20110823170927.1335:UseYaml
-class UseYaml
+class UseYaml #:nodoc: all
   #@  << class accessor >>
   #@+node:markdblackwell.20110823170927.1336:<< class accessor >>
   class << self
@@ -13,7 +13,7 @@ class UseYaml
   #@nl
   #@  << script >>
   #@+node:markdblackwell.20110823170927.1338:<< script >>
-  @extension = %w[yml] # Was 'yaml'.
+  @extension = %w[yml]
   #@nonl
   #@-node:markdblackwell.20110823170927.1338:<< script >>
   #@nl

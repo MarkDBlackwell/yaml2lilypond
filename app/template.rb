@@ -1,4 +1,4 @@
-class Template
+class Template #:nodoc: all
   FIRST_MEASURE_TIME_COMPARISON_VALUE = false
   attr_reader :hash, :measures
   def create_measures keys, time_data
