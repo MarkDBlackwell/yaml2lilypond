@@ -53,7 +53,7 @@ class Main
   ##print 'instrument.hash=';p instrument.hash
       begin
         m=(measure=instrument.hash.fetch measure_key)
-      rescue KeyError
+      rescue IndexError # Ruby 1.9.2 subclasses this to KeyError.
         raise "problem with key #{measure_key}; instrument is #{instrument}"
       end
       method_name='content' # Is default.

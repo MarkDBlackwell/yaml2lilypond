@@ -27,7 +27,7 @@
 <v t="markdblackwell.20110823170927.1368"><vh>&lt;&lt; accessor &gt;&gt;</vh></v>
 <v t="markdblackwell.20110823170927.1322"><vh>&lt;&lt; accessor &gt;&gt;</vh></v>
 </v>
-<v t="georgesawyer.20110825192845.1465" a="E"><vh>class</vh>
+<v t="georgesawyer.20110825192845.1465"><vh>class</vh>
 <v t="markdblackwell.20110823170927.1383"><vh>App</vh>
 <v t="markdblackwell.20110823170927.1384"><vh>&lt;&lt; class accessor &gt;&gt;</vh></v>
 <v t="markdblackwell.20110823170927.1386"><vh>&lt;&lt; script &gt;&gt;</vh></v>
@@ -99,7 +99,7 @@
 </v>
 </v>
 </v>
-<v t="markdblackwell.20110823170927.1335"><vh>UseYaml</vh>
+<v t="markdblackwell.20110823170927.1335" a="E"><vh>UseYaml</vh>
 <v t="markdblackwell.20110823170927.1336"><vh>&lt;&lt; class accessor &gt;&gt;</vh></v>
 <v t="markdblackwell.20110823170927.1338"><vh>&lt;&lt; script &gt;&gt;</vh></v>
 <v t="markdblackwell.20110823170927.1339" a="E"><vh>method</vh>
@@ -167,17 +167,17 @@
 </v>
 </v>
 <v t="georgesawyer.20110802081402.1953" a="E"><vh>external files</vh>
-<v t="georgesawyer.20110825192845.1923" a="E"><vh>@path .</vh>
+<v t="georgesawyer.20110825192845.1923"><vh>@path .</vh>
 <v t="georgesawyer.20110825192845.1920" a="E"><vh>@shadow README.md</vh></v>
 </v>
 <v t="markdblackwell.20110823170927.1230"><vh>@path my_doc</vh>
 <v t="georgesawyer.20110819095338.1333"
 expanded="georgesawyer.20110819095338.1341,georgesawyer.20110819095338.1342,georgesawyer.20110819095338.1343,"><vh>@shadow comment_block.txt</vh></v>
 </v>
-<v t="markdblackwell.20110823170927.1229"><vh>@path app</vh>
+<v t="markdblackwell.20110823170927.1229" a="E"><vh>@path app</vh>
 <v t="markdblackwell.20110823170927.1391"><vh>@shadow generate.rb</vh></v>
 <v t="markdblackwell.20110823170927.1382"><vh>@shadow app.rb</vh></v>
-<v t="markdblackwell.20110823170927.1239" a="E"
+<v t="markdblackwell.20110823170927.1239"
 expanded="markdblackwell.20110823170927.1260,markdblackwell.20110823170927.1261,"><vh>@shadow lily_pond.rb</vh></v>
 <v t="markdblackwell.20110823170927.1241" a="E"
 expanded="markdblackwell.20110823170927.1274,markdblackwell.20110823170927.1277,markdblackwell.20110823170927.1278,"><vh>@shadow main.rb</vh></v>
@@ -188,7 +188,7 @@ expanded="markdblackwell.20110823170927.1366,markdblackwell.20110823170927.1369,
 <v t="markdblackwell.20110823170927.1245"
 expanded="markdblackwell.20110823170927.1323,markdblackwell.20110823170927.1324,"><vh>@shadow template.rb</vh></v>
 <v t="markdblackwell.20110823170927.1247"
-expanded="markdblackwell.20110823170927.1339,markdblackwell.20110823170927.1340,"><vh>@shadow use_yaml.rb</vh></v>
+expanded="markdblackwell.20110823170927.1335,markdblackwell.20110823170927.1339,markdblackwell.20110823170927.1340,"><vh>@shadow use_yaml.rb</vh></v>
 <v t="markdblackwell.20110823170927.1249"
 expanded="markdblackwell.20110823170927.1351,markdblackwell.20110823170927.1352,"><vh>@shadow variable_request.rb</vh></v>
 </v>
@@ -221,6 +221,8 @@ Generate LilyPond input from YAML.</t>
 <t tx="georgesawyer.20110825192845.1468"></t>
 <t tx="georgesawyer.20110825192845.1469"></t>
 <t tx="georgesawyer.20110825192845.1922">#yaml2lilypond
+
+Program works; documentation NOT READY YET.
 
 A program to convert music specifications, from YAML format, into LilyPond (input) format.
 
@@ -339,7 +341,7 @@ end</t>
 ##print 'instrument.hash=';p instrument.hash
     begin
       m=(measure=instrument.hash.fetch measure_key)
-    rescue KeyError
+    rescue IndexError # Ruby 1.9.2 subclasses this to KeyError.
       raise "problem with key #{measure_key}; instrument is #{instrument}"
     end
     method_name='content' # Is default.
