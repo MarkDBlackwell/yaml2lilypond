@@ -17,7 +17,7 @@
 <v t="georgesawyer.20110802081402.2007"><vh>chop up with Leo</vh></v>
 <v t="georgesawyer.20110819095338.1609"><vh>&lt;&lt; purpose &gt;&gt;</vh></v>
 <v t="georgesawyer.20110827101921.1492"><vh>move current directory to App class</vh>
-<v t="markdblackwell.20110823170927.1383" a="E"><vh>App</vh>
+<v t="markdblackwell.20110823170927.1383"><vh>App</vh>
 <v t="markdblackwell.20110823170927.1384"><vh>&lt;&lt; class accessor &gt;&gt;</vh></v>
 <v t="markdblackwell.20110823170927.1386"><vh>&lt;&lt; script &gt;&gt;</vh></v>
 </v>
@@ -26,31 +26,37 @@
 </v>
 <v t="georgesawyer.20110802081402.2005" a="E"><vh>TODO</vh>
 <v t="georgesawyer.20110827101921.1493" a="E"><vh>actualize tests</vh>
-<v t="georgesawyer.20110827101921.1517" a="E"><vh>&lt;&lt; tests &gt;&gt;</vh>
-<v t="georgesawyer.20110827101921.1518" a="E"><vh>&lt;&lt; surroundings &gt;&gt;</vh>
+<v t="georgesawyer.20110827101921.1519"><vh>&lt;&lt; app code tests &gt;&gt;</vh>
+<v t="georgesawyer.20110827101921.1500"><vh>some test</vh>
+<v t="georgesawyer.20110827101921.1520"><vh>code</vh></v>
+<v t="georgesawyer.20110827101921.1521"><vh>prints</vh></v>
+</v>
+<v t="georgesawyer.20110827101921.1505"><vh>@shadow app_test.rb</vh></v>
+<v t="georgesawyer.20110827101921.1543"><vh>@shadow lilypond_test.rb</vh></v>
+<v t="georgesawyer.20110827101921.1544"><vh>@shadow main_test.rb</vh></v>
+<v t="georgesawyer.20110827101921.1545"><vh>@shadow measure_test.rb</vh></v>
+<v t="georgesawyer.20110827101921.1546"><vh>@shadow movement_test.rb</vh></v>
+<v t="georgesawyer.20110827101921.1547"><vh>@shadow template_test.rb</vh></v>
+<v t="georgesawyer.20110827101921.1548"><vh>@shadow use_yaml_test.rb</vh></v>
+<v t="georgesawyer.20110827101921.1549"><vh>@shadow variable_request_test.rb</vh></v>
+</v>
+<v t="georgesawyer.20110827101921.1518" a="E"><vh>&lt;&lt; surroundings tests &gt;&gt;</vh>
 <v t="georgesawyer.20110827101921.1510"><vh>@shadow unshift.rb</vh></v>
 <v t="georgesawyer.20110827101921.1509"><vh>@shadow yaml_test.rb</vh></v>
 <v t="georgesawyer.20110827101921.1508"><vh>@shadow flatten_test.rb</vh></v>
-</v>
-<v t="georgesawyer.20110827101921.1519" a="E"><vh>&lt;&lt; app code &gt;&gt;</vh>
-<v t="georgesawyer.20110827101921.1500" a="E"><vh>&lt;&lt; test &gt;&gt;</vh>
-<v t="georgesawyer.20110827101921.1503"><vh>&lt;&lt; three &gt;&gt;</vh></v>
-</v>
-<v t="georgesawyer.20110827101921.1505"><vh>@shadow app_test.rb</vh></v>
-</v>
 </v>
 </v>
 <v t="georgesawyer.20110825192845.1469"><vh>make project a Ruby gem</vh></v>
 <v t="georgesawyer.20110819095338.1610"><vh>&lt;&lt; usage &gt;&gt;</vh></v>
 </v>
-<v t="georgesawyer.20110825192845.1464" a="E"><vh>fragment</vh>
+<v t="georgesawyer.20110825192845.1464"><vh>fragment</vh>
 <v t="georgesawyer.20110825192845.1462"><vh>accessor</vh>
 <v t="markdblackwell.20110823170927.1300"><vh>&lt;&lt; accessor &gt;&gt;</vh></v>
 <v t="markdblackwell.20110823170927.1368"><vh>&lt;&lt; accessor &gt;&gt;</vh></v>
 <v t="markdblackwell.20110823170927.1322"><vh>&lt;&lt; accessor &gt;&gt;</vh></v>
 </v>
 <v t="georgesawyer.20110825192845.1465" a="E"><vh>class</vh>
-<v t="markdblackwell.20110823170927.1383" a="E"></v>
+<v t="markdblackwell.20110823170927.1383"></v>
 <v t="markdblackwell.20110823170927.1258"><vh>LilyPond</vh>
 <v t="markdblackwell.20110823170927.1259"><vh>&lt;&lt; constant &gt;&gt;</vh></v>
 <v t="markdblackwell.20110823170927.1260"><vh>method</vh>
@@ -111,11 +117,12 @@
 </v>
 </v>
 </v>
-<v t="markdblackwell.20110823170927.1320"><vh>Template</vh>
+<v t="markdblackwell.20110823170927.1320" a="E"><vh>Template</vh>
 <v t="markdblackwell.20110823170927.1321"><vh>&lt;&lt; constant &gt;&gt;</vh></v>
 <v t="markdblackwell.20110823170927.1322"></v>
-<v t="markdblackwell.20110823170927.1323"><vh>method</vh>
-<v t="markdblackwell.20110823170927.1324"><vh>public</vh>
+<v t="markdblackwell.20110823170927.1323" a="E"><vh>method</vh>
+<v t="markdblackwell.20110823170927.1324" a="E"><vh>public</vh>
+<v t="georgesawyer.20110827101921.1628"><vh>flatten</vh></v>
 <v t="markdblackwell.20110823170927.1325"><vh>create_measures</vh></v>
 <v t="markdblackwell.20110823170927.1326"><vh>initialize</vh></v>
 <v t="markdblackwell.20110823170927.1327"><vh>initialize_copy</vh></v>
@@ -154,6 +161,7 @@
 <v t="markdblackwell.20110823170927.1367"></v>
 </v>
 <v t="georgesawyer.20110825192845.1467"><vh>method</vh>
+<v t="georgesawyer.20110827101921.1628"></v>
 <v t="markdblackwell.20110823170927.1303"></v>
 <v t="markdblackwell.20110823170927.1302"></v>
 <v t="markdblackwell.20110823170927.1325"></v>
@@ -179,7 +187,7 @@
 <v t="markdblackwell.20110823170927.1311"></v>
 <v t="markdblackwell.20110823170927.1263"></v>
 </v>
-<v t="georgesawyer.20110825192845.1463"><vh>require</vh>
+<v t="georgesawyer.20110825192845.1463" a="E"><vh>require</vh>
 <v t="markdblackwell.20110823170927.1392"><vh>&lt;&lt; require &gt;&gt;</vh></v>
 </v>
 <v t="georgesawyer.20110825192845.1461"><vh>script</vh>
@@ -194,20 +202,25 @@
 <v t="georgesawyer.20110825192845.1920"><vh>@shadow README.md</vh></v>
 </v>
 <v t="georgesawyer.20110827101921.1494"><vh>@path test/units</vh>
-<v t="georgesawyer.20110827101921.1517" a="E"></v>
+<v t="georgesawyer.20110827101921.1552" a="E"><vh>@path surroundings</vh>
+<v t="georgesawyer.20110827101921.1518" a="E"></v>
+</v>
+<v t="georgesawyer.20110827101921.1553"><vh>@path app</vh>
+<v t="georgesawyer.20110827101921.1519"></v>
+</v>
 </v>
 <v t="markdblackwell.20110823170927.1230"><vh>@path my_doc</vh>
 <v t="georgesawyer.20110819095338.1333" a="E"><vh>@shadow comment_block.txt</vh></v>
 </v>
 <v t="markdblackwell.20110823170927.1229"><vh>@path app</vh>
-<v t="markdblackwell.20110823170927.1382" a="E"
-expanded="markdblackwell.20110823170927.1383,"><vh>@shadow app.rb</vh></v>
+<v t="markdblackwell.20110823170927.1382"><vh>@shadow app.rb</vh></v>
 <v t="markdblackwell.20110823170927.1391"><vh>@shadow generate.rb</vh></v>
 <v t="markdblackwell.20110823170927.1239"><vh>@shadow lily_pond.rb</vh></v>
 <v t="markdblackwell.20110823170927.1241"><vh>@shadow main.rb</vh></v>
 <v t="markdblackwell.20110823170927.1243"><vh>@shadow measure.rb</vh></v>
-<v t="markdblackwell.20110823170927.1354" a="E"><vh>@shadow movement.rb</vh></v>
-<v t="markdblackwell.20110823170927.1245"><vh>@shadow template.rb</vh></v>
+<v t="markdblackwell.20110823170927.1354"><vh>@shadow movement.rb</vh></v>
+<v t="markdblackwell.20110823170927.1245"
+expanded="markdblackwell.20110823170927.1320,markdblackwell.20110823170927.1323,markdblackwell.20110823170927.1324,"><vh>@shadow template.rb</vh></v>
 <v t="markdblackwell.20110823170927.1247"><vh>@shadow use_yaml.rb</vh></v>
 <v t="markdblackwell.20110823170927.1249"><vh>@shadow variable_request.rb</vh></v>
 </v>
@@ -275,25 +288,26 @@ Any other *.yml files are converted to LilyPond input format. The output filenam
 <t tx="georgesawyer.20110827101921.1492"></t>
 <t tx="georgesawyer.20110827101921.1493"></t>
 <t tx="georgesawyer.20110827101921.1494">@language ruby
-&lt;&lt; tests &gt;&gt;</t>
-<t tx="georgesawyer.20110827101921.1500">&lt;&lt; three &gt;&gt;</t>
-<t tx="georgesawyer.20110827101921.1503">Code:
-k='(Requi)-emAeternam'
+@others</t>
+<t tx="georgesawyer.20110827101921.1500"></t>
+<t tx="georgesawyer.20110827101921.1518">@others</t>
+<t tx="georgesawyer.20110827101921.1519">@others</t>
+<t tx="georgesawyer.20110827101921.1520">k='(Requi)-emAeternam'
 test_instrument[k].content_no_barlines='hello'
         print test_instrument[k].content, "\n"
 test_instrument[k].content='c4 d e f'
         print test_instrument[k].content, "\n"
 test_instrument[k].content="r*#{test_instrument[k].time}"
-        print test_instrument[k].content, "\n"
-Prints:
-hello
+        print test_instrument[k].content, "\n"</t>
+<t tx="georgesawyer.20110827101921.1521">hello
 | c4 d e f |
 | r*12/4 |</t>
-<t tx="georgesawyer.20110827101921.1517">&lt;&lt; surroundings &gt;&gt;
-&lt;&lt; app code &gt;&gt;
-@others</t>
-<t tx="georgesawyer.20110827101921.1518">@others</t>
-<t tx="georgesawyer.20110827101921.1519">@others</t>
+<t tx="georgesawyer.20110827101921.1552">@others</t>
+<t tx="georgesawyer.20110827101921.1553">@others</t>
+<t tx="georgesawyer.20110827101921.1628">def flatten a
+  a=[a].flatten;2==a.length ? a : (a.push 4)}
+
+end</t>
 <t tx="markdblackwell.20110823170927.1229">@language ruby</t>
 <t tx="markdblackwell.20110823170927.1230">@language plain</t>
 <t tx="markdblackwell.20110823170927.1258">class LilyPond #:nodoc: all
@@ -435,7 +449,8 @@ end</t>
 <t tx="markdblackwell.20110823170927.1323"></t>
 <t tx="markdblackwell.20110823170927.1324"></t>
 <t tx="markdblackwell.20110823170927.1325">def create_measures keys, time_data
-  times=time_data.collect{|a| a=[a].flatten;2==a.length ? a : (a.push 4)}
+#  times=time_data.collect{|a| a=[a].flatten;2==a.length ? a : (a.push 4)}
+  times=time_data.collect{|a| flatten a}
   time_same=(1...times.length).map{|i| times.at(i-1)==(times.at i)}
   time_same.unshift FIRST_MEASURE_TIME_COMPARISON_VALUE
   @measures=(keys.zip time_same, times).map{|k,ts,t| (Measure.new k,ts,t).freeze}
