@@ -5,7 +5,7 @@
 #--unknown-language--@+node:georgesawyer.20110825192845.1922:<< readme >>
 #yaml2lilypond
 
-Program works; documentation NOT READY YET.
+Program works, but the documentation is NOT READY YET.
 
 A program to convert music specifications, from YAML format, into LilyPond (input) format.
 

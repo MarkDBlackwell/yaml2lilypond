@@ -5,8 +5,8 @@
 class Movement #:nodoc: all
   #@  << constant >>
   #@+node:markdblackwell.20110823170927.1367:<< constant >>
-  MOVEMENTS_DIRECTORY=Pathname.pwd
-
+  MOVEMENTS_DIRECTORY=App.initial_current_directory
+  #@nonl
   #@-node:markdblackwell.20110823170927.1367:<< constant >>
   #@nl
   #@  << accessor >>

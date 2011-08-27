@@ -1,6 +1,5 @@
 class Movement #:nodoc: all
-  MOVEMENTS_DIRECTORY=Pathname.pwd
-
+  MOVEMENTS_DIRECTORY=App.initial_current_directory
   attr_reader :directory, :filepaths, :measure_keys, :template
   # Example: ['hostias']
   def self.names

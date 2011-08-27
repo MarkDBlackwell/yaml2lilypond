@@ -1,6 +1,6 @@
 #yaml2lilypond
 
-Program works; documentation NOT READY YET.
+Program works, but the documentation is NOT READY YET.
 
 A program to convert music specifications, from YAML format, into LilyPond (input) format.
 

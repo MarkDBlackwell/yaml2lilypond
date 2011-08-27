@@ -16,9 +16,31 @@
 <v t="georgesawyer.20110802081402.2006"><vh>add function to find all YAML files</vh></v>
 <v t="georgesawyer.20110802081402.2007"><vh>chop up with Leo</vh></v>
 <v t="georgesawyer.20110819095338.1609"><vh>&lt;&lt; purpose &gt;&gt;</vh></v>
+<v t="georgesawyer.20110827101921.1492"><vh>move current directory to App class</vh>
+<v t="markdblackwell.20110823170927.1383" a="E"><vh>App</vh>
+<v t="markdblackwell.20110823170927.1384"><vh>&lt;&lt; class accessor &gt;&gt;</vh></v>
+<v t="markdblackwell.20110823170927.1386"><vh>&lt;&lt; script &gt;&gt;</vh></v>
 </v>
-<v t="georgesawyer.20110802081402.2005"><vh>TODO</vh>
-<v t="georgesawyer.20110825192845.1469"><vh>make it a Ruby gem</vh></v>
+<v t="markdblackwell.20110823170927.1367"><vh>&lt;&lt; constant &gt;&gt;</vh></v>
+</v>
+</v>
+<v t="georgesawyer.20110802081402.2005" a="E"><vh>TODO</vh>
+<v t="georgesawyer.20110827101921.1493" a="E"><vh>actualize tests</vh>
+<v t="georgesawyer.20110827101921.1517" a="E"><vh>&lt;&lt; tests &gt;&gt;</vh>
+<v t="georgesawyer.20110827101921.1518" a="E"><vh>&lt;&lt; surroundings &gt;&gt;</vh>
+<v t="georgesawyer.20110827101921.1510"><vh>@shadow unshift.rb</vh></v>
+<v t="georgesawyer.20110827101921.1509"><vh>@shadow yaml_test.rb</vh></v>
+<v t="georgesawyer.20110827101921.1508"><vh>@shadow flatten_test.rb</vh></v>
+</v>
+<v t="georgesawyer.20110827101921.1519" a="E"><vh>&lt;&lt; app code &gt;&gt;</vh>
+<v t="georgesawyer.20110827101921.1500" a="E"><vh>&lt;&lt; test &gt;&gt;</vh>
+<v t="georgesawyer.20110827101921.1503"><vh>&lt;&lt; three &gt;&gt;</vh></v>
+</v>
+<v t="georgesawyer.20110827101921.1505"><vh>@shadow app_test.rb</vh></v>
+</v>
+</v>
+</v>
+<v t="georgesawyer.20110825192845.1469"><vh>make project a Ruby gem</vh></v>
 <v t="georgesawyer.20110819095338.1610"><vh>&lt;&lt; usage &gt;&gt;</vh></v>
 </v>
 <v t="georgesawyer.20110825192845.1464" a="E"><vh>fragment</vh>
@@ -27,11 +49,8 @@
 <v t="markdblackwell.20110823170927.1368"><vh>&lt;&lt; accessor &gt;&gt;</vh></v>
 <v t="markdblackwell.20110823170927.1322"><vh>&lt;&lt; accessor &gt;&gt;</vh></v>
 </v>
-<v t="georgesawyer.20110825192845.1465"><vh>class</vh>
-<v t="markdblackwell.20110823170927.1383" a="E"><vh>App</vh>
-<v t="markdblackwell.20110823170927.1384"><vh>&lt;&lt; class accessor &gt;&gt;</vh></v>
-<v t="markdblackwell.20110823170927.1386"><vh>&lt;&lt; script &gt;&gt;</vh></v>
-</v>
+<v t="georgesawyer.20110825192845.1465" a="E"><vh>class</vh>
+<v t="markdblackwell.20110823170927.1383" a="E"></v>
 <v t="markdblackwell.20110823170927.1258"><vh>LilyPond</vh>
 <v t="markdblackwell.20110823170927.1259"><vh>&lt;&lt; constant &gt;&gt;</vh></v>
 <v t="markdblackwell.20110823170927.1260"><vh>method</vh>
@@ -73,7 +92,7 @@
 </v>
 </v>
 <v t="markdblackwell.20110823170927.1366"><vh>Movement</vh>
-<v t="markdblackwell.20110823170927.1367"><vh>&lt;&lt; constant &gt;&gt;</vh></v>
+<v t="markdblackwell.20110823170927.1367"></v>
 <v t="markdblackwell.20110823170927.1368"></v>
 <v t="markdblackwell.20110823170927.1369"><vh>method</vh>
 <v t="markdblackwell.20110823170927.1370"><vh>public class</vh>
@@ -163,28 +182,31 @@
 <v t="georgesawyer.20110825192845.1463"><vh>require</vh>
 <v t="markdblackwell.20110823170927.1392"><vh>&lt;&lt; require &gt;&gt;</vh></v>
 </v>
-<v t="georgesawyer.20110825192845.1461" a="E"><vh>script</vh>
+<v t="georgesawyer.20110825192845.1461"><vh>script</vh>
 <v t="markdblackwell.20110823170927.1394"><vh>&lt;&lt; script &gt;&gt;</vh></v>
 <v t="markdblackwell.20110823170927.1338"></v>
 <v t="markdblackwell.20110823170927.1350"></v>
 <v t="markdblackwell.20110823170927.1386"></v>
 </v>
 </v>
-<v t="georgesawyer.20110802081402.1953" a="E"><vh>external files</vh>
+<v t="georgesawyer.20110802081402.1953"><vh>external files</vh>
 <v t="georgesawyer.20110825192845.1923"><vh>@path .</vh>
-<v t="georgesawyer.20110825192845.1920" a="E"><vh>@shadow README.md</vh></v>
+<v t="georgesawyer.20110825192845.1920"><vh>@shadow README.md</vh></v>
+</v>
+<v t="georgesawyer.20110827101921.1494"><vh>@path test/units</vh>
+<v t="georgesawyer.20110827101921.1517" a="E"></v>
 </v>
 <v t="markdblackwell.20110823170927.1230"><vh>@path my_doc</vh>
 <v t="georgesawyer.20110819095338.1333" a="E"><vh>@shadow comment_block.txt</vh></v>
 </v>
-<v t="markdblackwell.20110823170927.1229" a="E"><vh>@path app</vh>
-<v t="markdblackwell.20110823170927.1382"
+<v t="markdblackwell.20110823170927.1229"><vh>@path app</vh>
+<v t="markdblackwell.20110823170927.1382" a="E"
 expanded="markdblackwell.20110823170927.1383,"><vh>@shadow app.rb</vh></v>
-<v t="markdblackwell.20110823170927.1391" a="E"><vh>@shadow generate.rb</vh></v>
+<v t="markdblackwell.20110823170927.1391"><vh>@shadow generate.rb</vh></v>
 <v t="markdblackwell.20110823170927.1239"><vh>@shadow lily_pond.rb</vh></v>
 <v t="markdblackwell.20110823170927.1241"><vh>@shadow main.rb</vh></v>
 <v t="markdblackwell.20110823170927.1243"><vh>@shadow measure.rb</vh></v>
-<v t="markdblackwell.20110823170927.1354"><vh>@shadow movement.rb</vh></v>
+<v t="markdblackwell.20110823170927.1354" a="E"><vh>@shadow movement.rb</vh></v>
 <v t="markdblackwell.20110823170927.1245"><vh>@shadow template.rb</vh></v>
 <v t="markdblackwell.20110823170927.1247"><vh>@shadow use_yaml.rb</vh></v>
 <v t="markdblackwell.20110823170927.1249"><vh>@shadow variable_request.rb</vh></v>
@@ -218,7 +240,7 @@ Generate LilyPond input from YAML.</t>
 <t tx="georgesawyer.20110825192845.1469"></t>
 <t tx="georgesawyer.20110825192845.1922">#yaml2lilypond
 
-Program works; documentation NOT READY YET.
+Program works, but the documentation is NOT READY YET.
 
 A program to convert music specifications, from YAML format, into LilyPond (input) format.
 
@@ -250,6 +272,28 @@ Within each CHILD, there must be a file, 'template.yml' containing, for all the 
 Any other *.yml files are converted to LilyPond input format. The output filenames will have the same full pathnames but with the extension, '.gly' (for 'generated Lilypond').
 </t>
 <t tx="georgesawyer.20110825192845.1923"></t>
+<t tx="georgesawyer.20110827101921.1492"></t>
+<t tx="georgesawyer.20110827101921.1493"></t>
+<t tx="georgesawyer.20110827101921.1494">@language ruby
+&lt;&lt; tests &gt;&gt;</t>
+<t tx="georgesawyer.20110827101921.1500">&lt;&lt; three &gt;&gt;</t>
+<t tx="georgesawyer.20110827101921.1503">Code:
+k='(Requi)-emAeternam'
+test_instrument[k].content_no_barlines='hello'
+        print test_instrument[k].content, "\n"
+test_instrument[k].content='c4 d e f'
+        print test_instrument[k].content, "\n"
+test_instrument[k].content="r*#{test_instrument[k].time}"
+        print test_instrument[k].content, "\n"
+Prints:
+hello
+| c4 d e f |
+| r*12/4 |</t>
+<t tx="georgesawyer.20110827101921.1517">&lt;&lt; surroundings &gt;&gt;
+&lt;&lt; app code &gt;&gt;
+@others</t>
+<t tx="georgesawyer.20110827101921.1518">@others</t>
+<t tx="georgesawyer.20110827101921.1519">@others</t>
 <t tx="markdblackwell.20110823170927.1229">@language ruby</t>
 <t tx="markdblackwell.20110823170927.1230">@language plain</t>
 <t tx="markdblackwell.20110823170927.1258">class LilyPond #:nodoc: all
@@ -453,9 +497,7 @@ end</t>
   &lt;&lt; accessor &gt;&gt;
   @others
 end</t>
-<t tx="markdblackwell.20110823170927.1367">MOVEMENTS_DIRECTORY=Pathname.pwd
-
-</t>
+<t tx="markdblackwell.20110823170927.1367">MOVEMENTS_DIRECTORY=App.initial_current_directory</t>
 <t tx="markdblackwell.20110823170927.1368">attr_reader :directory, :filepaths, :measure_keys, :template</t>
 <t tx="markdblackwell.20110823170927.1369"></t>
 <t tx="markdblackwell.20110823170927.1370"></t>
@@ -513,9 +555,12 @@ end</t>
   @others
 end</t>
 <t tx="markdblackwell.20110823170927.1384">class &lt;&lt; self
-  attr_reader :my_root
+#  attr_reader :my_root
+  attr_reader :initial_current_directory
 end</t>
-<t tx="markdblackwell.20110823170927.1386">@my_root = Pathname(__FILE__).join('..').cleanpath.realpath.dirname</t>
+<t tx="markdblackwell.20110823170927.1386"># @my_root = Pathname(__FILE__).join('..').cleanpath.realpath.dirname
+@initial_current_directory = Pathname.pwd
+</t>
 <t tx="markdblackwell.20110823170927.1392">require 'yaml'
 require 'pathname'
 s=Pathname(__FILE__).join('..').cleanpath.realpath
