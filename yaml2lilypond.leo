@@ -26,7 +26,7 @@
 </v>
 <v t="georgesawyer.20110802081402.2005" a="E"><vh>TODO</vh>
 <v t="georgesawyer.20110827101921.1493" a="E"><vh>actualize tests</vh>
-<v t="georgesawyer.20110827152321.1531"><vh>@path test/units/app</vh>
+<v t="georgesawyer.20110827152321.1531" a="E"><vh>@path test/unit/app</vh>
 <v t="georgesawyer.20110827101921.1519" a="E"><vh>&lt;&lt; app code tests &gt;&gt;</vh>
 <v t="georgesawyer.20110827101921.1500"><vh>some test</vh>
 <v t="georgesawyer.20110827101921.1520"><vh>code</vh></v>
@@ -42,7 +42,7 @@
 <v t="georgesawyer.20110827101921.1549"><vh>@shadow variable_request_test.rb</vh></v>
 </v>
 </v>
-<v t="georgesawyer.20110827152321.1532"><vh>@path test/units/surroundings</vh>
+<v t="georgesawyer.20110827152321.1532"><vh>@path test/unit/surroundings</vh>
 <v t="georgesawyer.20110827101921.1518" a="E"><vh>&lt;&lt; surroundings tests &gt;&gt;</vh>
 <v t="georgesawyer.20110827101921.1510"><vh>@shadow unshift.rb</vh></v>
 <v t="georgesawyer.20110827101921.1509"><vh>@shadow yaml_test.rb</vh></v>
@@ -205,7 +205,7 @@
 <v t="georgesawyer.20110825192845.1923"><vh>@path .</vh>
 <v t="georgesawyer.20110825192845.1920"><vh>@shadow README.md</vh></v>
 </v>
-<v t="georgesawyer.20110827101921.1494" a="E"><vh>@path test/units</vh>
+<v t="georgesawyer.20110827101921.1494" a="E"><vh>@path test/unit</vh>
 <v t="georgesawyer.20110827101921.1552" a="E"><vh>@path surroundings</vh>
 <v t="georgesawyer.20110827101921.1518" a="E"></v>
 </v>
