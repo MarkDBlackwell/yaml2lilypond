@@ -20,8 +20,8 @@ class Template #:nodoc: all
   #@+node:markdblackwell.20110823170927.1324:public
   #@+node:georgesawyer.20110827101921.1628:flatten
   def flatten a
-    a=[a].flatten;2==a.length ? a : (a.push 4)}
-
+    a=[a].flatten # Array#flatten.
+    2==a.length ? a : (a.push 4)
   end
   #@nonl
   #@-node:georgesawyer.20110827101921.1628:flatten

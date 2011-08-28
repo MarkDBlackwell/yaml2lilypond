@@ -24,8 +24,8 @@
 <v t="markdblackwell.20110823170927.1367"><vh>&lt;&lt; constant &gt;&gt;</vh></v>
 </v>
 </v>
-<v t="georgesawyer.20110802081402.2005" a="E"><vh>TODO</vh>
-<v t="georgesawyer.20110827101921.1493" a="E"><vh>actualize tests</vh>
+<v t="georgesawyer.20110802081402.2005"><vh>TODO</vh>
+<v t="georgesawyer.20110827101921.1493"><vh>actualize tests</vh>
 <v t="georgesawyer.20110827152321.1533" a="E"><vh>@path test/unit</vh>
 <v t="georgesawyer.20110827152321.1531" a="E"><vh>@path app</vh>
 <v t="georgesawyer.20110827101921.1519"><vh>&lt;&lt; app code tests &gt;&gt;</vh>
@@ -204,11 +204,11 @@
 </v>
 </v>
 <v t="georgesawyer.20110802081402.1953" a="E"><vh>external files</vh>
-<v t="georgesawyer.20110825192845.1923" a="E"><vh>@path .</vh>
+<v t="georgesawyer.20110825192845.1923"><vh>@path .</vh>
 <v t="georgesawyer.20110827152321.1537"><vh>@shadow Rakefile</vh></v>
 <v t="georgesawyer.20110825192845.1920"><vh>@shadow README.md</vh></v>
 </v>
-<v t="georgesawyer.20110827101921.1494" a="E"><vh>@path test/unit</vh>
+<v t="georgesawyer.20110827101921.1494"><vh>@path test/unit</vh>
 <v t="georgesawyer.20110827152321.1534"><vh>@shadow standalone_test_helper.rb</vh></v>
 <v t="georgesawyer.20110827101921.1552" a="E"><vh>@path surroundings</vh>
 <v t="georgesawyer.20110827101921.1518" a="E"></v>
@@ -220,14 +220,14 @@
 <v t="markdblackwell.20110823170927.1230"><vh>@path my_doc</vh>
 <v t="georgesawyer.20110819095338.1333" a="E"><vh>@shadow comment_block.txt</vh></v>
 </v>
-<v t="markdblackwell.20110823170927.1229"><vh>@path app</vh>
+<v t="markdblackwell.20110823170927.1229" a="E"><vh>@path app</vh>
 <v t="markdblackwell.20110823170927.1382"><vh>@shadow app.rb</vh></v>
 <v t="markdblackwell.20110823170927.1391"><vh>@shadow generate.rb</vh></v>
 <v t="markdblackwell.20110823170927.1239"><vh>@shadow lily_pond.rb</vh></v>
 <v t="markdblackwell.20110823170927.1241"><vh>@shadow main.rb</vh></v>
 <v t="markdblackwell.20110823170927.1243"><vh>@shadow measure.rb</vh></v>
 <v t="markdblackwell.20110823170927.1354"><vh>@shadow movement.rb</vh></v>
-<v t="markdblackwell.20110823170927.1245"
+<v t="markdblackwell.20110823170927.1245" a="E"
 expanded="markdblackwell.20110823170927.1320,markdblackwell.20110823170927.1323,markdblackwell.20110823170927.1324,"><vh>@shadow template.rb</vh></v>
 <v t="markdblackwell.20110823170927.1247"><vh>@shadow use_yaml.rb</vh></v>
 <v t="markdblackwell.20110823170927.1249"><vh>@shadow variable_request.rb</vh></v>
@@ -313,8 +313,8 @@ test_instrument[k].content="r*#{test_instrument[k].time}"
 <t tx="georgesawyer.20110827101921.1552">@others</t>
 <t tx="georgesawyer.20110827101921.1553">@others</t>
 <t tx="georgesawyer.20110827101921.1628">def flatten a
-  a=[a].flatten;2==a.length ? a : (a.push 4)}
-
+  a=[a].flatten # Array#flatten.
+  2==a.length ? a : (a.push 4)
 end</t>
 <t tx="georgesawyer.20110827152321.1531"></t>
 <t tx="georgesawyer.20110827152321.1532"></t>

@@ -2,8 +2,8 @@ class Template #:nodoc: all
   FIRST_MEASURE_TIME_COMPARISON_VALUE = false
   attr_reader :hash, :measures
   def flatten a
-    a=[a].flatten;2==a.length ? a : (a.push 4)}
-
+    a=[a].flatten # Array#flatten.
+    2==a.length ? a : (a.push 4)
   end
   def create_measures keys, time_data
   #  times=time_data.collect{|a| a=[a].flatten;2==a.length ? a : (a.push 4)}
