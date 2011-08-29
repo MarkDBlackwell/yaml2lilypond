@@ -24,7 +24,8 @@
 <v t="markdblackwell.20110823170927.1367"><vh>&lt;&lt; constant &gt;&gt;</vh></v>
 </v>
 </v>
-<v t="georgesawyer.20110802081402.2005"><vh>TODO</vh>
+<v t="georgesawyer.20110802081402.2005" a="E"><vh>TODO</vh>
+<v t="georgesawyer.20110828205607.1541"><vh>better error message when template.yml has error.</vh></v>
 <v t="georgesawyer.20110827101921.1493"><vh>actualize tests</vh>
 <v t="georgesawyer.20110827152321.1533" a="E"><vh>@path test/unit</vh>
 <v t="georgesawyer.20110827152321.1531" a="E"><vh>@path app</vh>
@@ -319,6 +320,16 @@ end</t>
 <t tx="georgesawyer.20110827152321.1531"></t>
 <t tx="georgesawyer.20110827152321.1532"></t>
 <t tx="georgesawyer.20110827152321.1533"></t>
+<t tx="georgesawyer.20110828205607.1541">I accidently put a hyphen before ---, so it was - ---, so the second document was not found. Got:
+app/template.rb:10:in `create_measures': undefined method `collect' for nil:NilClass (NoMethodError)
+from C:/Mark/develop/GitHub/MarkDBlackwell/yaml2lilypond/app/template.rb:16:in `initialize'
+from C:/Mark/develop/GitHub/MarkDBlackwell/yaml2lilypond/app/movement.rb:21:in `new'
+from C:/Mark/develop/GitHub/MarkDBlackwell/yaml2lilypond/app/movement.rb:21:in `initialize'
+from C:/Mark/develop/GitHub/MarkDBlackwell/yaml2lilypond/app/main.rb:21:in `new'
+from C:/Mark/develop/GitHub/MarkDBlackwell/yaml2lilypond/app/main.rb:21:in `block in run'
+from C:/Mark/develop/GitHub/MarkDBlackwell/yaml2lilypond/app/main.rb:20:in `each'
+from C:/Mark/develop/GitHub/MarkDBlackwell/yaml2lilypond/app/main.rb:20:in `run'
+from C:/Mark/develop/GitHub/MarkDBlackwell/yaml2lilypond/app/generate.rb:13:in `&lt;main&gt;'</t>
 <t tx="markdblackwell.20110823170927.1229">@language ruby</t>
 <t tx="markdblackwell.20110823170927.1230">@language plain</t>
 <t tx="markdblackwell.20110823170927.1258">class LilyPond #:nodoc: all
