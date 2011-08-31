@@ -16,7 +16,7 @@ class Measure #:nodoc: all
     count,beat = @time_array
     @time = "#{count}/#{beat}"
     @default_music = "#{FILLER}1*#{@time}"
-    @content = ""#{BAR_SYMBOL} #{@default_music} #{BAR_SYMBOL}"
+    @content = "#{BAR_SYMBOL} #{@default_music} #{BAR_SYMBOL}"
   end
   def to_s
     time_line = @time_same ? nil : "\\time #{@time}"

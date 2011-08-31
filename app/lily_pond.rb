@@ -1,7 +1,8 @@
 class LilyPond #:nodoc: all
   INDENT = ' '*2
   LILYPOND_VERSION='2.14.1'
-  def self.output_extension; '.gly' end
+  OUTPUT_EXTENSION='.gly'
+  def self.output_extension; OUTPUT_EXTENSION end
   def self.rest; rest='r1*' end
   def self.write_input_for_lilypond movement, instrument, filepath
     lilypond_variable_name, mode, overall_prefix = Main.three_keys
@@ -15,7 +16,7 @@ class LilyPond #:nodoc: all
     a.push "#{INDENT}}"
     a.push "}"
     s=a.join "\n"
-    f=File.new filepath, 'w'
+    f=File.new filepath, 'wb' # Use Unix (LF) line endings.
     f.print s, "\n"
     f.close
   end

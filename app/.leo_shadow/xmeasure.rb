@@ -58,7 +58,7 @@ class Measure #:nodoc: all
     count,beat = @time_array
     @time = "#{count}/#{beat}"
     @default_music = "#{FILLER}1*#{@time}"
-    @content = ""#{BAR_SYMBOL} #{@default_music} #{BAR_SYMBOL}"
+    @content = "#{BAR_SYMBOL} #{@default_music} #{BAR_SYMBOL}"
   end
   #@nonl
   #@-node:markdblackwell.20110823170927.1310:initialize

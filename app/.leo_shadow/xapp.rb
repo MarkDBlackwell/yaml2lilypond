@@ -6,7 +6,6 @@ class App #:nodoc: all
   #@  << class accessor >>
   #@+node:markdblackwell.20110823170927.1384:<< class accessor >>
   class << self
-  #  attr_reader :my_root
     attr_reader :initial_current_directory
   end
   #@nonl
@@ -14,7 +13,6 @@ class App #:nodoc: all
   #@nl
   #@  << script >>
   #@+node:markdblackwell.20110823170927.1386:<< script >>
-  # @my_root = Pathname(__FILE__).join('..').cleanpath.realpath.dirname
   @initial_current_directory = Pathname.pwd
   #@-node:markdblackwell.20110823170927.1386:<< script >>
   #@nl

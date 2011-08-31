@@ -101,7 +101,7 @@ class Main #:nodoc: all
   def self.make_copyable_version movement
     s = movement.template.measures.map{|e| "#{e.key}:\n- #{e.default_music}\n"}.to_s
     filepath = movement.directory.join TEMPLATE_FILENAME_COPYABLE
-    f = File.open filepath, 'wb' # For Git, use LF line endings.
+    f = File.open filepath, 'wb' # For Git, use Unix (LF) line endings.
     f.print s
     f.close
   end

@@ -15,7 +15,7 @@
 <v t="georgesawyer.20110825192845.1468" a="E"><vh>DONE</vh>
 <v t="markdblackwell.20110831121351.1583" a="E"><vh>better error messages</vh>
 <v t="markdblackwell.20110831121351.1610" a="E"><vh>reading a YAML music file</vh>
-<v t="markdblackwell.20110831121351.1611"><vh>problem with key</vh>
+<v t="markdblackwell.20110831121351.1611" a="E"><vh>problem with key</vh>
 <v t="markdblackwell.20110831121351.1616"><vh>error message</vh></v>
 <v t="markdblackwell.20110831121351.1612" a="E"><vh>source</vh>
 <v t="markdblackwell.20110831121351.1613" a="E"><vh>Main</vh>
@@ -26,7 +26,7 @@
 </v>
 </v>
 <v t="georgesawyer.20110831082815.1603" a="E"><vh>reading a YAML template</vh>
-<v t="georgesawyer.20110828205607.1541"><vh>second document not found</vh>
+<v t="georgesawyer.20110828205607.1541" a="E"><vh>second document not found</vh>
 <v t="georgesawyer.20110831082815.1604"><vh>error message</vh></v>
 <v t="georgesawyer.20110831082815.1605" a="E"><vh>source</vh>
 <v t="markdblackwell.20110831121351.1579" a="E"><vh>Main</vh>
@@ -58,7 +58,11 @@
 </v>
 </v>
 <v t="georgesawyer.20110802081402.2005" a="E"><vh>TODO</vh>
-<v t="markdblackwell.20110831121351.1617"><vh>better error messages</vh>
+<v t="markdblackwell.20110831121351.1617" a="E"><vh>better error messages</vh>
+<v t="markdblackwell.20110831121351.1942" a="E"><vh>missing LF after ...</vh>
+<v t="markdblackwell.20110831121351.1941"><vh>error message</vh></v>
+</v>
+<v t="markdblackwell.20110831121351.1939"><vh>when one of my three values is missing </vh></v>
 <v t="markdblackwell.20110831121351.1619"><vh>reading a YAML music file</vh></v>
 <v t="markdblackwell.20110831121351.1618"><vh>reading a YAML template</vh></v>
 </v>
@@ -109,7 +113,7 @@
 <v t="georgesawyer.20110819095338.1610"><vh>&lt;&lt; usage &gt;&gt;</vh></v>
 </v>
 <v t="georgesawyer.20110825192845.1464"><vh>fragment</vh>
-<v t="markdblackwell.20110831121351.1570" a="E"><vh>private</vh>
+<v t="markdblackwell.20110831121351.1570"><vh>private</vh>
 <v t="markdblackwell.20110831121351.1574" a="E"><vh>private class</vh>
 <v t="markdblackwell.20110831105007.1548"></v>
 </v>
@@ -133,7 +137,7 @@
 <v t="markdblackwell.20110823170927.1258" a="E"><vh>LilyPond</vh>
 <v t="markdblackwell.20110823170927.1259"><vh>&lt;&lt; constant &gt;&gt;</vh></v>
 <v t="markdblackwell.20110823170927.1260" a="E"><vh>method</vh>
-<v t="markdblackwell.20110823170927.1261"><vh>public class</vh>
+<v t="markdblackwell.20110823170927.1261" a="E"><vh>public class</vh>
 <v t="markdblackwell.20110826175603.1481"><vh>output_extension</vh></v>
 <v t="markdblackwell.20110823170927.1262"><vh>rest</vh></v>
 <v t="markdblackwell.20110823170927.1263"><vh>write_input_for_lilypond</vh></v>
@@ -176,8 +180,8 @@
 <v t="markdblackwell.20110823170927.1367"></v>
 <v t="markdblackwell.20110823170927.1368"></v>
 <v t="markdblackwell.20110823170927.1369" a="E"><vh>method</vh>
-<v t="markdblackwell.20110823170927.1370"><vh>public class</vh>
-<v t="markdblackwell.20110823170927.1371"><vh>names</vh>
+<v t="markdblackwell.20110823170927.1370" a="E"><vh>public class</vh>
+<v t="markdblackwell.20110823170927.1371" a="E"><vh>names</vh>
 <v t="markdblackwell.20110827081420.1493"><vh>&lt;&lt; rdoc &gt;&gt;</vh></v>
 </v>
 </v>
@@ -208,10 +212,10 @@
 </v>
 </v>
 </v>
-<v t="markdblackwell.20110823170927.1348" a="E"><vh>VariableRequest</vh>
+<v t="markdblackwell.20110823170927.1348"><vh>VariableRequest</vh>
 <v t="markdblackwell.20110823170927.1349"><vh>&lt;&lt; class accessor &gt;&gt;</vh></v>
 <v t="markdblackwell.20110823170927.1350"><vh>&lt;&lt; script &gt;&gt;</vh></v>
-<v t="markdblackwell.20110823170927.1351" a="E"><vh>method</vh>
+<v t="markdblackwell.20110823170927.1351"><vh>method</vh>
 <v t="markdblackwell.20110823170927.1352"><vh>public class</vh>
 <v t="markdblackwell.20110823170927.1353"><vh>execute_method</vh></v>
 </v>
@@ -246,7 +250,7 @@
 <v t="markdblackwell.20110823170927.1327"></v>
 <v t="markdblackwell.20110823170927.1374"></v>
 <v t="markdblackwell.20110831105007.1548"></v>
-<v t="markdblackwell.20110823170927.1371"></v>
+<v t="markdblackwell.20110823170927.1371" a="E"></v>
 <v t="markdblackwell.20110826175603.1481"></v>
 <v t="markdblackwell.20110823170927.1304"></v>
 <v t="markdblackwell.20110823170927.1305"></v>
@@ -291,19 +295,18 @@
 expanded="markdblackwell.20110823170927.1383,"><vh>@shadow app.rb</vh></v>
 <v t="markdblackwell.20110823170927.1391" a="E"><vh>@shadow generate.rb</vh></v>
 <v t="markdblackwell.20110823170927.1239" a="E"
-expanded="markdblackwell.20110823170927.1258,markdblackwell.20110823170927.1260,"><vh>@shadow lily_pond.rb</vh></v>
+expanded="markdblackwell.20110823170927.1258,markdblackwell.20110823170927.1260,markdblackwell.20110823170927.1261,"><vh>@shadow lily_pond.rb</vh></v>
 <v t="markdblackwell.20110823170927.1241" a="E"
 expanded="markdblackwell.20110823170927.1274,markdblackwell.20110823170927.1277,markdblackwell.20110823170927.1278,markdblackwell.20110831121351.1574,"><vh>@shadow main.rb</vh></v>
 <v t="markdblackwell.20110823170927.1243" a="E"
 expanded="markdblackwell.20110823170927.1298,markdblackwell.20110823170927.1301,markdblackwell.20110823170927.1308,markdblackwell.20110823170927.1309,"><vh>@shadow measure.rb</vh></v>
 <v t="markdblackwell.20110823170927.1354" a="E"
-expanded="markdblackwell.20110823170927.1366,markdblackwell.20110823170927.1369,markdblackwell.20110823170927.1372,markdblackwell.20110823170927.1375,"><vh>@shadow movement.rb</vh></v>
+expanded="markdblackwell.20110823170927.1366,markdblackwell.20110823170927.1369,markdblackwell.20110823170927.1370,markdblackwell.20110823170927.1371,markdblackwell.20110823170927.1372,markdblackwell.20110823170927.1375,"><vh>@shadow movement.rb</vh></v>
 <v t="markdblackwell.20110823170927.1245" a="E"
 expanded="markdblackwell.20110823170927.1320,markdblackwell.20110823170927.1323,markdblackwell.20110823170927.1324,markdblackwell.20110831105007.1551,"><vh>@shadow template.rb</vh></v>
 <v t="markdblackwell.20110823170927.1247" a="E"
 expanded="markdblackwell.20110823170927.1335,markdblackwell.20110823170927.1339,markdblackwell.20110823170927.1340,"><vh>@shadow use_yaml.rb</vh></v>
-<v t="markdblackwell.20110823170927.1249" a="E"
-expanded="markdblackwell.20110823170927.1348,markdblackwell.20110823170927.1351,"><vh>@shadow variable_request.rb</vh></v>
+<v t="markdblackwell.20110823170927.1249" a="E"><vh>@shadow variable_request.rb</vh></v>
 </v>
 </v>
 </v>
@@ -417,7 +420,8 @@ from C:/Mark/develop/GitHub/MarkDBlackwell/yaml2lilypond/app/generate.rb:13:in `
   @others
 end</t>
 <t tx="markdblackwell.20110823170927.1259">INDENT = ' '*2
-LILYPOND_VERSION='2.14.1'</t>
+LILYPOND_VERSION='2.14.1'
+OUTPUT_EXTENSION='.gly'</t>
 <t tx="markdblackwell.20110823170927.1260"></t>
 <t tx="markdblackwell.20110823170927.1261"></t>
 <t tx="markdblackwell.20110823170927.1262">def self.rest; rest='r1*' end</t>
@@ -433,7 +437,7 @@ LILYPOND_VERSION='2.14.1'</t>
   a.push "#{INDENT}}"
   a.push "}"
   s=a.join "\n"
-  f=File.new filepath, 'w'
+  f=File.new filepath, 'wb' # Use Unix (LF) line endings.
   f.print s, "\n"
   f.close
 end</t>
@@ -533,7 +537,7 @@ INDENT = ' '*4</t>
   count,beat = @time_array
   @time = "#{count}/#{beat}"
   @default_music = "#{FILLER}1*#{@time}"
-  @content = ""#{BAR_SYMBOL} #{@default_music} #{BAR_SYMBOL}"
+  @content = "#{BAR_SYMBOL} #{@default_music} #{BAR_SYMBOL}"
 end</t>
 <t tx="markdblackwell.20110823170927.1311">def to_s
   time_line = @time_same ? nil : "\\time #{@time}"
@@ -579,6 +583,7 @@ end</t>
   result=Array.new
   push_document=Proc.new{|e| result.push e}
   f=File.new filepath, 'r'
+##print 'filepath=';p filepath
   YAML::load_documents f, &amp;push_document
   f.close
   raise "#{filepath} must have #{n} YAML document(s), #{result.length} found." unless n==result.length
@@ -674,11 +679,9 @@ end</t>
   @others
 end</t>
 <t tx="markdblackwell.20110823170927.1384">class &lt;&lt; self
-#  attr_reader :my_root
   attr_reader :initial_current_directory
 end</t>
-<t tx="markdblackwell.20110823170927.1386"># @my_root = Pathname(__FILE__).join('..').cleanpath.realpath.dirname
-@initial_current_directory = Pathname.pwd
+<t tx="markdblackwell.20110823170927.1386">@initial_current_directory = Pathname.pwd
 </t>
 <t tx="markdblackwell.20110823170927.1392">require 'yaml'
 require 'pathname'
@@ -694,14 +697,14 @@ require 'use_yaml'
 require 'variable_request'
 </t>
 <t tx="markdblackwell.20110823170927.1394">Main.run</t>
-<t tx="markdblackwell.20110826175603.1481">def self.output_extension; '.gly' end</t>
+<t tx="markdblackwell.20110826175603.1481">def self.output_extension; OUTPUT_EXTENSION end</t>
 <t tx="markdblackwell.20110827081420.1493"># Example: ['hostias']</t>
 <t tx="markdblackwell.20110827081420.1506"># Example: soprano/note.yml</t>
 <t tx="markdblackwell.20110831105007.1547"></t>
 <t tx="markdblackwell.20110831105007.1548">def self.make_copyable_version movement
   s = movement.template.measures.map{|e| "#{e.key}:\n- #{e.default_music}\n"}.to_s
   filepath = movement.directory.join TEMPLATE_FILENAME_COPYABLE
-  f = File.open filepath, 'wb' # For Git, use LF line endings.
+  f = File.open filepath, 'wb' # For Git, use Unix (LF) line endings.
   f.print s
   f.close
 end
@@ -736,5 +739,18 @@ from C:/Documents and Settings/Mark/My Documents/develop/GitHub/MarkDBlckwell/ya
 <t tx="markdblackwell.20110831121351.1617"></t>
 <t tx="markdblackwell.20110831121351.1618"></t>
 <t tx="markdblackwell.20110831121351.1619"></t>
+<t tx="markdblackwell.20110831121351.1939"></t>
+<t tx="markdblackwell.20110831121351.1941">ruby/1.8/yaml.rb:217:in `load_documents': syntax error on line 20, col 3: ♥' (ArgumentError)
+from C:/progra/ruby/1.8.7-p352/lib/ruby/1.8/yaml.rb:217:in `each_document'
+from C:/progra/ruby/1.8.7-p352/lib/ruby/1.8/yaml.rb:232:in `load_documents'
+from C:/Documents and Settings/Mark/My Documents/develop/GitHub/MarkDBlackwell/yaml2lilypond/app/use_yaml.rb:11:in `get_yaml_documents'
+from C:/Documents and Settings/Mark/My Documents/develop/GitHub/MarkDBlackwell/yaml2lilypond/app/main.rb:13:in `get_sole_yaml_document'
+from C:/Documents and Settings/Mark/My Documents/develop/GitHub/MarkDBlackwell/yaml2lilypond/app/main.rb:26:in `run'
+from C:/Documents and Settings/Mark/My Documents/develop/GitHub/MarkDBlackwell/yaml2lilypond/app/main.rb:22:in `each'
+from C:/Documents and Settings/Mark/My Documents/develop/GitHub/MarkDBlackwell/yaml2lilypond/app/main.rb:22:in `run'
+from C:/Documents and Settings/Mark/My Documents/develop/GitHub/MarkDBlackwell/yaml2lilypond/app/main.rb:18:in `each'
+from C:/Documents and Settings/Mark/My Documents/develop/GitHub/MarkDBlackwell/yaml2lilypond/app/main.rb:18:in `run'
+from C:/Documents and Settings/Mark/My Documents/develop/GitHub/MarkDBlackwell/yaml2lilypond/app/generate.rb:13</t>
+<t tx="markdblackwell.20110831121351.1942">Turned out to be missing LF after YAML's end of stream signal, '...'. What can I do about that? Not use it, myself, or warn people.</t>
 </tnodes>
 </leo_file>

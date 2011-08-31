@@ -7,6 +7,7 @@ class LilyPond #:nodoc: all
   #@+node:markdblackwell.20110823170927.1259:<< constant >>
   INDENT = ' '*2
   LILYPOND_VERSION='2.14.1'
+  OUTPUT_EXTENSION='.gly'
   #@nonl
   #@-node:markdblackwell.20110823170927.1259:<< constant >>
   #@nl
@@ -14,7 +15,7 @@ class LilyPond #:nodoc: all
   #@+node:markdblackwell.20110823170927.1260:method
   #@+node:markdblackwell.20110823170927.1261:public class
   #@+node:markdblackwell.20110826175603.1481:output_extension
-  def self.output_extension; '.gly' end
+  def self.output_extension; OUTPUT_EXTENSION end
   #@nonl
   #@-node:markdblackwell.20110826175603.1481:output_extension
   #@+node:markdblackwell.20110823170927.1262:rest
@@ -34,7 +35,7 @@ class LilyPond #:nodoc: all
     a.push "#{INDENT}}"
     a.push "}"
     s=a.join "\n"
-    f=File.new filepath, 'w'
+    f=File.new filepath, 'wb' # Use Unix (LF) line endings.
     f.print s, "\n"
     f.close
   end
