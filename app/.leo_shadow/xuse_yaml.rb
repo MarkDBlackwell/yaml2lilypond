@@ -22,13 +22,13 @@ class UseYaml #:nodoc: all
   #@+node:markdblackwell.20110823170927.1340:public class
   #@+node:markdblackwell.20110823170927.1341:get_yaml_documents
   def self.get_yaml_documents filepath, required_number_of_yaml_documents
-    r = required_number_of_yaml_documents
+    n=required_number_of_yaml_documents
     result=Array.new
     push_document=Proc.new{|e| result.push e}
     f=File.new filepath, 'r'
     YAML::load_documents f, &push_document
     f.close
-    raise "#{filepath} must have #{r} YAML document(s), #{result.length} found." unless r==result.length
+    raise "#{filepath} must have #{n} YAML document(s), #{result.length} found." unless n==result.length
     result
   end
   #@nonl

@@ -26,7 +26,6 @@ class Main #:nodoc: all
         lilypond_variable_request=get_sole_yaml_document filepath
         extract_three_keys lilypond_variable_request
         instrument=movement.template.clone
-  #      run_requests instrument, lilypond_variable_request
         run_requests instrument, lilypond_variable_request, filepath
         x=filepath.extname
         no_x=filepath.to_s.chomp x
@@ -53,7 +52,6 @@ class Main #:nodoc: all
       begin
         m=(measure=instrument.hash.fetch measure_key)
       rescue IndexError # Ruby 1.9.2 subclasses this to KeyError.
-  #      raise "problem with key #{measure_key}; instrument is #{instrument}"
         raise " In #{filepath}, problem with key #{measure_key}"
       end
       method_name='content' # Is default.

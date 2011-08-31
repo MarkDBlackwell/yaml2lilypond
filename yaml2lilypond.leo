@@ -13,26 +13,19 @@
 <v t="georgesawyer.20110802081402.1951" a="E"><vh>yaml2lilypond project</vh>
 <v t="georgesawyer.20110825192845.1922"><vh>&lt;&lt; readme &gt;&gt;</vh></v>
 <v t="georgesawyer.20110825192845.1468" a="E"><vh>DONE</vh>
-<v t="markdblackwell.20110831121351.1583"><vh>better error messages</vh>
-<v t="markdblackwell.20110831121351.1610"><vh>reading a YAML music file</vh>
-<v t="markdblackwell.20110831121351.1611" a="E"><vh>problem with key</vh>
+<v t="markdblackwell.20110831121351.1583" a="E"><vh>better error messages</vh>
+<v t="markdblackwell.20110831121351.1610" a="E"><vh>reading a YAML music file</vh>
+<v t="markdblackwell.20110831121351.1611"><vh>problem with key</vh>
 <v t="markdblackwell.20110831121351.1616"><vh>error message</vh></v>
 <v t="markdblackwell.20110831121351.1612" a="E"><vh>source</vh>
-<v t="markdblackwell.20110831121351.1615" a="E"><vh>Movement</vh>
-<v t="markdblackwell.20110823170927.1373"><vh>initialize</vh></v>
-</v>
-<v t="markdblackwell.20110831121351.1614" a="E"><vh>Template</vh>
-<v t="markdblackwell.20110823170927.1322"><vh>&lt;&lt; accessor &gt;&gt;</vh></v>
-<v t="markdblackwell.20110823170927.1326"><vh>initialize</vh></v>
-</v>
 <v t="markdblackwell.20110831121351.1613" a="E"><vh>Main</vh>
-<v t="markdblackwell.20110823170927.1281"><vh>run</vh></v>
 <v t="markdblackwell.20110823170927.1283"><vh>run_requests</vh></v>
+<v t="markdblackwell.20110823170927.1281"><vh>run</vh></v>
 </v>
 </v>
 </v>
 </v>
-<v t="georgesawyer.20110831082815.1603"><vh>reading a YAML template</vh>
+<v t="georgesawyer.20110831082815.1603" a="E"><vh>reading a YAML template</vh>
 <v t="georgesawyer.20110828205607.1541"><vh>second document not found</vh>
 <v t="georgesawyer.20110831082815.1604"><vh>error message</vh></v>
 <v t="georgesawyer.20110831082815.1605" a="E"><vh>source</vh>
@@ -41,7 +34,7 @@
 <v t="markdblackwell.20110823170927.1281"></v>
 </v>
 <v t="markdblackwell.20110831121351.1580" a="E"><vh>Movement</vh>
-<v t="markdblackwell.20110823170927.1373"></v>
+<v t="markdblackwell.20110823170927.1373"><vh>initialize</vh></v>
 </v>
 <v t="markdblackwell.20110831121351.1581" a="E"><vh>Template</vh>
 <v t="markdblackwell.20110823170927.1325"><vh>create_measures</vh></v>
@@ -133,7 +126,7 @@
 <v t="georgesawyer.20110825192845.1462"><vh>accessor</vh>
 <v t="markdblackwell.20110823170927.1300"></v>
 <v t="markdblackwell.20110823170927.1368"></v>
-<v t="markdblackwell.20110823170927.1322"></v>
+<v t="markdblackwell.20110823170927.1322"><vh>&lt;&lt; accessor &gt;&gt;</vh></v>
 </v>
 <v t="georgesawyer.20110825192845.1465" a="E"><vh>class</vh>
 <v t="markdblackwell.20110823170927.1383" a="E"></v>
@@ -200,7 +193,7 @@
 <v t="markdblackwell.20110823170927.1322"></v>
 <v t="markdblackwell.20110823170927.1323" a="E"><vh>method</vh>
 <v t="markdblackwell.20110823170927.1324" a="E"><vh>public</vh>
-<v t="markdblackwell.20110823170927.1326"></v>
+<v t="markdblackwell.20110823170927.1326"><vh>initialize</vh></v>
 <v t="markdblackwell.20110823170927.1327"><vh>initialize_copy</vh></v>
 </v>
 <v t="markdblackwell.20110831105007.1551" a="E"></v>
@@ -477,7 +470,6 @@ end</t>
       lilypond_variable_request=get_sole_yaml_document filepath
       extract_three_keys lilypond_variable_request
       instrument=movement.template.clone
-#      run_requests instrument, lilypond_variable_request
       run_requests instrument, lilypond_variable_request, filepath
       x=filepath.extname
       no_x=filepath.to_s.chomp x
@@ -504,7 +496,6 @@ end</t>
     begin
       m=(measure=instrument.hash.fetch measure_key)
     rescue IndexError # Ruby 1.9.2 subclasses this to KeyError.
-#      raise "problem with key #{measure_key}; instrument is #{instrument}"
       raise " In #{filepath}, problem with key #{measure_key}"
     end
     method_name='content' # Is default.
@@ -584,13 +575,13 @@ end</t>
 <t tx="markdblackwell.20110823170927.1339"></t>
 <t tx="markdblackwell.20110823170927.1340"></t>
 <t tx="markdblackwell.20110823170927.1341">def self.get_yaml_documents filepath, required_number_of_yaml_documents
-  r = required_number_of_yaml_documents
+  n=required_number_of_yaml_documents
   result=Array.new
   push_document=Proc.new{|e| result.push e}
   f=File.new filepath, 'r'
   YAML::load_documents f, &amp;push_document
   f.close
-  raise "#{filepath} must have #{r} YAML document(s), #{result.length} found." unless r==result.length
+  raise "#{filepath} must have #{n} YAML document(s), #{result.length} found." unless n==result.length
   result
 end</t>
 <t tx="markdblackwell.20110823170927.1348">class VariableRequest #:nodoc: all
@@ -733,8 +724,6 @@ end
 <t tx="markdblackwell.20110831121351.1611"></t>
 <t tx="markdblackwell.20110831121351.1612">@language ruby</t>
 <t tx="markdblackwell.20110831121351.1613"></t>
-<t tx="markdblackwell.20110831121351.1614"></t>
-<t tx="markdblackwell.20110831121351.1615"></t>
 <t tx="markdblackwell.20110831121351.1616">app/main.rb:55:in `run_requests': problem with key HosannaSixteenthHoldq; instrument is #&lt;Template:0x284fad8&gt; (RuntimeError)
 from C:/Documents and Settings/Mark/My Documents/develop/GitHub/MarkDBlckwell/yaml2lilypond/app/main.rb:50:in `each'
 from C:/Documents and Settings/Mark/My Documents/develop/GitHub/MarkDBlckwell/yaml2lilypond/app/main.rb:50:in `run_requests'
