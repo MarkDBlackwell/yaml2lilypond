@@ -1,4 +1,5 @@
 class Main #:nodoc: all
+  TEMPLATE_FILENAME_COPYABLE = Pathname 'sample-yaml.txt'
   class << self
     attr_reader :three_keys
   end
@@ -9,16 +10,14 @@ class Main #:nodoc: all
         (lilypond_variable_request.delete 'prefix') ]
   end
   def self.get_sole_yaml_document filepath
-    y=UseYaml.get_yaml_documents filepath
-    raise unless 1==y.length # Must be exactly one YAML document.
+    y=UseYaml.get_yaml_documents filepath, 1 # Must be exactly one YAML document.
     y.first
   end
   def self.run
-    caller = caller(0)
-  ##print 'caller=';p caller
   ##print 'Movement.names=';p Movement.names
     Movement.names.each do |movement_name|
       movement = Movement.new movement_name
+      make_copyable_version movement
   ##print 'movement.filepaths.inspect=';p movement.filepaths.inspect
       movement.filepaths.each do |filepath|
   ##print 'filepath.to_s=';p filepath.to_s
@@ -62,5 +61,13 @@ class Main #:nodoc: all
         VariableRequest.execute_method method_name, measure, data
       end
     end
+  end
+  private
+  def self.make_copyable_version movement
+    s = movement.template.measures.map{|e| "#{e.key}:\n- #{e.default_music}\n"}.to_s
+    filepath = movement.directory.join TEMPLATE_FILENAME_COPYABLE
+    f = File.open filepath, 'wb' # For Git, use LF line endings.
+    f.print s
+    f.close
   end
 end

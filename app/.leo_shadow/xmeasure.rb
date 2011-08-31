@@ -13,7 +13,7 @@ class Measure #:nodoc: all
   #@nl
   #@  << accessor >>
   #@+node:markdblackwell.20110823170927.1300:<< accessor >>
-  attr_reader :content, :time, :time_array
+  attr_reader :content, :default_music, :key, :time, :time_array
   #@nonl
   #@-node:markdblackwell.20110823170927.1300:<< accessor >>
   #@nl
@@ -57,8 +57,8 @@ class Measure #:nodoc: all
     @time_array=[t].flatten; t = 2==t.length ? t : (t.push 4)
     count,beat = @time_array
     @time = "#{count}/#{beat}"
-    default_music = "#{BAR_SYMBOL} #{FILLER}1*#{@time} #{BAR_SYMBOL}"
-    @content = default_music
+    @default_music = "#{FILLER}1*#{@time}"
+    @content = ""#{BAR_SYMBOL} #{@default_music} #{BAR_SYMBOL}"
   end
   #@nonl
   #@-node:markdblackwell.20110823170927.1310:initialize

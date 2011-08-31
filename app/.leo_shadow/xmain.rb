@@ -3,6 +3,12 @@
 #@+others
 #@+node:markdblackwell.20110823170927.1274:Main
 class Main #:nodoc: all
+  #@  << constant >>
+  #@+node:markdblackwell.20110831121351.1575:<< constant>>
+  TEMPLATE_FILENAME_COPYABLE = Pathname 'sample-yaml.txt'
+  #@nonl
+  #@-node:markdblackwell.20110831121351.1575:<< constant>>
+  #@nl
   #@  << class accessor >>
   #@+node:markdblackwell.20110823170927.1275:<< class accessor >>
   class << self
@@ -25,19 +31,17 @@ class Main #:nodoc: all
   #@-node:markdblackwell.20110823170927.1279:extract_three_keys
   #@+node:markdblackwell.20110823170927.1280:get_sole_yaml_document
   def self.get_sole_yaml_document filepath
-    y=UseYaml.get_yaml_documents filepath
-    raise unless 1==y.length # Must be exactly one YAML document.
+    y=UseYaml.get_yaml_documents filepath, 1 # Must be exactly one YAML document.
     y.first
   end
   #@nonl
   #@-node:markdblackwell.20110823170927.1280:get_sole_yaml_document
   #@+node:markdblackwell.20110823170927.1281:run
   def self.run
-    caller = caller(0)
-  ##print 'caller=';p caller
   ##print 'Movement.names=';p Movement.names
     Movement.names.each do |movement_name|
       movement = Movement.new movement_name
+      make_copyable_version movement
   ##print 'movement.filepaths.inspect=';p movement.filepaths.inspect
       movement.filepaths.each do |filepath|
   ##print 'filepath.to_s=';p filepath.to_s
@@ -91,6 +95,18 @@ class Main #:nodoc: all
   #@nonl
   #@-node:markdblackwell.20110823170927.1283:run_requests
   #@-node:markdblackwell.20110823170927.1278:public class
+  #@+node:markdblackwell.20110831121351.1574:private class
+  private
+  #@+node:markdblackwell.20110831105007.1548:make_copyable_version
+  def self.make_copyable_version movement
+    s = movement.template.measures.map{|e| "#{e.key}:\n- #{e.default_music}\n"}.to_s
+    filepath = movement.directory.join TEMPLATE_FILENAME_COPYABLE
+    f = File.open filepath, 'wb' # For Git, use LF line endings.
+    f.print s
+    f.close
+  end
+  #@-node:markdblackwell.20110831105007.1548:make_copyable_version
+  #@-node:markdblackwell.20110831121351.1574:private class
   #@-node:markdblackwell.20110823170927.1277:method
   #@-others
 end

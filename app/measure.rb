@@ -2,7 +2,7 @@ class Measure #:nodoc: all
   BAR_SYMBOL = '|'
   FILLER = 's'
   INDENT = ' '*4
-  attr_reader :content, :time, :time_array
+  attr_reader :content, :default_music, :key, :time, :time_array
   def content_no_barlines= s; @content = s end
   def content= s; @content = "#{BAR_SYMBOL} #{s} #{BAR_SYMBOL}" end
   def prefix s; @content = "#{s}\n" + @content end
@@ -15,8 +15,8 @@ class Measure #:nodoc: all
     @time_array=[t].flatten; t = 2==t.length ? t : (t.push 4)
     count,beat = @time_array
     @time = "#{count}/#{beat}"
-    default_music = "#{BAR_SYMBOL} #{FILLER}1*#{@time} #{BAR_SYMBOL}"
-    @content = default_music
+    @default_music = "#{FILLER}1*#{@time}"
+    @content = ""#{BAR_SYMBOL} #{@default_music} #{BAR_SYMBOL}"
   end
   def to_s
     time_line = @time_same ? nil : "\\time #{@time}"

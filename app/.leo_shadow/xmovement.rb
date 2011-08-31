@@ -6,6 +6,7 @@ class Movement #:nodoc: all
   #@  << constant >>
   #@+node:markdblackwell.20110823170927.1367:<< constant >>
   MOVEMENTS_DIRECTORY=App.initial_current_directory
+  TEMPLATE_FILENAME = Pathname 'template.yml'
   #@nonl
   #@-node:markdblackwell.20110823170927.1367:<< constant >>
   #@nl
@@ -40,7 +41,7 @@ class Movement #:nodoc: all
   def initialize s
   ##print 's=';p s
     @directory=MOVEMENTS_DIRECTORY.join s
-    a = UseYaml.get_yaml_documents @directory.join 'template.yml'
+    a = UseYaml.get_yaml_documents @directory.join(TEMPLATE_FILENAME), 2 # Must be exactly two YAML documents.
   ##print 'a.inspect=';p a.inspect
     a=a.map{|e| e.nil? ? [] : e}
     @measure_keys, time_data = a
@@ -53,9 +54,10 @@ class Movement #:nodoc: all
   #@-node:markdblackwell.20110823170927.1373:initialize
   #@+node:markdblackwell.20110823170927.1374:is_template
   def is_template filepath
-    f=filepath
-    x=f.extname
-    'template'==(f.basename.to_s.chomp x)
+  #  f=filepath
+  #  x=f.extname
+  #  'template'==(f.basename.to_s.chomp x)
+    TEMPLATE_FILENAME==filepath.basename
   end
   #@nonl
   #@-node:markdblackwell.20110823170927.1374:is_template

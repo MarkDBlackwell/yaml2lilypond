@@ -5,7 +5,7 @@
 require 'yaml'
 require 'pathname'
 s=Pathname(__FILE__).join('..').cleanpath.realpath
-$LOAD_PATH.unshift s
+$LOAD_PATH.unshift s # Isn't this already included, like '.'?
 require 'app'
 require 'lily_pond'
 require 'main'

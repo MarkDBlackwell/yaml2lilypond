@@ -1,6 +1,6 @@
 #yaml2lilypond
 
-Program works, but the documentation is NOT READY YET.
+Program works, but the documentation (and tests: it was written as a spike solution) are NOT READY YET.
 
 A program to convert music specifications, from YAML format, into LilyPond (input) format.
 
@@ -30,3 +30,5 @@ Within each CHILD, there must be a file, 'template.yml' containing, for all the 
 * unique string identifiers
 
 Any other *.yml files are converted to LilyPond input format. The output filenames will have the same full pathnames but with the extension, '.gly' (for 'generated Lilypond').
+
+The program will generate a sample YAML file ('sample-yaml.txt') for you to copy measures from.
