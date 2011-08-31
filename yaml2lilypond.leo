@@ -25,7 +25,18 @@
 </v>
 </v>
 <v t="georgesawyer.20110802081402.2005" a="E"><vh>TODO</vh>
-<v t="georgesawyer.20110828205607.1541"><vh>better error message when template.yml has error.</vh></v>
+<v t="georgesawyer.20110831082815.1543" a="E"><vh>better error messages</vh>
+<v t="georgesawyer.20110831082815.1603" a="E"><vh>template.yml error</vh>
+<v t="georgesawyer.20110828205607.1541" a="E"><vh>second document not found</vh>
+<v t="georgesawyer.20110831082815.1604"><vh>error message</vh></v>
+<v t="georgesawyer.20110831082815.1605" a="E"><vh>source</vh>
+<v t="markdblackwell.20110823170927.1281"><vh>run</vh></v>
+<v t="markdblackwell.20110823170927.1373"><vh>initialize</vh></v>
+<v t="markdblackwell.20110823170927.1325"><vh>create_measures</vh></v>
+</v>
+</v>
+</v>
+</v>
 <v t="georgesawyer.20110827101921.1493"><vh>actualize tests</vh>
 <v t="georgesawyer.20110827152321.1533" a="E"><vh>@path test/unit</vh>
 <v t="georgesawyer.20110827152321.1531" a="E"><vh>@path app</vh>
@@ -76,11 +87,11 @@
 </v>
 <v t="markdblackwell.20110823170927.1274"><vh>Main</vh>
 <v t="markdblackwell.20110823170927.1275"><vh>&lt;&lt; class accessor &gt;&gt;</vh></v>
-<v t="markdblackwell.20110823170927.1277"><vh>method</vh>
-<v t="markdblackwell.20110823170927.1278"><vh>public class</vh>
+<v t="markdblackwell.20110823170927.1277" a="E"><vh>method</vh>
+<v t="markdblackwell.20110823170927.1278" a="E"><vh>public class</vh>
 <v t="markdblackwell.20110823170927.1279"><vh>extract_three_keys</vh></v>
 <v t="markdblackwell.20110823170927.1280"><vh>get_sole_yaml_document</vh></v>
-<v t="markdblackwell.20110823170927.1281"><vh>run</vh></v>
+<v t="markdblackwell.20110823170927.1281"></v>
 <v t="markdblackwell.20110823170927.1282"><vh>run_lilypond</vh></v>
 <v t="markdblackwell.20110823170927.1283"><vh>run_requests</vh></v>
 </v>
@@ -107,14 +118,14 @@
 <v t="markdblackwell.20110823170927.1366"><vh>Movement</vh>
 <v t="markdblackwell.20110823170927.1367"></v>
 <v t="markdblackwell.20110823170927.1368"></v>
-<v t="markdblackwell.20110823170927.1369"><vh>method</vh>
+<v t="markdblackwell.20110823170927.1369" a="E"><vh>method</vh>
 <v t="markdblackwell.20110823170927.1370"><vh>public class</vh>
 <v t="markdblackwell.20110823170927.1371"><vh>names</vh>
 <v t="markdblackwell.20110827081420.1493"><vh>&lt;&lt; rdoc &gt;&gt;</vh></v>
 </v>
 </v>
-<v t="markdblackwell.20110823170927.1372"><vh>public</vh>
-<v t="markdblackwell.20110823170927.1373"><vh>initialize</vh></v>
+<v t="markdblackwell.20110823170927.1372" a="E"><vh>public</vh>
+<v t="markdblackwell.20110823170927.1373"></v>
 <v t="markdblackwell.20110823170927.1374"><vh>is_template</vh></v>
 </v>
 <v t="markdblackwell.20110823170927.1375"><vh>private</vh>
@@ -124,13 +135,13 @@
 </v>
 </v>
 </v>
-<v t="markdblackwell.20110823170927.1320" a="E"><vh>Template</vh>
+<v t="markdblackwell.20110823170927.1320"><vh>Template</vh>
 <v t="markdblackwell.20110823170927.1321"><vh>&lt;&lt; constant &gt;&gt;</vh></v>
 <v t="markdblackwell.20110823170927.1322"></v>
 <v t="markdblackwell.20110823170927.1323" a="E"><vh>method</vh>
 <v t="markdblackwell.20110823170927.1324" a="E"><vh>public</vh>
 <v t="georgesawyer.20110827101921.1628"><vh>flatten</vh></v>
-<v t="markdblackwell.20110823170927.1325"><vh>create_measures</vh></v>
+<v t="markdblackwell.20110823170927.1325"></v>
 <v t="markdblackwell.20110823170927.1326"><vh>initialize</vh></v>
 <v t="markdblackwell.20110823170927.1327"><vh>initialize_copy</vh></v>
 </v>
@@ -223,13 +234,15 @@
 </v>
 <v t="markdblackwell.20110823170927.1229" a="E"><vh>@path app</vh>
 <v t="markdblackwell.20110823170927.1382"><vh>@shadow app.rb</vh></v>
-<v t="markdblackwell.20110823170927.1391"><vh>@shadow generate.rb</vh></v>
+<v t="markdblackwell.20110823170927.1391" a="E"><vh>@shadow generate.rb</vh></v>
 <v t="markdblackwell.20110823170927.1239"><vh>@shadow lily_pond.rb</vh></v>
-<v t="markdblackwell.20110823170927.1241"><vh>@shadow main.rb</vh></v>
+<v t="markdblackwell.20110823170927.1241"
+expanded="markdblackwell.20110823170927.1277,markdblackwell.20110823170927.1278,"><vh>@shadow main.rb</vh></v>
 <v t="markdblackwell.20110823170927.1243"><vh>@shadow measure.rb</vh></v>
-<v t="markdblackwell.20110823170927.1354"><vh>@shadow movement.rb</vh></v>
-<v t="markdblackwell.20110823170927.1245" a="E"
-expanded="markdblackwell.20110823170927.1320,markdblackwell.20110823170927.1323,markdblackwell.20110823170927.1324,"><vh>@shadow template.rb</vh></v>
+<v t="markdblackwell.20110823170927.1354"
+expanded="markdblackwell.20110823170927.1369,markdblackwell.20110823170927.1372,"><vh>@shadow movement.rb</vh></v>
+<v t="markdblackwell.20110823170927.1245"
+expanded="markdblackwell.20110823170927.1323,markdblackwell.20110823170927.1324,"><vh>@shadow template.rb</vh></v>
 <v t="markdblackwell.20110823170927.1247"><vh>@shadow use_yaml.rb</vh></v>
 <v t="markdblackwell.20110823170927.1249"><vh>@shadow variable_request.rb</vh></v>
 </v>
@@ -237,7 +250,8 @@ expanded="markdblackwell.20110823170927.1320,markdblackwell.20110823170927.1323,
 </v>
 </vnodes>
 <tnodes>
-<t tx="georgesawyer.20110802081402.1951">Convert YAML to LilyPond input format</t>
+<t tx="georgesawyer.20110802081402.1951">@language plain
+Convert YAML to LilyPond input format</t>
 <t tx="georgesawyer.20110802081402.1953">@path .</t>
 <t tx="georgesawyer.20110802081402.2005"></t>
 <t tx="georgesawyer.20110802081402.2006"># Look at this for finding YAML files:
@@ -320,8 +334,12 @@ end</t>
 <t tx="georgesawyer.20110827152321.1531"></t>
 <t tx="georgesawyer.20110827152321.1532"></t>
 <t tx="georgesawyer.20110827152321.1533"></t>
-<t tx="georgesawyer.20110828205607.1541">I accidently put a hyphen before ---, so it was - ---, so the second document was not found. Got:
-app/template.rb:10:in `create_measures': undefined method `collect' for nil:NilClass (NoMethodError)
+<t tx="georgesawyer.20110828205607.1541">Before, '---', I accidently put a hyphen, making, '- ---'. Therefore the second document was not found.
+
+But, the error message was terrible. It should identify the YAML file (and it easily can).</t>
+<t tx="georgesawyer.20110831082815.1543"></t>
+<t tx="georgesawyer.20110831082815.1603"></t>
+<t tx="georgesawyer.20110831082815.1604">app/template.rb:10:in `create_measures': undefined method `collect' for nil:NilClass (NoMethodError)
 from C:/Mark/develop/GitHub/MarkDBlackwell/yaml2lilypond/app/template.rb:16:in `initialize'
 from C:/Mark/develop/GitHub/MarkDBlackwell/yaml2lilypond/app/movement.rb:21:in `new'
 from C:/Mark/develop/GitHub/MarkDBlackwell/yaml2lilypond/app/movement.rb:21:in `initialize'
@@ -329,7 +347,9 @@ from C:/Mark/develop/GitHub/MarkDBlackwell/yaml2lilypond/app/main.rb:21:in `new'
 from C:/Mark/develop/GitHub/MarkDBlackwell/yaml2lilypond/app/main.rb:21:in `block in run'
 from C:/Mark/develop/GitHub/MarkDBlackwell/yaml2lilypond/app/main.rb:20:in `each'
 from C:/Mark/develop/GitHub/MarkDBlackwell/yaml2lilypond/app/main.rb:20:in `run'
-from C:/Mark/develop/GitHub/MarkDBlackwell/yaml2lilypond/app/generate.rb:13:in `&lt;main&gt;'</t>
+from C:/Mark/develop/GitHub/MarkDBlackwell/yaml2lilypond/app/generate.rb:13:in `&lt;main&gt;'
+</t>
+<t tx="georgesawyer.20110831082815.1605">@language ruby</t>
 <t tx="markdblackwell.20110823170927.1229">@language ruby</t>
 <t tx="markdblackwell.20110823170927.1230">@language plain</t>
 <t tx="markdblackwell.20110823170927.1258">class LilyPond #:nodoc: all
