@@ -10,7 +10,7 @@ class UseYaml #:nodoc: all
     f=File.new filepath, 'r'
     YAML::load_documents f, &push_document
     f.close
-    raise "#{filepath} must have #{r} YAML documents, #{result.length} found." unless r==result.length
+    raise "#{filepath} must have #{r} YAML document(s), #{result.length} found." unless r==result.length
     result
   end
 end

@@ -50,7 +50,8 @@ class Main #:nodoc: all
         lilypond_variable_request=get_sole_yaml_document filepath
         extract_three_keys lilypond_variable_request
         instrument=movement.template.clone
-        run_requests instrument, lilypond_variable_request
+  #      run_requests instrument, lilypond_variable_request
+        run_requests instrument, lilypond_variable_request, filepath
         x=filepath.extname
         no_x=filepath.to_s.chomp x
         output_filepath=no_x.concat LilyPond.output_extension
@@ -75,14 +76,15 @@ class Main #:nodoc: all
   #@nonl
   #@-node:markdblackwell.20110823170927.1282:run_lilypond
   #@+node:markdblackwell.20110823170927.1283:run_requests
-  def self.run_requests instrument, lilypond_variable_request
+  def self.run_requests instrument, lilypond_variable_request, filepath
   ##print 'instrument=';p instrument
     lilypond_variable_request.each do |measure_key,measure_request_vector|
   ##print 'instrument.hash=';p instrument.hash
       begin
         m=(measure=instrument.hash.fetch measure_key)
       rescue IndexError # Ruby 1.9.2 subclasses this to KeyError.
-        raise "problem with key #{measure_key}; instrument is #{instrument}"
+  #      raise "problem with key #{measure_key}; instrument is #{instrument}"
+        raise " In #{filepath}, problem with key #{measure_key}"
       end
       method_name='content' # Is default.
       until measure_request_vector.empty?

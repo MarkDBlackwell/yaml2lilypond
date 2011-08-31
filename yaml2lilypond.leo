@@ -12,18 +12,36 @@
 <vnodes>
 <v t="georgesawyer.20110802081402.1951" a="E"><vh>yaml2lilypond project</vh>
 <v t="georgesawyer.20110825192845.1922"><vh>&lt;&lt; readme &gt;&gt;</vh></v>
-<v t="georgesawyer.20110825192845.1468"><vh>DONE</vh>
+<v t="georgesawyer.20110825192845.1468" a="E"><vh>DONE</vh>
 <v t="markdblackwell.20110831121351.1583"><vh>better error messages</vh>
-<v t="georgesawyer.20110831082815.1603" a="E"><vh>reading YAML template</vh>
-<v t="georgesawyer.20110828205607.1541" a="E"><vh>second document not found</vh>
+<v t="markdblackwell.20110831121351.1610"><vh>reading a YAML music file</vh>
+<v t="markdblackwell.20110831121351.1611" a="E"><vh>problem with key</vh>
+<v t="markdblackwell.20110831121351.1616"><vh>error message</vh></v>
+<v t="markdblackwell.20110831121351.1612" a="E"><vh>source</vh>
+<v t="markdblackwell.20110831121351.1615" a="E"><vh>Movement</vh>
+<v t="markdblackwell.20110823170927.1373"><vh>initialize</vh></v>
+</v>
+<v t="markdblackwell.20110831121351.1614" a="E"><vh>Template</vh>
+<v t="markdblackwell.20110823170927.1322"><vh>&lt;&lt; accessor &gt;&gt;</vh></v>
+<v t="markdblackwell.20110823170927.1326"><vh>initialize</vh></v>
+</v>
+<v t="markdblackwell.20110831121351.1613" a="E"><vh>Main</vh>
+<v t="markdblackwell.20110823170927.1281"><vh>run</vh></v>
+<v t="markdblackwell.20110823170927.1283"><vh>run_requests</vh></v>
+</v>
+</v>
+</v>
+</v>
+<v t="georgesawyer.20110831082815.1603"><vh>reading a YAML template</vh>
+<v t="georgesawyer.20110828205607.1541"><vh>second document not found</vh>
 <v t="georgesawyer.20110831082815.1604"><vh>error message</vh></v>
 <v t="georgesawyer.20110831082815.1605" a="E"><vh>source</vh>
 <v t="markdblackwell.20110831121351.1579" a="E"><vh>Main</vh>
 <v t="markdblackwell.20110823170927.1280"><vh>get_sole_yaml_document</vh></v>
-<v t="markdblackwell.20110823170927.1281"><vh>run</vh></v>
+<v t="markdblackwell.20110823170927.1281"></v>
 </v>
 <v t="markdblackwell.20110831121351.1580" a="E"><vh>Movement</vh>
-<v t="markdblackwell.20110823170927.1373"><vh>initialize</vh></v>
+<v t="markdblackwell.20110823170927.1373"></v>
 </v>
 <v t="markdblackwell.20110831121351.1581" a="E"><vh>Template</vh>
 <v t="markdblackwell.20110823170927.1325"><vh>create_measures</vh></v>
@@ -46,7 +64,11 @@
 <v t="markdblackwell.20110823170927.1367"><vh>&lt;&lt; constant &gt;&gt;</vh></v>
 </v>
 </v>
-<v t="georgesawyer.20110802081402.2005"><vh>TODO</vh>
+<v t="georgesawyer.20110802081402.2005" a="E"><vh>TODO</vh>
+<v t="markdblackwell.20110831121351.1617"><vh>better error messages</vh>
+<v t="markdblackwell.20110831121351.1619"><vh>reading a YAML music file</vh></v>
+<v t="markdblackwell.20110831121351.1618"><vh>reading a YAML template</vh></v>
+</v>
 <v t="georgesawyer.20110827101921.1493"><vh>actualize tests</vh>
 <v t="georgesawyer.20110827152321.1533" a="E"><vh>@path test/unit</vh>
 <v t="georgesawyer.20110827152321.1531" a="E"><vh>@path app</vh>
@@ -111,7 +133,7 @@
 <v t="georgesawyer.20110825192845.1462"><vh>accessor</vh>
 <v t="markdblackwell.20110823170927.1300"></v>
 <v t="markdblackwell.20110823170927.1368"></v>
-<v t="markdblackwell.20110823170927.1322"><vh>&lt;&lt; accessor &gt;&gt;</vh></v>
+<v t="markdblackwell.20110823170927.1322"></v>
 </v>
 <v t="georgesawyer.20110825192845.1465" a="E"><vh>class</vh>
 <v t="markdblackwell.20110823170927.1383" a="E"></v>
@@ -134,7 +156,7 @@
 <v t="markdblackwell.20110823170927.1280"></v>
 <v t="markdblackwell.20110823170927.1281"></v>
 <v t="markdblackwell.20110823170927.1282"><vh>run_lilypond</vh></v>
-<v t="markdblackwell.20110823170927.1283"><vh>run_requests</vh></v>
+<v t="markdblackwell.20110823170927.1283"></v>
 </v>
 <v t="markdblackwell.20110831121351.1574" a="E"></v>
 </v>
@@ -178,7 +200,7 @@
 <v t="markdblackwell.20110823170927.1322"></v>
 <v t="markdblackwell.20110823170927.1323" a="E"><vh>method</vh>
 <v t="markdblackwell.20110823170927.1324" a="E"><vh>public</vh>
-<v t="markdblackwell.20110823170927.1326"><vh>initialize</vh></v>
+<v t="markdblackwell.20110823170927.1326"></v>
 <v t="markdblackwell.20110823170927.1327"><vh>initialize_copy</vh></v>
 </v>
 <v t="markdblackwell.20110831105007.1551" a="E"></v>
@@ -254,7 +276,7 @@
 <v t="markdblackwell.20110823170927.1386"></v>
 </v>
 </v>
-<v t="georgesawyer.20110802081402.1953"><vh>external files</vh>
+<v t="georgesawyer.20110802081402.1953" a="E"><vh>external files</vh>
 <v t="georgesawyer.20110825192845.1923"><vh>@path .</vh>
 <v t="georgesawyer.20110827152321.1537"><vh>@shadow Rakefile</vh></v>
 <v t="georgesawyer.20110825192845.1920"><vh>@shadow README.md</vh></v>
@@ -455,7 +477,8 @@ end</t>
       lilypond_variable_request=get_sole_yaml_document filepath
       extract_three_keys lilypond_variable_request
       instrument=movement.template.clone
-      run_requests instrument, lilypond_variable_request
+#      run_requests instrument, lilypond_variable_request
+      run_requests instrument, lilypond_variable_request, filepath
       x=filepath.extname
       no_x=filepath.to_s.chomp x
       output_filepath=no_x.concat LilyPond.output_extension
@@ -474,14 +497,15 @@ end</t>
   dos_quote = '"'
   ## `#{dos_quote}#{program_location}#{dos_quote} #{arguments}`
 end</t>
-<t tx="markdblackwell.20110823170927.1283">def self.run_requests instrument, lilypond_variable_request
+<t tx="markdblackwell.20110823170927.1283">def self.run_requests instrument, lilypond_variable_request, filepath
 ##print 'instrument=';p instrument
   lilypond_variable_request.each do |measure_key,measure_request_vector|
 ##print 'instrument.hash=';p instrument.hash
     begin
       m=(measure=instrument.hash.fetch measure_key)
     rescue IndexError # Ruby 1.9.2 subclasses this to KeyError.
-      raise "problem with key #{measure_key}; instrument is #{instrument}"
+#      raise "problem with key #{measure_key}; instrument is #{instrument}"
+      raise " In #{filepath}, problem with key #{measure_key}"
     end
     method_name='content' # Is default.
     until measure_request_vector.empty?
@@ -566,7 +590,7 @@ end</t>
   f=File.new filepath, 'r'
   YAML::load_documents f, &amp;push_document
   f.close
-  raise "#{filepath} must have #{r} YAML documents, #{result.length} found." unless r==result.length
+  raise "#{filepath} must have #{r} YAML document(s), #{result.length} found." unless r==result.length
   result
 end</t>
 <t tx="markdblackwell.20110823170927.1348">class VariableRequest #:nodoc: all
@@ -705,5 +729,23 @@ end
 <t tx="markdblackwell.20110831121351.1581"></t>
 <t tx="markdblackwell.20110831121351.1582"></t>
 <t tx="markdblackwell.20110831121351.1583"></t>
+<t tx="markdblackwell.20110831121351.1610"></t>
+<t tx="markdblackwell.20110831121351.1611"></t>
+<t tx="markdblackwell.20110831121351.1612">@language ruby</t>
+<t tx="markdblackwell.20110831121351.1613"></t>
+<t tx="markdblackwell.20110831121351.1614"></t>
+<t tx="markdblackwell.20110831121351.1615"></t>
+<t tx="markdblackwell.20110831121351.1616">app/main.rb:55:in `run_requests': problem with key HosannaSixteenthHoldq; instrument is #&lt;Template:0x284fad8&gt; (RuntimeError)
+from C:/Documents and Settings/Mark/My Documents/develop/GitHub/MarkDBlckwell/yaml2lilypond/app/main.rb:50:in `each'
+from C:/Documents and Settings/Mark/My Documents/develop/GitHub/MarkDBlckwell/yaml2lilypond/app/main.rb:50:in `run_requests'
+from C:/Documents and Settings/Mark/My Documents/develop/GitHub/MarkDBlckwell/yaml2lilypond/app/main.rb:29:in `run'
+from C:/Documents and Settings/Mark/My Documents/develop/GitHub/MarkDBlckwell/yaml2lilypond/app/main.rb:22:in `each'
+from C:/Documents and Settings/Mark/My Documents/develop/GitHub/MarkDBlckwell/yaml2lilypond/app/main.rb:22:in `run'
+from C:/Documents and Settings/Mark/My Documents/develop/GitHub/MarkDBlckwell/yaml2lilypond/app/main.rb:18:in `each'
+from C:/Documents and Settings/Mark/My Documents/develop/GitHub/MarkDBlckwell/yaml2lilypond/app/main.rb:18:in `run'
+from C:/Documents and Settings/Mark/My Documents/develop/GitHub/MarkDBlckwell/yaml2lilypond/app/generate.rb:13</t>
+<t tx="markdblackwell.20110831121351.1617"></t>
+<t tx="markdblackwell.20110831121351.1618"></t>
+<t tx="markdblackwell.20110831121351.1619"></t>
 </tnodes>
 </leo_file>
