@@ -12,24 +12,24 @@
 <vnodes>
 <v t="georgesawyer.20110802081402.1951" a="E"><vh>yaml2lilypond project</vh>
 <v t="georgesawyer.20110825192845.1922"><vh>&lt;&lt; readme &gt;&gt;</vh></v>
-<v t="georgesawyer.20110825192845.1468" a="E"><vh>DONE</vh>
-<v t="markdblackwell.20110831121351.1583" a="E"><vh>better error messages</vh>
-<v t="markdblackwell.20110831121351.1610" a="E"><vh>reading a YAML music file</vh>
-<v t="markdblackwell.20110831121351.1611" a="E"><vh>problem with key</vh>
+<v t="georgesawyer.20110825192845.1468"><vh>DONE</vh>
+<v t="markdblackwell.20110831121351.1583"><vh>better error messages</vh>
+<v t="markdblackwell.20110831121351.1610"><vh>reading a YAML music file</vh>
+<v t="markdblackwell.20110831121351.1611"><vh>problem with key</vh>
 <v t="markdblackwell.20110831121351.1616"><vh>error message</vh></v>
-<v t="markdblackwell.20110831121351.1612" a="E"><vh>source</vh>
-<v t="markdblackwell.20110831121351.1613" a="E"><vh>Main</vh>
+<v t="markdblackwell.20110831121351.1612"><vh>source</vh>
+<v t="markdblackwell.20110831121351.1613"><vh>Main</vh>
 <v t="markdblackwell.20110823170927.1283"><vh>run_requests</vh></v>
 <v t="markdblackwell.20110823170927.1281"><vh>run</vh></v>
 </v>
 </v>
 </v>
 </v>
-<v t="georgesawyer.20110831082815.1603" a="E"><vh>reading a YAML template</vh>
-<v t="georgesawyer.20110828205607.1541" a="E"><vh>second document not found</vh>
+<v t="georgesawyer.20110831082815.1603"><vh>reading a YAML template</vh>
+<v t="georgesawyer.20110828205607.1541"><vh>second document not found</vh>
 <v t="georgesawyer.20110831082815.1604"><vh>error message</vh></v>
-<v t="georgesawyer.20110831082815.1605" a="E"><vh>source</vh>
-<v t="markdblackwell.20110831121351.1579" a="E"><vh>Main</vh>
+<v t="georgesawyer.20110831082815.1605"><vh>source</vh>
+<v t="markdblackwell.20110831121351.1579"><vh>Main</vh>
 <v t="markdblackwell.20110823170927.1280"><vh>get_sole_yaml_document</vh></v>
 <v t="markdblackwell.20110823170927.1281"></v>
 </v>
@@ -57,7 +57,7 @@
 <v t="markdblackwell.20110823170927.1367"><vh>&lt;&lt; constant &gt;&gt;</vh></v>
 </v>
 </v>
-<v t="georgesawyer.20110802081402.2005" a="E"><vh>TODO</vh>
+<v t="georgesawyer.20110802081402.2005"><vh>TODO</vh>
 <v t="markdblackwell.20110831121351.1617" a="E"><vh>better error messages</vh>
 <v t="markdblackwell.20110831121351.1942" a="E"><vh>missing LF after ...</vh>
 <v t="markdblackwell.20110831121351.1941"><vh>error message</vh></v>
@@ -67,8 +67,8 @@
 <v t="markdblackwell.20110831121351.1618"><vh>reading a YAML template</vh></v>
 </v>
 <v t="georgesawyer.20110827101921.1493"><vh>actualize tests</vh>
-<v t="georgesawyer.20110827152321.1533" a="E"><vh>@path test/unit</vh>
-<v t="georgesawyer.20110827152321.1531" a="E"><vh>@path app</vh>
+<v t="georgesawyer.20110827152321.1533"><vh>@path test/unit</vh>
+<v t="georgesawyer.20110827152321.1531"><vh>@path app</vh>
 <v t="georgesawyer.20110827101921.1519"><vh>&lt;&lt; app code tests &gt;&gt;</vh>
 <v t="georgesawyer.20110827101921.1500"><vh>some test</vh>
 <v t="georgesawyer.20110827101921.1520"><vh>code</vh></v>
@@ -84,8 +84,8 @@
 <v t="georgesawyer.20110827101921.1549"><vh>@shadow variable_request_test.rb</vh></v>
 </v>
 </v>
-<v t="georgesawyer.20110827152321.1532" a="E"><vh>@path surroundings</vh>
-<v t="georgesawyer.20110827101921.1518" a="E"><vh>&lt;&lt; surroundings tests &gt;&gt;</vh>
+<v t="georgesawyer.20110827152321.1532"><vh>@path surroundings</vh>
+<v t="georgesawyer.20110827101921.1518"><vh>&lt;&lt; surroundings tests &gt;&gt;</vh>
 <v t="georgesawyer.20110827101921.1510"><vh>@shadow unshift.rb</vh></v>
 <v t="georgesawyer.20110827101921.1509"><vh>@shadow yaml_test.rb</vh></v>
 <v t="georgesawyer.20110827101921.1508"><vh>@shadow flatten_test.rb</vh></v>
@@ -94,7 +94,7 @@
 </v>
 </v>
 <v t="markdblackwell.20110831105007.1547"><vh>from YAML template, produce sample text</vh>
-<v t="markdblackwell.20110831105007.1550" a="E"><vh>source</vh>
+<v t="markdblackwell.20110831105007.1550"><vh>source</vh>
 <v t="markdblackwell.20110831121351.1576"><vh>Main</vh>
 <v t="markdblackwell.20110831121351.1575"><vh>&lt;&lt; constant&gt;&gt;</vh></v>
 <v t="markdblackwell.20110831105007.1548"><vh>make_copyable_version</vh></v>
@@ -132,7 +132,7 @@
 <v t="markdblackwell.20110823170927.1368"></v>
 <v t="markdblackwell.20110823170927.1322"><vh>&lt;&lt; accessor &gt;&gt;</vh></v>
 </v>
-<v t="georgesawyer.20110825192845.1465" a="E"><vh>class</vh>
+<v t="georgesawyer.20110825192845.1465"><vh>class</vh>
 <v t="markdblackwell.20110823170927.1383" a="E"></v>
 <v t="markdblackwell.20110823170927.1258" a="E"><vh>LilyPond</vh>
 <v t="markdblackwell.20110823170927.1259"><vh>&lt;&lt; constant &gt;&gt;</vh></v>
@@ -144,11 +144,11 @@
 </v>
 </v>
 </v>
-<v t="markdblackwell.20110823170927.1274" a="E"><vh>Main</vh>
+<v t="markdblackwell.20110823170927.1274"><vh>Main</vh>
 <v t="markdblackwell.20110831121351.1575"></v>
 <v t="markdblackwell.20110823170927.1275"><vh>&lt;&lt; class accessor &gt;&gt;</vh></v>
-<v t="markdblackwell.20110823170927.1277" a="E"><vh>method</vh>
-<v t="markdblackwell.20110823170927.1278" a="E"><vh>public class</vh>
+<v t="markdblackwell.20110823170927.1277"><vh>method</vh>
+<v t="markdblackwell.20110823170927.1278"><vh>public class</vh>
 <v t="markdblackwell.20110823170927.1279"><vh>extract_three_keys</vh></v>
 <v t="markdblackwell.20110823170927.1280"></v>
 <v t="markdblackwell.20110823170927.1281"></v>
@@ -180,8 +180,8 @@
 <v t="markdblackwell.20110823170927.1367"></v>
 <v t="markdblackwell.20110823170927.1368"></v>
 <v t="markdblackwell.20110823170927.1369" a="E"><vh>method</vh>
-<v t="markdblackwell.20110823170927.1370" a="E"><vh>public class</vh>
-<v t="markdblackwell.20110823170927.1371" a="E"><vh>names</vh>
+<v t="markdblackwell.20110823170927.1370"><vh>public class</vh>
+<v t="markdblackwell.20110823170927.1371"><vh>names</vh>
 <v t="markdblackwell.20110827081420.1493"><vh>&lt;&lt; rdoc &gt;&gt;</vh></v>
 </v>
 </v>
@@ -235,7 +235,7 @@
 <v t="markdblackwell.20110823170927.1367"></v>
 <v t="markdblackwell.20110831121351.1575"></v>
 </v>
-<v t="georgesawyer.20110825192845.1467" a="E"><vh>method</vh>
+<v t="georgesawyer.20110825192845.1467"><vh>method</vh>
 <v t="georgesawyer.20110827101921.1628"></v>
 <v t="markdblackwell.20110823170927.1303"></v>
 <v t="markdblackwell.20110823170927.1302"></v>
@@ -250,7 +250,7 @@
 <v t="markdblackwell.20110823170927.1327"></v>
 <v t="markdblackwell.20110823170927.1374"></v>
 <v t="markdblackwell.20110831105007.1548"></v>
-<v t="markdblackwell.20110823170927.1371" a="E"></v>
+<v t="markdblackwell.20110823170927.1371"></v>
 <v t="markdblackwell.20110826175603.1481"></v>
 <v t="markdblackwell.20110823170927.1304"></v>
 <v t="markdblackwell.20110823170927.1305"></v>
@@ -281,7 +281,7 @@
 <v t="georgesawyer.20110827101921.1494"><vh>@path test/unit</vh>
 <v t="georgesawyer.20110827152321.1534"><vh>@shadow standalone_test_helper.rb</vh></v>
 <v t="georgesawyer.20110827101921.1552" a="E"><vh>@path surroundings</vh>
-<v t="georgesawyer.20110827101921.1518" a="E"></v>
+<v t="georgesawyer.20110827101921.1518"></v>
 </v>
 <v t="georgesawyer.20110827101921.1553"><vh>@path app</vh>
 <v t="georgesawyer.20110827101921.1519"></v>
@@ -296,12 +296,12 @@ expanded="markdblackwell.20110823170927.1383,"><vh>@shadow app.rb</vh></v>
 <v t="markdblackwell.20110823170927.1391" a="E"><vh>@shadow generate.rb</vh></v>
 <v t="markdblackwell.20110823170927.1239" a="E"
 expanded="markdblackwell.20110823170927.1258,markdblackwell.20110823170927.1260,markdblackwell.20110823170927.1261,"><vh>@shadow lily_pond.rb</vh></v>
-<v t="markdblackwell.20110823170927.1241" a="E"
-expanded="markdblackwell.20110823170927.1274,markdblackwell.20110823170927.1277,markdblackwell.20110823170927.1278,markdblackwell.20110831121351.1574,"><vh>@shadow main.rb</vh></v>
+<v t="markdblackwell.20110823170927.1241"
+expanded="markdblackwell.20110831121351.1574,"><vh>@shadow main.rb</vh></v>
 <v t="markdblackwell.20110823170927.1243" a="E"
 expanded="markdblackwell.20110823170927.1298,markdblackwell.20110823170927.1301,markdblackwell.20110823170927.1308,markdblackwell.20110823170927.1309,"><vh>@shadow measure.rb</vh></v>
 <v t="markdblackwell.20110823170927.1354" a="E"
-expanded="markdblackwell.20110823170927.1366,markdblackwell.20110823170927.1369,markdblackwell.20110823170927.1370,markdblackwell.20110823170927.1371,markdblackwell.20110823170927.1372,markdblackwell.20110823170927.1375,"><vh>@shadow movement.rb</vh></v>
+expanded="markdblackwell.20110823170927.1366,markdblackwell.20110823170927.1369,markdblackwell.20110823170927.1372,markdblackwell.20110823170927.1375,"><vh>@shadow movement.rb</vh></v>
 <v t="markdblackwell.20110823170927.1245" a="E"
 expanded="markdblackwell.20110823170927.1320,markdblackwell.20110823170927.1323,markdblackwell.20110823170927.1324,markdblackwell.20110831105007.1551,"><vh>@shadow template.rb</vh></v>
 <v t="markdblackwell.20110823170927.1247" a="E"
@@ -702,7 +702,7 @@ require 'variable_request'
 <t tx="markdblackwell.20110827081420.1506"># Example: soprano/note.yml</t>
 <t tx="markdblackwell.20110831105007.1547"></t>
 <t tx="markdblackwell.20110831105007.1548">def self.make_copyable_version movement
-  s = movement.template.measures.map{|e| "#{e.key}:\n- #{e.default_music}\n"}.to_s
+  s = movement.template.measures.map{|e| "#{e.key}:\n- #{e.default_music}\n"}.join
   filepath = movement.directory.join TEMPLATE_FILENAME_COPYABLE
   f = File.open filepath, 'wb' # For Git, use Unix (LF) line endings.
   f.print s

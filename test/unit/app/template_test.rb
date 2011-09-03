@@ -9,7 +9,7 @@ class TemplateTest < Test::Unit::TestCase
       2==a.length ? a : (a.push 4)
     end
     s='[[1, 4], [2, 8]]'
-    assert_equal s, b.to_s
+    assert_equal s, b.inspect
   end
 
 end

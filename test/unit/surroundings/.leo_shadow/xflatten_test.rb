@@ -8,7 +8,7 @@ class FlattenTest < Test::Unit::TestCase
     a=[1,[2,8]]
     a=[a].flatten
     s='[1, 2, 8]'
-    assert_equal s, a.to_s
+    assert_equal s, a.inspect
   end
 
 end

@@ -6,7 +6,7 @@ class UnshiftTest < Test::Unit::TestCase
     a=[1,2]
     a.unshift(3)
     s='[3, 1, 2]'
-    assert_equal s, a.to_s
+    assert_equal s, a.inspect
   end
 
 end
