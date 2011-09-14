@@ -37,6 +37,8 @@ Within each CHILD, there must be a file, 'template.yml' containing, for all the 
 Any other *.yml files are converted to LilyPond input format. The output filenames will have the same full pathnames but with the extension, '.gly' (for 'generated Lilypond').
 
 The program will generate a sample YAML file ('sample-yaml.txt') for you to copy measures from.
+
+Copyright (c) 2011 Mark D. Blackwell. See [MIT-LICENSE](MIT-LICENSE) for details.
 #--unknown-language--@-node:georgesawyer.20110825192845.1922:<< readme >>
 #--unknown-language--@nl
 #--unknown-language--@+others

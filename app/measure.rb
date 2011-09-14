@@ -21,6 +21,6 @@ class Measure #:nodoc: all
   def to_s
     time_line = @time_same ? nil : "\\time #{@time}"
     key_line = "#{INDENT}% #{@key}"
-    [time_line, @content, key_line].compact.join "\n"
+    [key_line, time_line, @content].compact.join "\n"
   end
 end
