@@ -6,7 +6,7 @@ class LilyPond #:nodoc: all
   #@  << constant >>
   #@+node:markdblackwell.20110823170927.1259:<< constant >>
   INDENT = ' '*2
-  LILYPOND_VERSION='2.14.1'
+  LILYPOND_VERSION='2.14.2'
   OUTPUT_EXTENSION='.gly'
   #@nonl
   #@-node:markdblackwell.20110823170927.1259:<< constant >>

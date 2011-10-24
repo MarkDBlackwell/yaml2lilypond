@@ -14,11 +14,11 @@
 <v t="georgesawyer.20110825192845.1922"><vh>&lt;&lt; readme &gt;&gt;</vh></v>
 <v t="georgesawyer.20110825192845.1468"><vh>DONE</vh>
 <v t="markdblackwell.20110831121351.1583"><vh>better error messages</vh>
-<v t="markdblackwell.20110831121351.1610"><vh>reading a YAML music file</vh>
-<v t="markdblackwell.20110831121351.1611"><vh>problem with key</vh>
+<v t="markdblackwell.20110831121351.1610" a="E"><vh>reading a YAML music file</vh>
+<v t="markdblackwell.20110831121351.1611" a="E"><vh>problem with key</vh>
 <v t="markdblackwell.20110831121351.1616"><vh>error message</vh></v>
-<v t="markdblackwell.20110831121351.1612"><vh>source</vh>
-<v t="markdblackwell.20110831121351.1613"><vh>Main</vh>
+<v t="markdblackwell.20110831121351.1612" a="E"><vh>source</vh>
+<v t="markdblackwell.20110831121351.1613" a="E"><vh>Main</vh>
 <v t="markdblackwell.20110823170927.1283"><vh>run_requests</vh></v>
 <v t="markdblackwell.20110823170927.1281"><vh>run</vh></v>
 </v>
@@ -56,13 +56,27 @@
 </v>
 <v t="markdblackwell.20110823170927.1367"><vh>&lt;&lt; constant &gt;&gt;</vh></v>
 </v>
+<v t="markdblackwell.20110831105007.1547"><vh>from YAML template, produce sample text</vh>
+<v t="markdblackwell.20110831105007.1550"><vh>source</vh>
+<v t="markdblackwell.20110831121351.1576" a="E"><vh>Main</vh>
+<v t="markdblackwell.20110831121351.1575"><vh>&lt;&lt; constant&gt;&gt;</vh></v>
+<v t="markdblackwell.20110831105007.1548"><vh>make_copyable_version</vh></v>
+<v t="markdblackwell.20110823170927.1281"></v>
 </v>
-<v t="georgesawyer.20110802081402.2005" a="E"><vh>TODO</vh>
-<v t="markdblackwell.20110914111846.1611" a="E"><vh>in output, place key above contents</vh>
+<v t="markdblackwell.20110831121351.1577"><vh>Measure</vh>
+<v t="markdblackwell.20110823170927.1300"><vh>&lt;&lt; accessor &gt;&gt;</vh></v>
+<v t="markdblackwell.20110823170927.1310"><vh>initialize</vh></v>
+</v>
+<v t="markdblackwell.20110831121351.1578"><vh>Movement</vh>
+<v t="markdblackwell.20110823170927.1368"><vh>&lt;&lt; accessor &gt;&gt;</vh></v>
+</v>
+</v>
+</v>
+<v t="markdblackwell.20110914111846.1611"><vh>in output, place key above contents</vh>
 <v t="markdblackwell.20110823170927.1311"><vh>to_s</vh></v>
 <v t="markdblackwell.20110823170927.1263"><vh>write_input_for_lilypond</vh></v>
 <v t="markdblackwell.20110914111846.1680" a="E"><vh>trail, not needed</vh>
-<v t="markdblackwell.20110823170927.1310"><vh>initialize</vh></v>
+<v t="markdblackwell.20110823170927.1310"></v>
 <v t="markdblackwell.20110823170927.1327"><vh>initialize_copy</vh></v>
 <v t="markdblackwell.20110823170927.1325"></v>
 <v t="markdblackwell.20110823170927.1322"><vh>&lt;&lt; accessor &gt;&gt;</vh></v>
@@ -70,6 +84,8 @@
 <v t="markdblackwell.20110823170927.1281"></v>
 </v>
 </v>
+</v>
+<v t="georgesawyer.20110802081402.2005"><vh>TODO</vh>
 <v t="markdblackwell.20110831121351.1617"><vh>better error messages</vh>
 <v t="markdblackwell.20110831121351.1942" a="E"><vh>missing LF after ...</vh>
 <v t="markdblackwell.20110831121351.1941"><vh>error message</vh></v>
@@ -105,26 +121,10 @@
 </v>
 </v>
 </v>
-<v t="markdblackwell.20110831105007.1547"><vh>from YAML template, produce sample text</vh>
-<v t="markdblackwell.20110831105007.1550"><vh>source</vh>
-<v t="markdblackwell.20110831121351.1576"><vh>Main</vh>
-<v t="markdblackwell.20110831121351.1575"><vh>&lt;&lt; constant&gt;&gt;</vh></v>
-<v t="markdblackwell.20110831105007.1548"><vh>make_copyable_version</vh></v>
-<v t="markdblackwell.20110823170927.1281"></v>
-</v>
-<v t="markdblackwell.20110831121351.1577"><vh>Measure</vh>
-<v t="markdblackwell.20110823170927.1300"><vh>&lt;&lt; accessor &gt;&gt;</vh></v>
-<v t="markdblackwell.20110823170927.1310"></v>
-</v>
-<v t="markdblackwell.20110831121351.1578"><vh>Movement</vh>
-<v t="markdblackwell.20110823170927.1368"><vh>&lt;&lt; accessor &gt;&gt;</vh></v>
-</v>
-</v>
-</v>
 <v t="georgesawyer.20110825192845.1469"><vh>make project a Ruby gem</vh></v>
 <v t="georgesawyer.20110819095338.1610"><vh>&lt;&lt; usage &gt;&gt;</vh></v>
 </v>
-<v t="georgesawyer.20110825192845.1464"><vh>fragment</vh>
+<v t="georgesawyer.20110825192845.1464" a="E"><vh>fragment</vh>
 <v t="markdblackwell.20110831121351.1570"><vh>private</vh>
 <v t="markdblackwell.20110831121351.1574" a="E"><vh>private class</vh>
 <v t="markdblackwell.20110831105007.1548"></v>
@@ -144,7 +144,7 @@
 <v t="markdblackwell.20110823170927.1368"></v>
 <v t="markdblackwell.20110823170927.1322"></v>
 </v>
-<v t="georgesawyer.20110825192845.1465"><vh>class</vh>
+<v t="georgesawyer.20110825192845.1465" a="E"><vh>class</vh>
 <v t="markdblackwell.20110823170927.1383" a="E"></v>
 <v t="markdblackwell.20110823170927.1258" a="E"><vh>LilyPond</vh>
 <v t="markdblackwell.20110823170927.1259"><vh>&lt;&lt; constant &gt;&gt;</vh></v>
@@ -159,8 +159,8 @@
 <v t="markdblackwell.20110823170927.1274" a="E"><vh>Main</vh>
 <v t="markdblackwell.20110831121351.1575"></v>
 <v t="markdblackwell.20110823170927.1275"><vh>&lt;&lt; class accessor &gt;&gt;</vh></v>
-<v t="markdblackwell.20110823170927.1277" a="E"><vh>method</vh>
-<v t="markdblackwell.20110823170927.1278" a="E"><vh>public class</vh>
+<v t="markdblackwell.20110823170927.1277"><vh>method</vh>
+<v t="markdblackwell.20110823170927.1278"><vh>public class</vh>
 <v t="markdblackwell.20110823170927.1279"><vh>extract_three_keys</vh></v>
 <v t="markdblackwell.20110823170927.1280"></v>
 <v t="markdblackwell.20110823170927.1281"></v>
@@ -170,7 +170,7 @@
 <v t="markdblackwell.20110831121351.1574" a="E"></v>
 </v>
 </v>
-<v t="markdblackwell.20110823170927.1298" a="E"><vh>Measure</vh>
+<v t="markdblackwell.20110823170927.1298"><vh>Measure</vh>
 <v t="markdblackwell.20110823170927.1299"><vh>&lt;&lt; constant &gt;&gt;</vh></v>
 <v t="markdblackwell.20110823170927.1300"></v>
 <v t="markdblackwell.20110823170927.1301" a="E"><vh>&lt;&lt; single line method &gt;&gt;</vh>
@@ -181,8 +181,8 @@
 <v t="markdblackwell.20110823170927.1306"><vh>suffix</vh></v>
 <v t="markdblackwell.20110823170927.1307"><vh>suffix_barlines</vh></v>
 </v>
-<v t="markdblackwell.20110823170927.1308" a="E"><vh>method</vh>
-<v t="markdblackwell.20110823170927.1309" a="E"><vh>public</vh>
+<v t="markdblackwell.20110823170927.1308"><vh>method</vh>
+<v t="markdblackwell.20110823170927.1309"><vh>public</vh>
 <v t="markdblackwell.20110823170927.1310"></v>
 <v t="markdblackwell.20110823170927.1311"></v>
 </v>
@@ -224,11 +224,11 @@
 </v>
 </v>
 </v>
-<v t="markdblackwell.20110823170927.1348"><vh>VariableRequest</vh>
+<v t="markdblackwell.20110823170927.1348" a="E"><vh>VariableRequest</vh>
 <v t="markdblackwell.20110823170927.1349"><vh>&lt;&lt; class accessor &gt;&gt;</vh></v>
 <v t="markdblackwell.20110823170927.1350"><vh>&lt;&lt; script &gt;&gt;</vh></v>
-<v t="markdblackwell.20110823170927.1351"><vh>method</vh>
-<v t="markdblackwell.20110823170927.1352"><vh>public class</vh>
+<v t="markdblackwell.20110823170927.1351" a="E"><vh>method</vh>
+<v t="markdblackwell.20110823170927.1352" a="E"><vh>public class</vh>
 <v t="markdblackwell.20110823170927.1353"><vh>execute_method</vh></v>
 </v>
 </v>
@@ -247,7 +247,7 @@
 <v t="markdblackwell.20110823170927.1367"></v>
 <v t="markdblackwell.20110831121351.1575"></v>
 </v>
-<v t="georgesawyer.20110825192845.1467"><vh>method</vh>
+<v t="georgesawyer.20110825192845.1467" a="E"><vh>method</vh>
 <v t="georgesawyer.20110827101921.1628"></v>
 <v t="markdblackwell.20110823170927.1303"></v>
 <v t="markdblackwell.20110823170927.1302"></v>
@@ -286,7 +286,7 @@
 </v>
 </v>
 <v t="georgesawyer.20110802081402.1953" a="E"><vh>external files</vh>
-<v t="georgesawyer.20110825192845.1923"><vh>@path .</vh>
+<v t="georgesawyer.20110825192845.1923" a="E"><vh>@path .</vh>
 <v t="georgesawyer.20110827152321.1537"><vh>@shadow Rakefile</vh></v>
 <v t="georgesawyer.20110825192845.1920" a="E"><vh>@shadow README.md</vh></v>
 </v>
@@ -309,16 +309,17 @@ expanded="markdblackwell.20110823170927.1383,"><vh>@shadow app.rb</vh></v>
 <v t="markdblackwell.20110823170927.1239"
 expanded="markdblackwell.20110823170927.1258,markdblackwell.20110823170927.1260,markdblackwell.20110823170927.1261,"><vh>@shadow lily_pond.rb</vh></v>
 <v t="markdblackwell.20110823170927.1241"
-expanded="markdblackwell.20110823170927.1274,markdblackwell.20110823170927.1277,markdblackwell.20110823170927.1278,markdblackwell.20110831121351.1574,"><vh>@shadow main.rb</vh></v>
-<v t="markdblackwell.20110823170927.1243" a="E"
-expanded="markdblackwell.20110823170927.1298,markdblackwell.20110823170927.1301,markdblackwell.20110823170927.1308,markdblackwell.20110823170927.1309,"><vh>@shadow measure.rb</vh></v>
+expanded="markdblackwell.20110823170927.1274,markdblackwell.20110831121351.1574,"><vh>@shadow main.rb</vh></v>
+<v t="markdblackwell.20110823170927.1243"
+expanded="markdblackwell.20110823170927.1301,"><vh>@shadow measure.rb</vh></v>
 <v t="markdblackwell.20110823170927.1354"
 expanded="markdblackwell.20110823170927.1366,markdblackwell.20110823170927.1369,markdblackwell.20110823170927.1372,markdblackwell.20110823170927.1375,"><vh>@shadow movement.rb</vh></v>
 <v t="markdblackwell.20110823170927.1245"
 expanded="markdblackwell.20110823170927.1320,markdblackwell.20110823170927.1323,markdblackwell.20110823170927.1324,markdblackwell.20110831105007.1551,"><vh>@shadow template.rb</vh></v>
 <v t="markdblackwell.20110823170927.1247"
 expanded="markdblackwell.20110823170927.1339,markdblackwell.20110823170927.1340,"><vh>@shadow use_yaml.rb</vh></v>
-<v t="markdblackwell.20110823170927.1249"><vh>@shadow variable_request.rb</vh></v>
+<v t="markdblackwell.20110823170927.1249" a="E"
+expanded="markdblackwell.20110823170927.1348,markdblackwell.20110823170927.1351,markdblackwell.20110823170927.1352,"><vh>@shadow variable_request.rb</vh></v>
 </v>
 </v>
 </v>
@@ -356,38 +357,157 @@ Generate LilyPond input from YAML.</t>
 <t tx="georgesawyer.20110825192845.1469"></t>
 <t tx="georgesawyer.20110825192845.1922">#yaml2lilypond
 
-Program works, but the documentation (and tests: it was written as a spike solution) are NOT READY YET.
+A program to convert music specifications from YAML format into LilyPond (input) format.
 
-A program to convert music specifications, from YAML format, into LilyPond (input) format.
+The program works, but its tests (it was written as a spike solution) and documentation are&lt;br /&gt;
+NOT READY YET.
 
-It is written in Ruby.
+TODO: change invocation to, 'yaml2lilypond'.
 
-##invocation
+Written in Ruby.
+
+##Justification and purpose
+
+Some music, especially some choral music, is largely irregular in measure length. During LilyPond music entry and editing, these measures often are (or could be) joined or split, depending on the source you are working with: especially in early music, or wherever music has been entered in a free way.
+
+In a practical way, yaml2lilypond allows measures to be labeled by (text) strings, instead of (only) by measure numbers.
+
+Given multiple instruments or voice parts, each often carries along or implies several, separate, parallel LilyPond files for various purposes, such as adjusting the piano or organ reduction. Other features which LilyPond doesn't do well yet (completely automatically) might necessitate more of these parallel files.
+
+Whenever there are parallel files, they require careful synchronization of all the measures and measure lengths. What a bother!
+
+Obviously, any time humans find themselves checking and synchronizing with difficulty is a good opportunity for a computer to do it, instead. I found myself in that situation, and that's why I wrote this program.
+
+For all music input files (in YAML format), yaml2lilypond fills each measure with spacer rests, unless told otherwise.
+
+Regarding a LilyPond file whose purpose is just a few measures, this eases synchronization, because you can include only those measures.
+
+When joining and splitting measures, only those LilyPond files which specify something explicitly (for those measures) need be changed. They are changed more simply:
+* the measures are easier to find;
+* just those couple of labeled measure areas need be changed; and
+* measure numbers following them don't need adjusting, because there aren't any.
+
+What is YAML? YAML is a data (storage) format whose noise (extra characters you enter) is very spare. It seems the cleanest for entering LilyPond source (it interferes only minimally) while still allowing measures to be labeled by text strings.
+
+##Invocation
 
 ```bash
-cd &lt;directory containing LilyPond movement directories&gt;
-yaml2lilypond
+cd &lt;movements directory&gt;
+ruby &lt;directory containing yaml2lilypond&gt;/app/generate.rb
 ```
 
-##requirements
+If on the Windows command line:
 
-When yaml2lilypond is invoked, each tree below the current directory (in the filesystem) must contain the *.yml files of only a single musical movement (even if there is only one).
+```
+cd &lt;movements directory&gt;
+ruby "&lt;directory containing yaml2lilypond&gt;/app/generate.rb"
+```
 
-The easiest way is to make a subdirectory (in your LilyPond project), e.g., 'all-movements', and place the files pertaining to each musical movement in a separate, ('CHILD') subdirectory under it. For example, if your project were called, 'my-suite', then one of my-suite's filesystem children would be called, 'all-movements', and all-movements' children might be 'adagio', 'minuet' and 'sarabande'.
+##Requirements
 
-BTW, in LilyPond, you can and should be using relative paths, for example by specifying in your book.ly:
+Yaml2lilypond requires your LilyPond project files (at least the YAML files) to be organized in a certain way. First, make a directory (e.g., 'movements'). Under this, segregate each music movement's files into its own subdirectory (actually, filesystem tree). Note: if a LilyPond project only has one movement, there nevertheless must be a subdirectory for it.
+
+Before running yaml2lilypond, change your current, working directory to 'movements'.
+
+BTW, to allow relative include paths in LilyPond (useful for movements), insert this line somewhere, such as near the top of book.ly:
 
 ```lilypond
 #(ly:set-option 'relative-includes #t)
 ```
-Within each CHILD, there must be a file, 'template.yml' containing, for all the movement's measures:
 
-* time signatures, and
-* unique string identifiers
+For example, a LilyPond project in a directory, 'suite', should have a subdirectory, 'movements'. Under this you might make subdirectories, 'adagio', 'minuet' and 'sarabande':
 
-Any other *.yml files are converted to LilyPond input format. The output filenames will have the same full pathnames but with the extension, '.gly' (for 'generated Lilypond').
+```
+suite
+* movements
+** adagio
+** minuet
+** sarabande
+```
 
-The program will generate a sample YAML file ('sample-yaml.txt') for you to copy measures from.
+Within each movement's subdirectory, there must be a file, ('template.yml', in YAML format) describing all the measures (in music order) with:
+
+* Unique string identifiers, and
+* Time signatures.
+
+For example, the following is for a movement of two measures, with time signatures 6/4 and 3/2:
+
+```yaml
+---
+- SomeLabel
+- SomeOtherLabel
+---
+- 6
+- - 3
+  - 2
+...
+```
+
+##Results
+
+All  YAML (*.yml) files (except, 'template.yml': see above) are converted to files in LilyPond input format in the same directories. The output files will have the same filenames, but with extension, '.gly' (for 'generated Lilypond').
+
+For reference, and for copying, yaml2lilypond also will generate a useful, sample YAML file in each movement directory ('sample-yaml.txt', based on template.yml), with a spacer rest for each measure.
+
+##Input format
+
+YAML input files for various instruments, voices, or voice 'overlays', etc., can be placed anywhere in the filesystem tree of a given movement. They must start with variable, mode and a prefix for the file. Continuing the example from above:
+
+```yaml
+---
+variable: someMovementSopranoNotes
+mode: relative c''
+prefix:
+- %
+
+SomeLabel:
+- R1*6/4
+
+SomeOtherLabel:
+- R1*3/2
+...
+```
+
+The above would generate:
+
+```lilypond
+someMovementSopranoNotes = {
+  \relative c'' {
+    %
+    % SomeLabel
+\time 6/4
+| R1*6/4 |
+    % SomeOtherLabel
+\time 3/2
+| R1*3/2 |
+  }
+}
+```
+
+Beside measure content ('R1*6/4', above), you can specify measure prefixes and suffixes, or both, e.g.:
+
+```yaml
+SomeLabel:
+# New relative pitch location.
+- prefix
+- '} \relative c {'
+
+SomeOtherLabel:
+# New section.
+- suffix
+- \bar "||"
+- \tempo "Poco più mosso" 2 = 56
+```
+
+You need not give any measure content. Also, you need not include measure labels for all measures. In both cases, a LilyPond spacer rest (for the full measure) will be used.
+
+##YAML notes
+
+If you want, you can include YAML comments. They can start anywhere with a hash character (#).
+
+If you have any characters of '{}#' in a line (except YAML comments) or, as in tremolo, ':' at the end, then everything (after '- ') must be enclosed in single quotes (they will be removed). In that case, for single quotes in the result, you must enter them twice.
+
+Be careful about the final, triple dots. If there are any characters after them, other than your computer's usual end of line sequence (required) you will get a mysterious error message.
 
 Copyright (c) 2011 Mark D. Blackwell. See [MIT-LICENSE](MIT-LICENSE) for details.
 </t>
@@ -440,7 +560,7 @@ from C:/Mark/develop/GitHub/MarkDBlackwell/yaml2lilypond/app/generate.rb:13:in `
   @others
 end</t>
 <t tx="markdblackwell.20110823170927.1259">INDENT = ' '*2
-LILYPOND_VERSION='2.14.1'
+LILYPOND_VERSION='2.14.2'
 OUTPUT_EXTENSION='.gly'</t>
 <t tx="markdblackwell.20110823170927.1260"></t>
 <t tx="markdblackwell.20110823170927.1261"></t>
