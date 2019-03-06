@@ -1,4 +1,4 @@
-#yaml2lilypond
+# yaml2lilypond
 
 A program to convert music specifications from YAML format into LilyPond (input) format.
 
@@ -9,7 +9,7 @@ TODO: change invocation to, 'yaml2lilypond'.
 
 Written in Ruby.
 
-##Justification and purpose
+## Justification and purpose
 
 Some music, especially some choral music, is largely irregular in measure length. During LilyPond music entry and editing, these measures often are (or could be) joined or split, depending on the source you are working with: especially in early music, or wherever music has been entered in a free way.
 
@@ -32,7 +32,7 @@ When joining and splitting measures, only those LilyPond files which specify som
 
 What is YAML? YAML is a data (storage) format whose noise (extra characters you enter) is very spare. It seems the cleanest for entering LilyPond source (it interferes only minimally) while still allowing measures to be labeled by text strings.
 
-##Invocation
+## Invocation
 
 ```bash
 cd <movements directory>
@@ -46,7 +46,7 @@ cd <movements directory>
 ruby "<directory containing yaml2lilypond>/app/generate.rb"
 ```
 
-##Requirements
+## Requirements
 
 Yaml2lilypond requires your LilyPond project files (at least the YAML files) to be organized in a certain way. First, make a directory (e.g., 'movements'). Under this, segregate each music movement's files into its own subdirectory (actually, filesystem tree). Note: if a LilyPond project only has one movement, there nevertheless must be a subdirectory for it.
 
@@ -86,13 +86,13 @@ For example, the following is for a movement of two measures, with time signatur
 ...
 ```
 
-##Results
+## Results
 
 All  YAML (*.yml) files (except, 'template.yml': see above) are converted to files in LilyPond input format in the same directories. The output files will have the same filenames, but with extension, '.gly' (for 'generated Lilypond').
 
 For reference, and for copying, yaml2lilypond also will generate a useful, sample YAML file in each movement directory ('sample-yaml.txt', based on template.yml), with a spacer rest for each measure.
 
-##Input format
+## Input format
 
 YAML input files for various instruments, voices, or voice 'overlays', etc., can be placed anywhere in the filesystem tree of a given movement. They must start with variable, mode and a prefix for the file. Continuing the example from above:
 
@@ -144,7 +144,7 @@ SomeOtherLabel:
 
 You need not give any measure content. Also, you need not include measure labels for all measures. In both cases, a LilyPond spacer rest (for the full measure) will be used.
 
-##YAML notes
+## YAML notes
 
 If you want, you can include YAML comments. They can start anywhere with a hash character (#).
 
